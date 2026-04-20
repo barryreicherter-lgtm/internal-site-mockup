@@ -1,0 +1,1091 @@
+
+
+
+
+SHRM Intelligence Layer Studio
+
+
+
+Project Definition: Staff Hackathon Series
+
+
+
+ILS-HACK-01  |  Updated April 2026  |  Internal Cultural Accelerator & Rapid Prototyping Series
+
+Project Code
+
+ILS-HACK-01
+
+Parent Initiative
+
+SHRM Intelligence Layer Studio (ILS)
+
+Classification
+
+Internal Cultural Accelerator / Rapid Prototyping Series
+
+Status
+
+Phase 1 Complete (Innovation Week executed); Phase 2 Active Planning
+
+Date
+
+April 2026 (updated from March 24, 2026)
+
+Prior Version
+
+v1.0 (March 24, 2026) — superseded by this document. Status updated to reflect Phase 1 completion; Triage model expanded to layered multi-path architecture; Vibe Experiments Library formalized.
+
+Lead AI Coach
+
+Barry Reicherter, Director Market Research & VoC / Scale Free Strategy
+
+Co-Coaches
+
+Joey Buss; Sandeep Reddy Nimma
+
+ILS Sponsor
+
+Syed Wasey, EVP SHRM Business
+
+
+
+
+
+
+
+
+
+§1  Executive Summary & Strategic Intent
+
+
+
+The Internal Innovation Series is the cultural engine of the Intelligence Layer Studio. Its primary goal is to transition SHRM staff from Identic AI (ad hoc, unstructured use of free tools) to Agentic AI fluency (building structured, value-adding HR solutions). The program empowers SHRM employees to solve concrete HR problems using natural language development — &apos;Vibe Coding&apos; — within a secure, high-velocity sandbox.
+
+
+
+The program&apos;s strategic value is not measured solely by the count of prototypes that reach enterprise launch. It is measured by heterogeneous output generation: the diverse set of ideas, prototypes, program concepts, and insights that the organization can evaluate and route forward. A hackathon output that becomes a new certification credential, a new L&D course framework, or a strategic insight for leadership is as valuable as one that becomes a technical prototype — and the program is designed to accommodate all of these output types.
+
+
+
+This project definition updates the March 24 original to reflect Phase 1 completion (SHRM Innovation Week executed under the &apos;From Identic to Agentic&apos; theme) and to expand the Triage model from a simple technical review step into a layered multi-path disposition architecture. Every hackathon output is preserved in the ILS Vibe Experiments Library as institutional memory, and a subset of outputs advance along one of five active development tracks based on output type and forward-path viability.
+
+
+
+
+
+
+
+
+
+§2  Current State
+
+
+
+
+
+
+
+2.1  Phase 1 Completion — Innovation Week
+
+
+
+SHRM Innovation Week was executed under the theme &apos;From Identic to Agentic.&apos; The event was coached by a three-person team: Barry Reicherter as Lead AI Coach, with Joey Buss and Sandeep Reddy Nimma as co-coaches. Phase 1 operational lessons and retrospective findings are captured separately; this document does not make specific claims about Phase 1 outputs or outcomes in the interest of keeping the governance definition evergreen rather than tied to event-specific results.
+
+
+
+
+
+
+
+2.2  Phase 2 Active Planning
+
+
+
+Phase 2 is the continuous operational phase of the hackathon program. It is no longer an event-based activity tied to a single week, but a rolling cadence of Flash Team sprints commissioned in response to proposed HR problems. Phase 2 planning activities underway as of this revision include: refinement of the Triage governance model (§4), formalization of the Vibe Experiments Library (§5), and scope confirmation for the first Phase 2 sprint cycle.
+
+
+
+
+
+
+
+
+
+§3  The Vibe Coding Sprint Lifecycle
+
+
+
+The hackathon operates on a Flash Team model — teams convene and dissolve in response to specific ideas, avoiding standing-team overhead. The lifecycle has four stages through the Triage gate, after which disposition is handled through the layered model in §4.
+
+Stage
+
+Action
+
+Output
+
+Step 1: The &apos;One Problem&apos; Proposal
+
+A staffer submits a one-paragraph proposal describing a specific HR friction point. Example: &apos;Designing an ADA-compliant job description for a remote-first retail role.&apos; Constraint: must help HR professionals and align with SHRM standards.
+
+Proposal log; AI Coach review for safety, scope, and feasibility; go/no-go on sprint authorization.
+
+Step 2: Flash Team Formation
+
+Approved proposals form nimble teams of 2–4 people. Cross-departmental collaboration is encouraged (e.g., a Marketing staffer paired with a Knowledge Advisor).
+
+Formed team; sprint window scheduled; AI Coach assigned.
+
+Step 3: The 1–2 Week Sprint Window
+
+Intensive building period focused on &apos;Vibe over Polish.&apos; AI Coach provides technical oversight and coaching. The Studio provides access to approved SOC2 sandboxes.
+
+Sprint artifact (code, prototype, design, concept document, etc.) — whatever form the output takes for that particular &apos;One Problem.&apos;
+
+Step 4: The Triage Gate
+
+Demo session where the team presents the output. AI Coach reviews for safety, alignment, and output quality — then routes the output into the layered disposition model (§4). Triage is no longer a binary pass/fail decision; it is a routing decision across six disposition paths.
+
+Library entry drafted (universal); active development path assigned if applicable (§4.2).
+
+
+
+
+
+
+
+
+
+
+
+
+§4  Triage & Disposition — The Layered Model
+
+
+
+Hackathon outputs are heterogeneous. Some are technical prototypes with reasoning logic that warrants scientific audit. Some are technical prototypes that need internal iteration. Some are non-technical program concepts — new certification ideas, L&D course frameworks, member engagement programs. Some are strategic insights or frameworks. And some are valuable explorations that don&apos;t have a forward development path but deserve preservation.
+
+
+
+A single-path Triage model cannot handle this diversity. The revised Triage operates as a layered model: every output enters the Vibe Experiments Library as a universal disposition, and a subset of outputs additionally receive an active development track.
+
+
+
+
+
+
+
+4.1  The Universal Layer — Vibe Experiments Library Entry
+
+
+
+Every hackathon output, regardless of Triage outcome, receives a Vibe Experiments Library entry. This is not a consolation for ideas that did not advance; it is the permanent record of what the hackathon program produces. See §5 for the Library specification.
+
+
+
+Universal rule: Before a Flash Team disbands, its Library entry must be complete. The AI Coach is accountable for Library entry completion — the entry is part of the sprint&apos;s deliverable, not an afterthought. A team cannot conclude a sprint without a Library entry.
+
+
+
+
+
+
+
+
+
+
+
+4.2  Active Development Tracks (Optional)
+
+
+
+Beyond the universal Library entry, some outputs receive an active development track. The Triage decision is: which track (if any) fits this output? There are five tracks, each with distinct routing criteria, stakeholder ownership, and success measures.
+
+
+
+
+
+Track 1 — Cornell Scientific Logic Audit (UNODE-01 Pipeline)
+
+Dimension
+
+Specification
+
+Routing criteria
+
+Technical prototype with reasoning logic that materially affects HR compliance, advisory, or decision-support outcomes. Examples: compliance-checking assistants, leave eligibility calculators, jurisdiction-aware advisory tools. Must have logic complexity that warrants scientific audit beyond what internal review can provide.
+
+Stakeholder owner
+
+Cornell Deep-Tech Node (see ILS-UNODE-01 §3.1) via the research distribution pipeline (UNODE-01 §4.3.1)
+
+Advancement target
+
+SHRM Validation Seal following Triple-Gate Review; commercial deployment under SHRM branding if all gates pass
+
+Expected volume
+
+Small subset. The prior UNODE-01 definition set a Year 1 goal of 5 hackathon prototypes advancing through Node validation to enterprise launch — that target remains in UNODE-01 but is aspirational. Realistic expectation is that most hackathon outputs will not have the scientific logic rigor to warrant Cornell validation, and that is appropriate: not every HR problem is a Graph-RAG optimization problem.
+
+
+
+
+
+
+
+
+
+Track 2 — SHRM Internal MVP Development
+
+Dimension
+
+Specification
+
+Routing criteria
+
+Technical prototype that solves a real pain point but either (a) does not have the logic complexity to warrant Cornell validation, (b) needs further product team refinement before external deployment, or (c) has natural alignment with an existing ILS project (KCDE integration, Hub integration) that should own forward development.
+
+Stakeholder owner
+
+Mark Davila and the SHRM product team (for general MVP refinement); ILS project leads for project-specific integrations
+
+Advancement target
+
+Product team evaluation for inclusion in product roadmap; integration scoping with existing ILS projects where applicable
+
+Expected volume
+
+Largest technical subset. Most technical hackathon outputs belong here — they solve real problems but need product-grade development before they can be externally deployed.
+
+
+
+
+
+
+
+
+
+Track 3 — SHRM Program Function Handoff
+
+Dimension
+
+Specification
+
+Routing criteria
+
+Non-technical program innovation: new certification concept, L&D course framework, member engagement program, community initiative, research study design, or similar idea that has real business value but is not primarily a code artifact.
+
+Stakeholder owner
+
+Varies by output type: Certification (Certification team); L&D course (Learning Solutions); member engagement (Member Services); research design (Research / Barry&apos;s VoC function); community initiative (Member Services or Executive Network depending on audience).
+
+Advancement target
+
+Formal handoff to the receiving function with a structured intake meeting. Receiving function owns forward development decision. Handoff includes original &apos;One Problem&apos; proposal, Flash Team artifacts, and AI Coach summary of what was tried and what the output looks like.
+
+Expected volume
+
+Potentially significant subset. The hackathon format attracts non-engineering staffers (Marketing, Knowledge Center, Member Services, Certification) whose natural output forms are programs, not code. Track 3 is how the program honors that creativity rather than forcing all outputs through a technical frame.
+
+
+
+
+
+
+
+
+
+Track 4 — Strategic Input / Leadership Consumption
+
+Dimension
+
+Specification
+
+Routing criteria
+
+Insight, framework, or analytical finding that doesn&apos;t become a product or program but informs strategic thinking. Examples: a new way of segmenting SHRM&apos;s member base; a discovered correlation in existing data that reframes a market opportunity; a conceptual framework that clarifies an ambiguous strategic question.
+
+Stakeholder owner
+
+ILS architect (Barry) as initial receiver; Alex Alonso for broader distribution decisions; Syed Wasey for commercially-implicated insights
+
+Advancement target
+
+Synthesized into strategic memos, leadership briefings, or architectural updates to other ILS projects. Does not produce a standalone product or program.
+
+Expected volume
+
+Modest. A well-run hackathon will produce a few of these per year — they are valuable precisely because they are not the expected output type.
+
+
+
+
+
+
+
+
+
+Track 5 — Library-Only (Honorable Discontinuation)
+
+Dimension
+
+Specification
+
+Routing criteria
+
+The output has real learning value but does not have a clear forward path on any of the other four tracks. The idea was worth exploring; the exploration produced insight; continuation is not warranted at this time.
+
+Stakeholder owner
+
+None beyond Library curation. No active track.
+
+Advancement target
+
+None. The Library entry is the output&apos;s final disposition.
+
+Expected volume
+
+Moderate to large subset, and that is correct. A program where every output must advance to development is a program that is either producing overly conservative ideas or is insufficiently honest about its disposition. &apos;Explored, documented, not pursued&apos; is a legitimate and valuable outcome.
+
+
+
+
+
+
+
+Cultural implication
+
+
+
+A well-maintained Library changes the meaning of &apos;did not continue.&apos; In most organizations, an abandoned project is a failure. In a Library-enabled hackathon program, an abandoned project is a contribution — a documented learning asset that increases the organization&apos;s accumulated knowledge. This framing is essential to sustain voluntary participation. Nobody&apos;s sprint is wasted even when the output does not ship.
+
+
+
+
+
+
+
+
+
+
+
+4.3  Triage Governance — Who Decides What Routes Where
+
+
+
+The Triage is two decisions: (1) which active development track, if any, fits this output; and (2) regardless of track, is the Library entry complete and discoverable. Decision authority and cadence vary by track.
+
+Decision Type
+
+Decision Authority
+
+Cadence / Timing
+
+Library entry quality and completeness (universal)
+
+AI Coach assigned to the Flash Team; approved by Lead AI Coach (Barry)
+
+At sprint conclusion; entry required before team disbands
+
+Track 1 routing (Cornell)
+
+Lead AI Coach recommends; ILS architect (Barry) authorizes; UNODE-01 Research Council schedules the validation sprint
+
+Within 10 business days of Triage demo
+
+Track 2 routing (Internal MVP)
+
+Lead AI Coach recommends; Mark Davila or relevant ILS project lead accepts intake
+
+Within 10 business days of Triage demo
+
+Track 3 routing (Program Function Handoff)
+
+Lead AI Coach recommends; receiving function leadership accepts handoff in a structured intake meeting. For sensitive or commercially-implicated ideas, Alex Alonso consulted.
+
+Within 20 business days of Triage demo (longer window accommodates cross-functional coordination)
+
+Track 4 routing (Strategic Input)
+
+Lead AI Coach recommends; ILS architect receives and decides on broader distribution; Alex Alonso consulted on sensitive findings
+
+Within 10 business days
+
+Track 5 routing (Library-Only)
+
+Lead AI Coach decision; no further stakeholder required beyond Library curation
+
+At Triage demo
+
+
+
+
+
+
+
+
+
+
+
+
+§5  The ILS Vibe Experiments Library
+
+
+
+The Library is the institutional memory of the hackathon program. It is the searchable internal repository of every hackathon output — the universal disposition that every sprint produces regardless of Triage outcome. The Library&apos;s strategic importance is greater than its operational simplicity suggests: it prevents duplicative exploration, preserves knowledge across staff transitions, and allows ideas that were not ready in one quarter to be rediscovered and revived when organizational context changes.
+
+
+
+
+
+
+
+5.1  Library Entry Specification
+
+
+
+Every Library entry includes the following elements. The AI Coach assigned to the Flash Team is responsible for entry completion before the team disbands.
+
+Element
+
+Specification
+
+Original &apos;One Problem&apos; Proposal
+
+The one-paragraph proposal that initiated the sprint. Captured verbatim as originally submitted.
+
+Team Roster
+
+Flash Team members; functional roles; AI Coach assigned.
+
+Sprint Artifact
+
+The output of the sprint, in whatever form it took: code (linked; Lovable project URLs, GitHub commits); prototypes (screenshots, demo videos); design artifacts (mockups, flow diagrams); concept documents (for non-technical outputs); or other forms as appropriate.
+
+Lessons Learned Memo
+
+Short narrative (roughly 300–600 words): what was tried, what worked, what did not, why the output ended up on the track it did. Written by the AI Coach in collaboration with the Flash Team. This is the single most valuable element for future discoverability.
+
+Disposition Tag
+
+The track assigned at Triage (Track 1–5) and any subsequent track changes if the output moves between tracks over time.
+
+Discoverability Tags
+
+Topic tags (HR-X practice area, BASK domain); technique tags (Lovable, Claude Code, Copilot Studio); problem-type tags (internal tooling, member-facing, compliance, advisory). Consistent taxonomy maintained across entries.
+
+Access Tier
+
+&apos;ILS team only&apos; or &apos;All SHRM staff.&apos; Default is &apos;All SHRM staff&apos; to maximize organizational learning value. Flash Teams may request &apos;ILS team only&apos; for entries they have legitimate reason to keep tightly scoped.
+
+Status Timeline
+
+Dated entries tracking the output&apos;s progression — Triage date, track change dates (if any), advancement milestones (if applicable), and final disposition.
+
+
+
+
+
+
+
+
+
+
+
+5.2  Library Governance
+
+Governance Element
+
+Specification
+
+Curation ownership
+
+Lead AI Coach (Barry) is the primary curator. Day-to-day entry review and tag consistency is delegated to AI Coaches on a rotating basis. Quarterly curation review across all entries to maintain tag quality and surface patterns.
+
+Discoverability maintenance
+
+Search interface must support topic, technique, problem-type, and full-text queries. Entries are cross-linked where one output informs another. A &apos;see also&apos; field allows curators to connect related explorations across time.
+
+Access tier enforcement
+
+Technical access controls enforce the two-tier model. &apos;ILS team only&apos; entries are not visible in default SHRM staff search. Request-for-access workflow for staff outside ILS who have legitimate interest in an ILS-only entry.
+
+Deletion protocol
+
+Participant-initiated deletion is supported in rare cases where a participant has legitimate concern about an entry&apos;s ongoing visibility (e.g., a prototype the participant has since come to regard as embarrassing or reputationally risky). Deletion requests routed to Lead AI Coach; default response is to move the entry to &apos;ILS team only&apos; tier rather than delete; full deletion reserved for cases where that is insufficient.
+
+Longitudinal utility metric
+
+The Library is successful when entries are consulted. A periodic metric — &apos;how many Phase N sprint proposals cited a prior Library entry as foundational?&apos; — is the strongest measure of Library value. Tracking begins in Phase 2.
+
+
+
+
+
+
+
+
+
+
+
+5.3  Library and the Proprietary Intelligence Boundary
+
+
+
+The Library contains hackathon artifacts, not production SHRM data. Flash Teams operate under the read-only API safeguard (§6.3) and do not have access to member PII or proprietary corpus data. Library entries therefore do not create IP or data governance exposure. Sprint artifacts that used synthetic or sample data for prototyping are clearly marked as such in the entry. Any entry that includes a prototype accessing live production data requires explicit SHRM Legal review before Library inclusion — this should be rare and is handled case-by-case.
+
+
+
+
+
+
+
+
+
+
+
+
+§6  Technology Infrastructure
+
+
+
+
+
+
+
+6.1  The Sandbox — Pre-Production Environment
+
+
+
+The hackathon series operates in a pre-production environment to ensure zero risk to SHRM&apos;s core systems. Approved tools provide Flash Teams with the velocity required for 1–2 week sprint timelines while respecting data governance and the Proprietary Intelligence Boundary.
+
+Tool
+
+Purpose
+
+Typical Use
+
+Lovable.dev
+
+Primary tool for generating full-stack HR web apps from natural language prompts
+
+Dashboards, calculators, internal tooling, member-facing concept prototypes
+
+Claude Code / Cursor
+
+For advanced staffers building agentic workflows or code scripts
+
+More complex prototypes requiring real code, agent orchestration, or API integration
+
+Microsoft Copilot Studio
+
+For prototyping skills and connectors for the M365 ecosystem
+
+Prototypes that would live in SHRM&apos;s existing M365 environment if advanced
+
+Anthropic Claude, OpenAI, Google Gemini (via official APIs)
+
+Reasoning and content generation inside prototypes
+
+Any prototype requiring LLM inference. API usage through SHRM-approved accounts; no personal API keys.
+
+
+
+
+
+
+
+
+
+
+
+6.2  Stack Portability Note
+
+
+
+Any prototype that advances to Track 1 (Cornell validation) or Track 2 (Internal MVP development) may need to be portable to the Google stack ILS reasoning infrastructure (Vertex AI, BigQuery, Gemini) that KCDE and VoW Synthetic run on in Phase 0 and Phase 1. This does not mean staffers must build on the Google stack during sprints — Lovable remains the right prototyping tool for most hackathon outputs. But prototypes that advance along technical tracks may require refactoring for the ILS reasoning environment, and this should be understood by teams proposing ambitious technical scope.
+
+
+
+
+
+
+
+6.3  Read-Only API Safeguard
+
+
+
+Tools may interact with SHRM production data only via read-only APIs with explicit ILS approval for the specific sprint. No PII access is permitted in the sandbox under any circumstances. Flash Teams that need realistic data for prototyping use synthetic sample data, anonymized extracts pre-approved by ILS, or publicly available workforce datasets.
+
+
+
+
+
+
+
+
+
+§7  Operational Format & Governance
+
+
+
+
+
+100% voluntary participation. The program is an outlet for entrepreneurial energy, not a mandatory task. Participation is not a performance expectation.
+
+
+
+
+
+Cross-functional teams are encouraged. Marketing staffers paired with Knowledge Advisors, Member Services staffers paired with Certification team members, etc. Homogeneous teams produce homogeneous outputs.
+
+
+
+
+
+Safety, alignment, and utility gates at Triage. Outputs that raise safety concerns, conflict with SHRM standards or positioning, or provide no discernible utility do not advance beyond Library archival. The AI Coach is empowered to make these calls at Triage.
+
+
+
+
+
+Proprietary Intelligence Boundary respected across all sprints. No sprint may result in SHRM proprietary data residing in a third-party vendor&apos;s platform. Any prototype that uses SHRM standards (BASK, HR-X) accesses them through SHRM-governed mechanisms, not by embedding them in a vendor environment.
+
+
+
+
+
+Sprint failure is honorable. Not every sprint produces a forward-track output, and that is fine. The Library captures the learning value regardless. Teams are not penalized or filtered for future participation based on sprint outcomes.
+
+
+
+
+
+
+
+
+
+§8  Coaching Model
+
+
+
+The AI Coach role is the operational backbone of the hackathon program. The Coach provides technical oversight during sprints, conducts Triage reviews, owns Library entry quality for their assigned Flash Teams, and makes routing recommendations across the five active development tracks.
+
+
+
+
+
+
+
+8.1  Current Coaching Team
+
+Role
+
+Individual
+
+Responsibilities
+
+Lead AI Coach
+
+Barry Reicherter (Director Market Research & VoC / Scale Free Strategy)
+
+Program leadership; Triage governance; cross-track routing decisions; Library curation oversight; Phase 2 cadence and scope; Research Council interface for Track 1 Cornell referrals
+
+Co-Coach
+
+Joey Buss
+
+Flash Team technical oversight; sprint coaching; Triage input on technical outputs; Library entry support
+
+Co-Coach
+
+Sandeep Reddy Nimma
+
+Flash Team technical oversight; sprint coaching; Triage input on technical outputs; Library entry support
+
+
+
+
+
+
+
+
+
+
+
+8.2  Expanded Coach Responsibilities Under the Layered Triage Model
+
+
+
+The coaching role is more demanding under the layered Triage model than under the prior single-path model. Coaches now need sufficient cross-functional familiarity to make sound routing recommendations: understanding enough about Certification, Learning Solutions, Member Services, Research, and the ILS portfolio to judge which track fits a given output. This does not mean Coaches need to be expert in all of these domains — but they need to know enough to recognize the right fit and make the right handoff.
+
+
+
+For routing decisions beyond a Coach&apos;s confidence range, the Lead AI Coach is available for consultation. For sensitive or cross-functional outputs, Alex Alonso is the review authority before any external handoff is initiated.
+
+
+
+
+
+
+
+
+
+§9  Integration with the ILS Portfolio
+
+ILS Project
+
+Relationship to Hackathon Program
+
+Direction
+
+ILS-UNODE-01 (University Nodes)
+
+Cornell Deep-Tech Node receives Track 1 hackathon outputs for scientific logic audit via the research distribution pipeline (UNODE-01 §4.3.1). Year 1 UNODE-01 target of 5 hackathon prototypes through Node validation remains aspirational — actual volume depends on hackathon output characteristics and is likely smaller in practice.
+
+Hackathon → UNODE-01 (Track 1 routing only)
+
+ILS-KCDE-01 (Knowledge Center Decision Engine)
+
+Hackathon outputs that extend or augment KCDE functionality route to KCDE project leadership via Track 2 (Internal MVP Development) for integration evaluation.
+
+Hackathon → KCDE (Track 2 routing)
+
+ILS-VOW-01 (VoW Synthetic)
+
+Hackathon outputs that propose new workforce simulation use cases route to VoW project leadership for scoping. Typically Track 2 with potential advancement to Track 1 if the simulation use case requires scientific audit.
+
+Hackathon → VoW (Track 2 routing)
+
+ILS-XHUB-01 (HR-X Hub)
+
+Hackathon outputs related to enterprise assessment, benchmarking, or Hub integration route to Stephanie Laguna and the Product team via Track 2.
+
+Hackathon → XHUB (Track 2 routing)
+
+
+
+
+
+
+
+
+
+§10  ILS Investment Cascade Positioning
+
+
+
+HACK-01 sits outside the ILS investment cascade gating logic. Unlike KCDE Phase 0 ($45K), VoW Synthetic Phase 0 ($24K–$40K), and UNODE-01 Phase 1 activation ($225K) — each of which requires board-level authorization at its respective gate — the hackathon program operates at minimal direct cost and generates rather than consumes infrastructure investment.
+
+
+
+Why HACK-01 is outside the cascade
+
+
+
+The hackathon program uses existing staff time (voluntary, not dedicated headcount), existing tool licenses (Lovable, Claude Code, Copilot Studio — all already acquired for ILS use), and SHRM-approved sandbox infrastructure. Its direct marginal cost is near zero. Its outputs are ideas, prototypes, and program concepts — which are infrastructure additions to SHRM&apos;s innovation capacity, not infrastructure expenditures. The program&apos;s value to the ILS portfolio is as a bottom-up demand generator and an organizational AI fluency accelerator — not as a capital project requiring phased authorization.
+
+
+
+This positioning also protects the program&apos;s voluntary and experimental character. Bringing HACK-01 under the investment cascade gating model would impose administrative overhead (sprint-level budget tracking, phase-gate reviews, formal deliverable commitments) that would undermine the &apos;vibe over polish&apos; operational ethos that makes the program effective. The program remains under ILS governance but outside the cascade&apos;s financial structure.
+
+
+
+
+
+
+
+
+
+§11  Success Metrics
+
+
+
+Hackathon program success is measured across the full disposition spectrum, not just prototype-to-launch counts. The following metrics reflect the program&apos;s heterogeneous output nature and the centrality of the Library.
+
+
+
+
+
+
+
+11.1  Output Diversity Metrics
+
+
+
+
+
+Number of sprints completed per quarter (Phase 2 cadence — targeting approximately 6–10 sprints per quarter once cadence is established)
+
+
+
+
+
+Distribution of outputs across the five active development tracks plus Library-only. A healthy program shows activity across all six dispositions, not concentration in any single one.
+
+
+
+
+
+Cross-functional participation rate — percentage of sprints involving at least two different SHRM functions
+
+
+
+
+
+
+
+11.2  Forward Advancement Metrics
+
+
+
+
+
+Track 1 (Cornell validation) — number of outputs advancing through the research distribution pipeline. Low volume is expected and acceptable.
+
+
+
+
+
+Track 2 (Internal MVP) — number of outputs accepted into product team roadmap or ILS project integration
+
+
+
+
+
+Track 3 (Program function handoff) — number of outputs accepted by receiving functions; downstream evidence of concept advancement where available
+
+
+
+
+
+Track 4 (Strategic input) — number of insights incorporated into leadership briefings or strategic documents
+
+
+
+
+
+
+
+11.3  Library Utility Metrics
+
+
+
+
+
+Library entry completion rate — percentage of sprints with complete entries at team disband. Target: 100%.
+
+
+
+
+
+Library consultation frequency — how often existing entries are searched, viewed, or cited by new sprint proposals
+
+
+
+
+
+Longitudinal citation rate — how often a Phase N sprint proposal cites a prior Library entry as foundational. This is the strongest indicator that the Library is functioning as institutional memory rather than a file cabinet.
+
+
+
+
+
+
+
+11.4  Cultural Metrics
+
+
+
+
+
+Voluntary participation rate — number of unique staffers participating across a rolling 12-month window
+
+
+
+
+
+Repeat participation — percentage of participants who return for additional sprints after their first
+
+
+
+
+
+Participant satisfaction — post-sprint qualitative feedback on experience, coaching quality, and perceived impact
+
+
+
+
+
+
+
+
+
+§12  Phase 1 — Innovation Week
+
+
+
+Phase 1 of the hackathon program was executed as SHRM Innovation Week under the theme &apos;From Identic to Agentic.&apos; The event was coached by Barry Reicherter as Lead AI Coach, with Joey Buss and Sandeep Reddy Nimma as co-coaches. The event format, participant experience, and specific outputs are documented separately in Innovation Week retrospective materials and are not restated in this governance document.
+
+
+
+The transition from Phase 1 (event-based) to Phase 2 (rolling cadence) is underway as of this revision. Phase 2 design incorporates the layered Triage model (§4) and the formalized Vibe Experiments Library (§5) — both of which are updates relative to the Phase 1 operating model.
+
+
+
+
+
+
+
+
+
+§13  Phase 2 Outlook
+
+
+
+
+
+
+
+13.1  Cadence
+
+
+
+Phase 2 operates as rolling cadence rather than event-based. Flash Team sprints are commissioned throughout the year in response to proposals rather than aggregated into single multi-day events. This cadence matches the operational reality of a voluntary program where staff availability is distributed rather than concentrated.
+
+
+
+
+
+
+
+13.2  Scope
+
+
+
+
+
+Initial Phase 2 cycle targets 2–4 concurrent sprints to calibrate coaching capacity against the expanded Triage responsibilities
+
+
+
+
+
+Proposal intake cadence is continuous — staffers can submit &apos;One Problem&apos; proposals at any time; AI Coach reviews and authorizes sprints on a rolling basis
+
+
+
+
+
+Library entry backfill: Phase 1 Innovation Week outputs are migrated into Library entries as part of Phase 2 standup, establishing the Library baseline
+
+
+
+
+
+
+
+13.3  Expected Progression
+
+
+
+
+
+Q1–Q2 Phase 2: calibration period — establishing cadence, testing the layered Triage governance model, validating Library curation workflow
+
+
+
+
+
+Q3+ Phase 2: steady state — cadence established, Library functioning as search-and-reuse resource, first Track 3 handoffs landing in receiving functions, early Track 1 referrals to Cornell (gated behind UNODE-01 Phase 1 activation)
+
+
+
+
+
+
+
+
+
+§14  Risks & Mitigations
+
+Risk
+
+Likelihood
+
+Impact
+
+Mitigation
+
+Library becomes an abandoned file cabinet rather than a searchable asset
+
+Medium
+
+High — undermines institutional memory value
+
+Curation ownership explicitly assigned to Lead AI Coach. Entry completion required before team disband (not optional). Longitudinal citation metric tracked in Phase 2 — surfaces Library utility issues early.
+
+Triage routing decisions create territorial friction with receiving functions (Certification, Learning, Member Services)
+
+Medium
+
+Medium
+
+Structured intake meetings required for Track 3 handoffs — not fire-and-forget. Lead AI Coach maintains relationships with receiving function leads. Alex Alonso consulted for sensitive handoffs.
+
+Coaching capacity constraint as program scales beyond current three-person team
+
+Medium
+
+Medium
+
+Phase 2 cadence intentionally modest (2–4 concurrent sprints) to validate coaching capacity. Expansion of coaching team considered only after Phase 2 steady state is achieved. Coach training program designed before any additional coaches onboarded.
+
+Staff participation declines after Innovation Week novelty wears off
+
+Medium–High (common in internal innovation programs)
+
+Medium
+
+Rolling cadence rather than event-based reduces &apos;one big moment&apos; fatigue. Library as visible record of contribution creates ongoing reputational value for participants. Repeat participation metric tracked as early warning signal.
+
+Hackathon outputs create unintended external commitments (e.g., a Lovable prototype gets shared externally and creates expectations)
+
+Low–Medium
+
+Medium–High if unmanaged
+
+Explicit sprint scope documentation at Step 1. External sharing of sprint artifacts requires Lead AI Coach approval. Clear marking on any prototype as &apos;internal exploration, not production commitment.&apos;
+
+Non-technical outputs (Track 3) are not taken seriously by receiving functions because they originated outside the function
+
+Medium
+
+Medium — undermines program&apos;s value proposition for non-engineering participants
+
+Structured handoff protocol with receiving function leadership buy-in established before Track 3 routing is attempted at scale. Lead AI Coach handles first handoffs personally to set precedent.
+
+Library access tier (ILS-only vs. all SHRM staff) creates perception of closed club
+
+Low
+
+Low–Medium
+
+Default access tier is &apos;All SHRM staff.&apos; &apos;ILS team only&apos; tier is exception, not default. Deletion protocol available for participant concern cases.
+
+
+
+
+
+
+
+— End of Document —
+
+
+
+ILS-HACK-01  |  SHRM Intelligence Layer Studio  |  Internal Use Only  |  April 2026
+
+
+
+
+

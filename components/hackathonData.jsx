@@ -1,0 +1,290 @@
+// SHRM Innovation Series — Hackathon 2025 submissions.
+// 61 staff submissions, curated subset (18) shown publicly. Attribution retained.
+// 4 elevated to candidate Studio projects; gallery shows the rest as "Submitted".
+
+const HACK_CURATED = [
+  // --- Elevated (4) — pinned at top of gallery, full subpages below
+  {
+    id: "sim", elevated: true, order: 1,
+    title: "HR Investigation Simulator",
+    author: "Alice Clark",
+    theme: "Learning & Simulation",
+    status: "elevated",
+    statusLine: "Elevated to candidate Studio project",
+    tldr: "Scenario-based ER training. Learners take the seat of an HR investigator, work a 7-step framework, interview witnesses, and review evidence — with framework-aligned feedback.",
+    problem: "HR investigations are high-stakes and legally sensitive — but traditional training is passive. New HR pros, ER specialists, and people managers rarely get to practice before their first real case.",
+    audience: "Early-career HR & ER · people managers · L&D and compliance teams · certification candidates",
+  },
+  {
+    id: "pathfinder", elevated: true, order: 2,
+    title: "SHRM PathFinder",
+    author: "Alice Clark",
+    theme: "Member Journey",
+    status: "elevated",
+    statusLine: "Elevated to candidate Studio project",
+    tldr: "Interactive recommendation engine that turns SHRM's full education portfolio into a personalized learning path in under 60 seconds — a Hero credential, a Build-Your-Path sequence, and Quick Wins.",
+    problem: "SHRM offers one of the richest HR education portfolios in the industry — and that breadth is also the challenge. Prospects bounce; high-intent learners default to what they've heard of.",
+    audience: "HR professionals at every career stage · SHRM Marketing & Member Experience · HR leaders making team-development decisions",
+  },
+  {
+    id: "careos", elevated: true, order: 3,
+    title: "CareOS",
+    author: "Shayla Alexander-Milligan",
+    theme: "Enterprise Intelligence",
+    status: "elevated",
+    statusLine: "Elevated to candidate Studio project",
+    tldr: "Employer caregiver intelligence platform — five modules: Caregiver OS, Manager Playbook Engine, Experience Assessment, Strategy Playbook, and Metrics Dashboard.",
+    problem: "Three in four workers manage a caregiving responsibility; 32% never disclose. Less than 12% of employers conduct an annual caregiving assessment. Most employers are navigating a structural workforce issue blind.",
+    audience: "CHROs · VP Benefits · HR Business Partners · People Managers at employers of 500–20,000",
+  },
+  {
+    id: "compass", elevated: true, order: 4,
+    title: "Civility Compass",
+    author: "Kristi Meacham",
+    theme: "Research-Backed Diagnostic",
+    status: "elevated",
+    statusLine: "Elevated to candidate Studio project",
+    tldr: "SHRM-aligned civility diagnostic. HR enters a workplace issue in plain language; the tool returns a structured diagnosis, signals, root-cause hypotheses, and practical next steps — grounded in SHRM's Civility Index.",
+    problem: "Incivility is persistent and expensive. SHRM's Civility Index sits in the 'Take Action' zone. Most tools stop at describing the law — they don't help HR frame the problem or move toward constructive response.",
+    audience: "HR & ER leaders · people managers · compliance and L&D teams · culture-change programs",
+  },
+
+  // --- Curated gallery (14 additional) — marked "Submitted"
+  { id: "careercoach",   order: 10, title: "AI Career Health Check",
+    author: "Saghana Suresh Kumar", theme: "Member Journey", status: "submitted",
+    tldr: "Like a gym's health assessment, this introduces an AI Career Health Check paired with a customized roadmap — bringing clarity to how HR roles are evolving with AI.",
+    problem: "HR professionals need a developmental (not evaluative) way to see how their role is changing and what practical next steps keep them ahead." },
+
+  { id: "workradar",     order: 11, title: "SHRM Work Radar",
+    author: "Brett Roth", theme: "Compliance & Policy", status: "submitted",
+    tldr: "Personalized alerting with three modes: Work Alerts (what changed), Horizon Index (what's coming), and Advocate — role-relevant guidance tailored by responsibility, location, and industry.",
+    problem: "HR leaders need to stay ahead of policy change — not react to it. Today's alerts are generic and delayed." },
+
+  { id: "guardian",      order: 12, title: "SHRM Guardian",
+    author: "Nathan Ebikwo", theme: "Compliance & Policy", status: "submitted",
+    tldr: "Compliance copilot: upload policies or job posts, flag risks across U.S. and global laws, prioritize issues P0–P3, draft fixes with citations, and track remediation.",
+    problem: "HR teams face fast-changing regulations but rely on slow, point-in-time audits. Existing tools are built for lawyers, not operators." },
+
+  { id: "pulse",         order: 13, title: "Pulse Survey Insight Generator",
+    author: "Olivia Pagan", theme: "Analytics & Benchmarking", status: "submitted",
+    tldr: "Turn pulse survey results into decision-ready top-line insights: executive summary, key themes, risk signals, recommendations — exportable to Word or slides.",
+    problem: "HR teams collect valuable feedback but sharing and acting on it takes significant manual work. The gap between data collection and a shareable top-line is the bottleneck." },
+
+  { id: "metricmatchup", order: 14, title: "SHRM Metric Matchup",
+    author: "Nathan Ebikwo", theme: "Analytics & Benchmarking", status: "submitted",
+    tldr: "Instant HR benchmarking: input or upload key metrics and get percentile rankings, anomaly flags, an executive summary, and a 'cost of inaction' in dollars.",
+    problem: "HR has data but can't answer 'are we good?' in business terms. Benchmarks are buried in PDFs; leaders struggle to translate metrics into financial impact." },
+
+  { id: "insightbridge", order: 15, title: "SHRM InsightBridge",
+    author: "Niloufar Gomez", theme: "Analytics & Benchmarking", status: "submitted",
+    tldr: "Helps HR leaders translate people data into executive-ready narratives leaders can act on — merging HR metrics and SHRM expertise into an instant executive brief.",
+    problem: "HR professionals have abundant data but lack clear storytelling that connects metrics to strategic outcomes." },
+
+  { id: "evolve",        order: 16, title: "EVOLVE",
+    author: "Alaina Leadbeter", theme: "Enterprise Intelligence", status: "submitted",
+    tldr: "AI-driven workforce intelligence: scenario modeling for redeploy/upskill/hire decisions, integrated with SHRM research, with executive briefs generated from enterprise data.",
+    problem: "Limited visibility into internal talent; misaligned roles; decisions disconnected from market and workforce realities." },
+
+  { id: "bloom",         order: 17, title: "Bloom",
+    author: "Abby Harrington", theme: "Manager & Onboarding", status: "submitted",
+    tldr: "A guided first-90-days for every new hire, with built-in visibility for managers and HR — timelines, check-ins, searchable docs, and an Ask-Bloom assistant grounded in company policy.",
+    problem: "Onboarding is fragmented; managers lack visibility; HR lacks engagement data until problems surface." },
+
+  { id: "ave",           order: 18, title: "A.V.E. Framework",
+    author: "Nisha Kurup", theme: "Talent Intelligence", status: "submitted",
+    tldr: "Alumni Value Ecosystem — captures alumni value at exit, tracks growth via public data, and activates alumni across three outcomes: talent (rehire/referrals), brand, and business.",
+    problem: "Organizations lose visibility into proven talent and trusted relationships the moment employees leave. A blind spot where warm pipelines go untapped." },
+
+  { id: "hireprep",      order: 19, title: "HirePrep",
+    author: "Kevin Abbed", theme: "Learning & Simulation", status: "submitted",
+    tldr: "A two-sided mock interview platform connecting early-career candidates with SHRM-verified practitioners for 30-minute practice interviews and structured feedback.",
+    problem: "Students rarely get realistic reps before high-stakes interviews. Career centers can't scale 1:1 coaching. Practitioners who want to mentor lack a lightweight channel." },
+
+  { id: "mgrcost",       order: 20, title: "Cost of Bad Management Calculator",
+    author: "Anika Dhir", theme: "Analytics & Benchmarking", status: "submitted",
+    tldr: "A research-backed calculator that turns six workforce inputs into a hard-dollar estimate of what ineffective management costs — projected across five years, mapped to SHRM interventions.",
+    problem: "HR leaders need to make the business case for investing in managers. The numbers exist — they're just not in a form a CFO will accept." },
+
+  { id: "adjacensee",    order: 21, title: "AdjacenSee",
+    author: "Calven Engstrom & Sydney Ross", theme: "Talent Intelligence", status: "submitted",
+    tldr: "A skills-to-abilities matrix built on O*NET data that surfaces the transferable strengths candidates bring — strengths recruiters and hiring managers often miss in a job-description search.",
+    problem: "Recruiters restricted to the job description overlook transferable talent. Existing data sources are too complex for day-to-day use." },
+
+  { id: "people-sim",    order: 22, title: "People Analytics in Action",
+    author: "Alice Clark", theme: "Learning & Simulation", status: "submitted",
+    tldr: "A self-paced simulation across six phases — Brief, Data Room, Analysis, Recommendation, Executive Defense, Debrief — grading decisions against expert takes on four fully built scenarios.",
+    problem: "Most HR analytics training teaches statistics, not judgment. The hard part is choosing the question, spotting misleading patterns, and influencing a CFO who already has a theory." },
+
+  { id: "hrxdoc",        order: 23, title: "HR Doc Genius",
+    author: "Jessica Langlois", theme: "Knowledge & Advisory", status: "submitted",
+    tldr: "An interactive builder for policies, forms, and communications — with state and federal law applied — that delivers a self-service function Knowledge Advisors are unable to provide directly.",
+    problem: "Members regularly request document creation from SHRM Knowledge Advisors, who are unable to directly deliver it. The gap is real and persistent." },
+
+  { id: "flsa",          order: 24, title: "FLSA Classification Advisor",
+    author: "Jessica Langlois", theme: "Knowledge & Advisory", status: "submitted",
+    tldr: "A 360-degree decision engine built on SHRM's FLSA Exemption Flow Chart: upload a job description for analysis, or walk a guided questionnaire. Built-in learning module for misclassification.",
+    problem: "'Is this role exempt or nonexempt?' is one of the most frequent member asks Knowledge Advisors cannot directly resolve. The flow chart is the right logic — it just needs to be software." },
+];
+
+// Themes used for filter chips on the gallery page.
+const HACK_THEMES = [
+  "All",
+  "Enterprise Intelligence",
+  "Compliance & Policy",
+  "Analytics & Benchmarking",
+  "Learning & Simulation",
+  "Member Journey",
+  "Talent Intelligence",
+  "Manager & Onboarding",
+  "Knowledge & Advisory",
+  "Research-Backed Diagnostic",
+];
+
+// Detailed content for the 4 elevated projects — extends the main project schema.
+const ELEVATED_PROJECTS = {
+  sim: {
+    id: "sim",
+    code: "HR Investigation Sim",
+    name: "HR Investigation Simulator",
+    origin: { source: "SHRM Innovation Series — 2025", author: "Alice Clark" },
+    tagline: "Practice investigations before your first real case.",
+    oneLiner: "An interactive, scenario-based training app that puts learners in the seat of an HR investigator. Realistic workplace cases — harassment, retaliation, expense fraud, union grievance — worked through a structured 7-step investigation framework with framework-aligned feedback.",
+    classification: "Learning & Simulation · Candidate Studio Project",
+    status: "elevated",
+    statusLine: "Elevated from Innovation Series · in Studio evaluation",
+    accent: "#D14E28",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #1B3C69 45%, #D14E28 100%)",
+    kpis: [
+      { n: "7",   l: "Step investigation framework — SHRM-grounded" },
+      { n: "4+",  l: "Case types: harassment, retaliation, fraud, grievance" },
+      { n: "0",   l: "Safe sandbox: zero-stakes reps before the first live case" },
+      { n: "ER",  l: "Built for the Employee Relations judgment muscle" },
+    ],
+    phases: [
+      { k: "Intro",       v: "Cinematic case brief sets the stakes" },
+      { k: "Decisions",   v: "Sequence interviews, weigh credibility, set scope" },
+      { k: "Interviews",  v: "Branching witness conversations with artifacts" },
+      { k: "Case file",   v: "Review emails, policies, transcripts — side by side" },
+      { k: "Findings",    v: "Structure findings against the 7-step framework" },
+      { k: "Feedback",    v: "Framework-aligned coaching on what was missed" },
+    ],
+    audiences: [
+      "Early-career HR & ER professionals building investigative judgment before their first live case",
+      "People managers who need to recognize when to escalate and how investigations actually work",
+      "L&D and compliance teams at mid-to-large organizations looking for engaging, defensible training",
+      "HR certification candidates and graduate programs needing applied case practice",
+    ],
+  },
+  pathfinder: {
+    id: "pathfinder",
+    code: "SHRM PathFinder",
+    name: "SHRM PathFinder",
+    origin: { source: "SHRM Innovation Series — 2025", author: "Alice Clark" },
+    tagline: "Your SHRM learning path, in under 60 seconds.",
+    oneLiner: "SHRM PathFinder turns SHRM's full education portfolio — certifications, specialty credentials, seminars, and eLearning — into a personalized learning path. A branching quiz produces a three-tier recommendation: a Hero credential, a Build-Your-Path sequence, and Quick Wins.",
+    classification: "Member Journey · Candidate Studio Project",
+    status: "elevated",
+    statusLine: "Elevated from Innovation Series · in Studio evaluation",
+    accent: "#0076BE",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #1B3C69 45%, #0076BE 100%)",
+    kpis: [
+      { n: "60s", l: "From first click to a personalized learning path" },
+      { n: "3",   l: "Tier output: Hero credential · Build Your Path · Quick Wins" },
+      { n: "All", l: "SHRM certifications, specialty credentials, seminars, eLearning" },
+      { n: "Why", l: "Plain-English 'why this fits you' on every recommendation" },
+    ],
+    phases: [
+      { k: "Stage",      v: "Where are you in your career?" },
+      { k: "Goal",       v: "What are you trying to do in the next 12 months?" },
+      { k: "Focus",      v: "Which HR practice areas are pulling on you?" },
+      { k: "Mode",       v: "How do you prefer to learn — and how much time do you have?" },
+      { k: "Hero",       v: "The credential that best fits the stated goal" },
+      { k: "Quick wins", v: "Things you can knock out today to make progress" },
+    ],
+    audiences: [
+      "HR professionals at every career stage — from early-career practitioners to senior leaders pursuing strategic credentials",
+      "SHRM Marketing & Member Experience — as a UX improvement that reduces drop-off and a lead-gen surface",
+      "HR leaders making team-development decisions — who need a fast way to map roles to SHRM offerings",
+    ],
+  },
+  careos: {
+    id: "careos",
+    code: "CareOS",
+    name: "CareOS",
+    origin: { source: "SHRM Innovation Series — 2025", author: "Shayla Alexander-Milligan" },
+    tagline: "Treat caregiving as a strategic workforce issue — with data.",
+    oneLiner: "CareOS is an employer caregiver intelligence platform. Five modules give HR the infrastructure to move caregiving from a one-off accommodation request to a measured, managed workforce strategy — grounded in SHRM's published research on caregiving and work.",
+    classification: "Enterprise Intelligence · Candidate Studio Project",
+    status: "elevated",
+    statusLine: "Elevated from Innovation Series · in Studio evaluation",
+    accent: "#2A8F6B",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #1B3C69 45%, #2A8F6B 100%)",
+    kpis: [
+      { n: "5",     l: "Modules — Caregiver OS, Playbook, Assessment, Strategy, Metrics" },
+      { n: "3-in-4", l: "Workers managing some caregiving responsibility (SHRM)" },
+      { n: "6",     l: "Organizational dimensions benchmarked in the assessment" },
+      { n: "2027",  l: "All Boomers 65+ — elder-care volume surges as readiness is lowest" },
+    ],
+    modules: [
+      { n: "01", h: "Caregiver OS",             b: "Centralizes policies, active accommodations, resources, and disclosure tracking in one place — surfacing compliance gaps before they become liabilities." },
+      { n: "02", h: "Manager Playbook Engine",  b: "AI-powered decision support for the moment that matters most: when a manager doesn't know what to say after a disclosure. Response options, legal flags, conversation guide, documentation." },
+      { n: "03", h: "Experience Assessment",    b: "Diagnoses the organization across six dimensions — policy maturity, culture safety, manager readiness, elder-care coverage, and more — benchmarked against SHRM industry data." },
+      { n: "04", h: "Strategy Playbook",        b: "Turns assessment findings into a customized implementation roadmap — tiered by company size and maturity, sequenced across a 90-day to 12-month horizon." },
+      { n: "05", h: "Metrics Dashboard",        b: "Tracks caregiver retention, absenteeism, benefit utilization, and accommodation ROI over time — giving CHROs the numbers to prove business case." },
+    ],
+    audiences: [
+      "CHROs and VP Benefits at employers of 500–20,000 who know caregiving is affecting their workforce",
+      "Strategic HR Business Partners who need a consistent, legally-sound framework — not a policy PDF to interpret under pressure",
+      "People Managers, the frontline of caregiver experience, who currently lack structured support",
+    ],
+  },
+  compass: {
+    id: "compass",
+    code: "Civility Compass",
+    name: "Civility Compass",
+    origin: { source: "SHRM Innovation Series — 2025", author: "Kristi Meacham" },
+    tagline: "From vague tension to clear diagnosis — one conversation at a time.",
+    oneLiner: "Civility Compass is a SHRM-aligned diagnostic. HR enters a workplace issue in plain language — tension after layoffs, repeated interruptions, exclusion, political conflict — and the tool returns a structured diagnosis, signal analysis, root-cause hypotheses, and practical next steps.",
+    classification: "Research-Backed Diagnostic · Candidate Studio Project",
+    status: "elevated",
+    statusLine: "Elevated from Innovation Series · in Studio evaluation",
+    accent: "#8B1377",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #1B3C69 45%, #8B1377 100%)",
+    kpis: [
+      { n: "5",   l: "Diagnosis types — from civility breakdown to change-related stress" },
+      { n: "SHRM", l: "Civility Index — the empirical anchor of every diagnosis" },
+      { n: "Zone 3", l: "Where SHRM's workplace scores sit — the 'Take Action' range" },
+      { n: "No",  l: "Legal conclusions. No blame. Frame problems, then respond." },
+    ],
+    diagnoses: [
+      { h: "Civility breakdown",       b: "Persistent rudeness, disrespect, or low-grade hostility as a cultural pattern." },
+      { h: "Manager-enabled incivility", b: "Managers who could have intervened and didn't — or who contributed to the pattern." },
+      { h: "Low psychological safety", b: "Teams where people won't speak up because the cost of speaking up is too high." },
+      { h: "Communication breakdown",  b: "Passive-aggression, unclear expectations, and the erosion of trust in routine exchanges." },
+      { h: "Change-related civility stress", b: "Tension after layoffs, restructures, or policy shifts — not a culture problem so much as a pressure one." },
+    ],
+    principles: [
+      "Does not jump to blame or legal conclusions",
+      "Helps HR frame problems more clearly, not accuse people",
+      "Focuses on patterns, not accusations",
+      "Separates symptoms from causes",
+      "Distinguishes isolated tension from broader culture issues",
+      "Flags when a problem warrants direct HR or ER review",
+    ],
+    audiences: [
+      "HR & ER leaders diagnosing friction before it escalates into formal complaints",
+      "People managers recognizing patterns they can intervene on",
+      "Culture-change programs grounded in SHRM's Civility Index research",
+      "Compliance and L&D teams building manager-readiness curricula",
+    ],
+  },
+};
+
+window.HACK_CURATED = HACK_CURATED;
+window.HACK_THEMES = HACK_THEMES;
+window.ELEVATED_PROJECTS = ELEVATED_PROJECTS;
+window.getElevatedProject = (id) => ELEVATED_PROJECTS[id];

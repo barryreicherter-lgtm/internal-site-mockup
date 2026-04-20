@@ -1,0 +1,1531 @@
+
+
+
+
+SHRM Intelligence Layer Studio
+
+
+
+Project Definition: Knowledge Center Decision Engine
+
+
+
+ILS-KCDE-01  |  Rev. 2 — April 2026  |  Phased Architecture + Integrated VoC Research Plan
+
+Project Code
+
+ILS-KCDE-01
+
+Parent Initiative
+
+SHRM Intelligence Layer Studio (ILS)
+
+Classification
+
+Proprietary Computational Reasoning Infrastructure
+
+Status
+
+Phase 0 — Investment Review / Prototyping
+
+Date
+
+April 2026 — Revision 2 (phased stack architecture clarified)
+
+Prior Versions
+
+v1.0 (March 25, 2026) — Google-stack original; v2.0 (March 26, 2026) — stack-ambiguous; April 2026 consolidated — superseded by this document
+
+Operative Stack
+
+Phased: Google stack (Phase 0–1); Microsoft-native (Phase 2+ if enterprise integration requires)
+
+Document Owner
+
+Barry Reicherter, Director Market Research & VoC / Scale Free Strategy
+
+ILS Sponsor
+
+Syed Wasey, EVP SHRM Business
+
+
+
+
+
+
+
+
+
+§1  Executive Summary & Strategic Intent
+
+
+
+The Knowledge Center Decision Engine (KCDE) is SHRM&apos;s internal AI reasoning infrastructure — a Graph-RAG system that converts two years of high-value Knowledge Center case resolution history into machine-executable intelligence. Its core function is to transition SHRM from a &apos;Search and Retrieval&apos; model (finding documents) to a &apos;Reasoning and Recommendation&apos; model (synthesizing answers grounded in SHRM&apos;s accumulated advisory expertise).
+
+
+
+The KCDE is a reasoning engine, not a product. It is infrastructure — the layer that makes SHRM&apos;s Knowledge Center expertise computationally accessible, embeddable, and scalable. It surfaces through products and platforms: as an internal advisor augmentation tool for KC staff, as an API consumed by enterprise HRIS integrations, and eventually as a future integration point for the HR-X Solution Hub&apos;s Tier 2 compliance and policy guidance layer.
+
+
+
+STRATEGIC UPDATE — Architecture Correction (1 of 2): ILS Positioning
+
+
+
+The KCDE is no longer described as the &apos;primary Reasoning Layer&apos; or &apos;power grid&apos; of ILS, and is no longer positioned as a load-bearing component of the HR-X Solution Hub. The Hub&apos;s Tier 2 prescriptive layer operates independently; KCDE is acknowledged as a significant future integration that will deepen the compliance and policy guidance layer once it achieves production readiness. The Proprietary Intelligence Boundary principle is explicitly applied to all KCDE deployment modes: the vectorized BASK corpus and KC resolution corpus must reside in SHRM-owned infrastructure and are accessed via API only — not embedded in host platforms such as Microsoft Copilot or Workday.
+
+
+
+STRATEGIC UPDATE — Architecture Correction (2 of 2): Phased Stack
+
+
+
+The KCDE uses a phased technical architecture, matching the VoW Synthetic phasing principle. Phase 0 and Phase 1 operate on the Google stack: Qualtrics → BigQuery for corpus storage; Vertex AI Vector Search for BASK and resolution vectors; Gemini via Vertex AI for inference. This is consistent with the original v1.0 (March 25) architecture and keeps KCDE and VoW Synthetic on a single unified Phase 0 stack — reducing operational complexity, eliminating cross-cloud data movement, and keeping combined Phase 0 spend efficient. Phase 2+ migration to Microsoft-native infrastructure is triggered only by specific enterprise integration requirements (M365 Copilot deep integration, enterprise Azure API Management, SOC2 Type II at commercial scale) — not by default.
+
+
+
+
+
+
+
+
+
+§2  Architecture & Reasoning Model
+
+
+
+
+
+
+
+2.1  The Reasoning Corpus
+
+
+
+The KCDE ingests and structures approximately two years of Knowledge Center case resolution data — the specific questions asked, the reasoning paths taken, and the resolution framings used by SHRM&apos;s expert advisors — as the primary intelligence corpus. This is supplemented by a live citation layer for regulatory currency.
+
+Layer
+
+Source
+
+Function
+
+Phase 0 Implementation
+
+Memory Layer
+
+Qualtrics XM Discover — 2-year KC case history
+
+Captures Resolution Flow: the logical steps, neutral third-person framing, and advisory reasoning patterns used by SHRM experts. PII masked via Qualtrics automated pipeline before ingestion.
+
+Qualtrics → BigQuery sync. Text IQ topic tagging pre-applied. Vectorized via Vertex AI Vector Search into SHRM-owned vector store.
+
+Anchor Layer
+
+Live API integrations: Vital Law, EBIA Checkpoint, CalChamber, Federal/State registers
+
+Provides real-time regulatory currency — the &apos;current weather&apos; layered onto the historical &apos;climb strategy.&apos; Triggers Regulatory Conflict Flag when live law contradicts historical resolution path.
+
+Real-time API calls at inference time. Google Cloud API Gateway for rate limiting and auth. No caching of regulatory content beyond session.
+
+Standards Layer
+
+SHRM BASK (vectorized)
+
+Grounds all reasoning in SHRM&apos;s authoritative Body of Applied Skills and Knowledge. Prevents hallucination by constraining output to validated HR standards.
+
+BASK chunked, tagged by domain, and vectorized. Stored in Vertex AI Vector Search alongside KC resolution corpus. Retrieved prior to inference — never embedded in host platform.
+
+
+
+
+
+
+
+
+
+
+
+2.2  Contextual Reasoning Architecture
+
+
+
+The KCDE uses a Context-Aware Graph-RAG architecture. Unlike standard retrieval-augmented generation, it does not simply retrieve a relevant document — it synthesizes a response grounded in the specific operational context of the user&apos;s environment, inherited at the moment of the query.
+
+Contextual Signal
+
+Source
+
+What It Enables
+
+Identity & Role
+
+O365 Graph (where applicable in Mode B/C deployments)
+
+Tailors response persona: Managerial Coaching framing vs. Administrative Execution framing depending on seniority and department of the querying user.
+
+Geographic / Jurisdictional
+
+Geo-location or enterprise profile metadata
+
+Automatically activates state-specific legal logic (e.g., California Labor Code, New York predictive scheduling) without requiring the user to specify jurisdiction.
+
+Enterprise Parameters
+
+SaaS metadata (org size, headcount)
+
+Applies correct federal thresholds automatically (e.g., FMLA eligibility at 50+ employees, ACA reporting at 50+ FTEs).
+
+
+
+
+
+
+
+
+
+
+
+2.3  Operational Modes — Deployment Matrix
+
+
+
+Proprietary Intelligence Boundary applies to all deployment modes: the KCDE reasoning engine, vectorized BASK corpus, and KC resolution corpus reside in SHRM-owned infrastructure in all cases. Host platforms (Copilot, Workday, SAP) query SHRM intelligence via API. SHRM data does not reside in any third-party environment.
+
+
+
+
+
+Mode
+
+Platform
+
+Primary User
+
+Function
+
+A — Internal Advisor Augmentation
+
+SHRM Knowledge Center internal tooling
+
+KC Advisors
+
+Provides advisors with AI-drafted responses, case precedents, and automated regulatory refreshes during query surges. Estimated 70% reduction in manual lookup time. Human advisor reviews and approves all output before member delivery. Phase 0 target mode.
+
+B — Agent-Ready Skill
+
+Microsoft Copilot (M365), OpenClaw
+
+Enterprise HR professionals (via their AI assistant)
+
+KCDE exposed as a discoverable skill via SKILL.md manifest. Third-party AI agents autonomously query SHRM&apos;s reasoning corpus for HR compliance and guidance tasks. Phase 1+ target.
+
+C — Skilled Assistant
+
+ChatGPT (Actions), Claude (Tool Use), Gemini (Extensions)
+
+SHRM members and HR professionals
+
+Custom-branded &apos;SHRM HR Insights&apos; assistant experience embedded in consumer AI chat interfaces. SHRM&apos;s reasoning corpus accessed via tool use — not resident in the platform. Phase 1+ target.
+
+D — API Service
+
+Workday, SAP, Rippling, and other enterprise HRIS
+
+Enterprise HR professionals within their HRIS workflow
+
+Headless API service embedding SHRM&apos;s reasoning directly into enterprise software. Powers real-time manager coaching and compliance flagging within active HR transactions. Phase 2+ target (may drive Microsoft-native migration).
+
+
+
+
+
+
+
+
+
+
+
+2.4  Operational Guardrails
+
+
+
+
+
+Neutral Voice Control: All output uses strict third-person framing (&apos;An employer in California typically…&apos;) — no first-person legal advice. Prevents unauthorized practice of law.
+
+
+
+
+
+Regulatory Conflict Flag: Engine surfaces a structured alert when historical resolution reasoning conflicts with a live regulatory update. Does not auto-resolve — human escalation path is triggered.
+
+
+
+
+
+Human Escalation Path: High-stakes queries (multi-party employment disputes, complex leave intersections, termination scenarios in regulated environments) trigger mandatory handoff to a live KC Advisor. The KCDE never functions as a terminal endpoint for high-risk queries.
+
+
+
+
+
+Deterministic Anchoring: BASK retrieval occurs before inference — not as a post-hoc filter. Prevents drift from SHRM standards in the reasoning path itself.
+
+
+
+
+
+
+
+
+
+
+
+
+§3  Phased Technical Architecture
+
+
+
+
+
+
+
+3.1  Phase 0 (Months 1–6) — Google Stack
+
+
+
+Phase 0 objective: prove that Graph-RAG reasoning against the two-year KC case corpus produces AI-drafted responses that meet the quality standards KC advisors require for member-facing deployment. Scope: Mode A internal advisor augmentation only. Corpus ingestion, vectorization, and inference all on the Google stack — consistent with the original v1.0 architecture and matching the VoW Synthetic Phase 0 stack for unified ILS infrastructure.
+
+Component
+
+Google Stack Service
+
+Function in Phase 0
+
+Corpus Storage
+
+BigQuery
+
+Houses the Qualtrics two-year KC case history. Text IQ topic tags preserved through ETL. Column-level security enforces access controls.
+
+Vectorization & Retrieval
+
+Vertex AI Vector Search
+
+Stores KC resolution vectors and BASK embeddings. Single vector store for both — retrieval pulls resolution precedents and BASK standards in the same query.
+
+Inference
+
+Gemini via Vertex AI
+
+LLM inference for reasoning synthesis. Gemini 1.5 Pro (or successor) for complex multi-step reasoning; Gemini Flash for simpler retrieval-augmented responses. Model selection dynamic by query complexity.
+
+Reasoning Orchestration
+
+Vertex AI Agent Engine
+
+Implements the Think → Verify → Act reasoning loop. Handles multi-step query decomposition, BASK retrieval, and escalation triggering.
+
+Live Citation Bridge
+
+Cloud Functions + API Gateway
+
+Real-time integration with Vital Law, EBIA Checkpoint, CalChamber, and Federal/State registers. Triggered by Regulatory Conflict Flag logic.
+
+PII Masking
+
+Qualtrics automated PII masking + BigQuery column-level security
+
+Qualtrics pre-masks PII before corpus egress to BigQuery. Column-level security enforces additional restrictions. No Purview governance overhead in Phase 0.
+
+
+
+
+
+
+
+
+
+
+
+3.2  Phase 1 (Months 7–12) — Google Stack with Selective Additions
+
+
+
+Phase 1 extends the Google stack to support Mode B (Agent-Ready Skill) and Mode C (Skilled Assistant) deployments. Selective additions introduced as specific use cases require them:
+
+
+
+
+
+Agent discovery endpoint: SKILL.md manifest published at SHRM-owned URL for Mode B discovery by Microsoft Copilot, OpenClaw, and compatible orchestrators
+
+
+
+
+
+Tool-use integration endpoints: ChatGPT Actions, Claude Tool Use, and Gemini Extensions integration for Mode C
+
+
+
+
+
+Usage metering and rate limiting: Cloud Armor and API Gateway quota management for commercial access control
+
+
+
+
+
+SOC2 readiness documentation: foundation for Phase 2 enterprise compliance if commercial demand materializes
+
+
+
+
+
+
+
+
+
+
+
+3.3  Phase 2+ (Year 2+) — Microsoft-Native Migration (Conditional)
+
+
+
+Phase 2 migration to Microsoft-native infrastructure is triggered only by specific enterprise integration requirements — not by default. The triggers for migration:
+
+
+
+
+
+Mode D (API Service) demand from enterprise HRIS customers requiring native Azure API Management integration and M365 Copilot deep integration
+
+
+
+
+
+SOC2 Type II compliance requirements at enterprise commercial scale that justify Microsoft Purview and Entra ID governance overhead
+
+
+
+
+
+Enterprise customer data residency requirements that favor Azure&apos;s governance and tenant isolation capabilities
+
+
+
+
+
+Consolidated infrastructure alignment with the HR-X Solution Hub&apos;s Phase 2 Microsoft-native migration (if Hub triggers first)
+
+
+
+If none of these triggers materialize, KCDE remains on the Google stack indefinitely. Infrastructure decisions are driven by enterprise integration demand, not by architectural preference.
+
+
+
+
+
+Capability
+
+Phase 0–1 (Google)
+
+Phase 2+ (Microsoft, Conditional)
+
+Corpus Storage
+
+BigQuery
+
+Microsoft Fabric (OneLake, Lakehouse)
+
+Vector Store
+
+Vertex AI Vector Search
+
+Azure AI Search
+
+Inference
+
+Gemini (Vertex AI)
+
+Azure OpenAI (GPT-4.1 / GPT-4o / o-series)
+
+Orchestration
+
+Vertex AI Agent Engine
+
+Azure AI Studio Agents + Semantic Kernel
+
+API Gateway
+
+Vertex AI endpoints + Cloud API Gateway
+
+Azure API Management
+
+PII & Governance
+
+Qualtrics masking + BigQuery column-level security
+
+Microsoft Purview + Entra ID
+
+
+
+
+
+
+
+
+
+§4  ILS Portfolio Positioning
+
+
+
+
+
+
+
+4.1  KCDE Role Within ILS
+
+
+
+The KCDE is one of two core Phase 0 ILS investments alongside VoW Synthetic. Both projects run on the same Google stack during Phase 0, enabling unified Phase 0 infrastructure management and shared Vertex AI infrastructure costs. The combined Phase 0 spend represents the maximum sunk cost before a board-level go/no-go decision. The investment cascade model means University Nodes ($225,000 activation cost) are gated behind KCDE and VoW Synthetic Phase 0 validation.
+
+ILS Project
+
+Relationship to KCDE
+
+Dependency Direction
+
+ILS-VOW-01 (VoW Synthetic)
+
+Parallel Phase 0 investment on same Google stack. VoW Synthetic provides workforce simulation; KCDE provides HR compliance and advisory reasoning. Distinct capabilities — not substitutes. Shared Vertex AI infrastructure.
+
+Parallel; independent validation tracks; unified Phase 0 stack
+
+ILS-XHUB-01 (HR-X Hub)
+
+Future integration target. KCDE is explicitly not a load-bearing component of Hub Phase 1 or Phase 2. Once KCDE achieves production readiness, it deepens the Hub&apos;s Tier 2 compliance guidance layer.
+
+One-directional: Hub will consume KCDE via API. KCDE development is not blocked by Hub timeline. If Hub triggers Microsoft-native migration at Phase 2, KCDE may follow.
+
+ILS-UNODE-01 (University Nodes)
+
+Cornell Node provides Graph-RAG optimization validation for KCDE reasoning architecture. University Nodes are gated behind KCDE Phase 0 validation.
+
+KCDE Phase 0 gates University Node activation
+
+ILS-HACK-01 (Staff Hackathons)
+
+Hackathon prototypes that involve HR compliance or advisory workflows are natural KCDE integration candidates. Hackathon outputs may surface use cases that inform KCDE deployment priorities.
+
+Independent; KCDE informs hackathon scope
+
+
+
+
+
+
+
+
+
+
+
+4.2  Phase 0 Investment — Google Stack
+
+
+
+Phase 0 cost structure reflects the Google stack architecture. Original v1.0 (March 25) estimate of $45,000 is carried forward as the planning baseline; actual costs will be tracked against this estimate through the 60-day gate.
+
+Cost Category
+
+Phase 0 Allocation (60 Days)
+
+Purpose
+
+Data Activation
+
+$6,500
+
+Qualtrics → BigQuery sync and landing. PII masking pipeline validation. Text IQ tag preservation through ETL.
+
+Ontology Mapping
+
+$11,000
+
+Automated HR-X/BASK tagging of 2-year case history. Semantic categorization by practice area and jurisdiction.
+
+Vectorization & Reasoning Brain
+
+$7,500
+
+Building the semantic index in Vertex AI Vector Search. BASK and KC resolution vectors co-located. Context-Handshake architecture.
+
+Live Citation Bridge
+
+$20,000
+
+Cloud Functions + API Gateway integration with Vital Law, EBIA Checkpoint, CalChamber, and Federal/State registers.
+
+Phase 0 Total
+
+$45,000
+
+Go/No-Go gate cost. Board-level decision point before any further investment.
+
+
+
+
+
+
+
+Investment Cascade Note
+
+
+
+KCDE Phase 0 ($45,000) runs in parallel with VoW Synthetic Phase 0 Rev 2 estimate ($24,000–$40,000). Combined maximum sunk cost before board go/no-go is approximately $69,000–$85,000 — improved from prior estimates. Both projects share Vertex AI infrastructure during Phase 0, eliminating cross-cloud data movement and simplifying Phase 0 operational management. No commitment beyond this amount is authorized prior to Phase 0 validation results.
+
+
+
+
+
+
+
+
+
+§5  Revenue & Cost Avoidance Model
+
+
+
+
+
+
+
+5.1  Revenue Forecast (24-Month Outlook)
+
+
+
+Revenue model uses metered API consumption at $0.50–$1.50 per Reasoning Sprint and annual platform maintenance fees. The following projections reflect the full range of deployment modes becoming operational — not just Phase 0 validation output. Google stack through Phase 1 supports all deployment modes through Mode C; Mode D at commercial scale may trigger Phase 2 Microsoft-native migration depending on enterprise customer requirements.
+
+Revenue Stream
+
+Year 1 (Beta)
+
+Year 2 (Scaling)
+
+Notes
+
+API Metered Usage (B2B)
+
+$150,000
+
+$1,200,000
+
+Enterprise HRIS and Copilot integration partners. Modes B and D. Phase 1 on Google stack; Phase 2 Microsoft migration if enterprise demand requires.
+
+Skill Store Licensing
+
+$50,000
+
+$250,000
+
+Modes B and C. Agent-ready skill and branded assistant licensing. Phase 1 on Google stack.
+
+Enterprise Contracts
+
+$125,000
+
+$650,000
+
+Annual enterprise contracts for metered access + SLA. Mode D. Phase 2 may trigger Microsoft-native stack.
+
+Cost Avoidance (Staff)
+
+$200,000
+
+$450,000
+
+Mode A internal advisor augmentation. KC advisor time savings at estimated 70% lookup reduction. Phase 0 operational target.
+
+Annual Total
+
+$525,000
+
+$2,550,000
+
+Year 1 is beta/validation phase. Year 2 assumes full multi-mode deployment.
+
+
+
+
+
+
+
+
+
+
+
+5.2  Incubation & Ownership Transition
+
+Phase
+
+Timeline
+
+Ownership
+
+ILS Role
+
+Incubation
+
+M1–M9
+
+Intelligence Layer Studio
+
+ILS owns prototyping, validation, and initial deployment on Google stack. Full operational control.
+
+Transition
+
+M9–M12
+
+Product team (Project Buffalo for consumer; SHRM Business for B2B API)
+
+ILS transfers technical assets and operational documentation. Handoff protocol defined at M6. Stack migration decision (Google vs. Microsoft) made based on Phase 2 commercial requirements.
+
+Sustaining
+
+Year 2+
+
+SHRM Business / Membership divisions (permanent)
+
+ILS retains Observer status for logic updates and standards alignment. No operational control.
+
+
+
+
+
+
+
+
+
+
+
+
+§6  Integrated VoC Research Plan — ILS-KCDE-01
+
+
+
+This research plan governs all primary and secondary research conducted in support of KCDE development and validation. Phase status indicators reflect current state. Findings feed product decisions at each phase gate and are routed through Alex Alonso before internal distribution.
+
+
+
+
+
+
+
+Phase 1: Needs Discovery
+
+
+
+▶ ACTIVE
+
+
+
+Phase 2A: Concept Validation (Quant)
+
+
+
+◷ PLANNED
+
+
+
+Phase 2B: Concept Validation (Qual)
+
+
+
+◷ PLANNED
+
+
+
+Phase 3: Usability / UX Testing
+
+
+
+○ FUTURE-GATED
+
+
+
+
+
+
+
+
+
+
+
+R1  Research Rationale & User Populations
+
+
+
+KCDE serves three distinct user populations, each with different needs, different access levels, and different research methods appropriate to their study. The research plan addresses all three but weights them differently by phase:
+
+Population
+
+Description
+
+Access Level
+
+Primary Research Phase
+
+KC Advisors (Internal)
+
+SHRM Knowledge Center advisors who will use KCDE in Mode A to augment their advisory work. Fully accessible internal population.
+
+Full access — no recruitment required
+
+Phases 1 and 3 (needs and usability)
+
+SHRM Members / HR Professionals
+
+HR professionals who access SHRM guidance through member channels and will interact with KCDE through Modes B and C (agent skills and branded assistants).
+
+High access — SHRM VoW Research Panel
+
+Phases 1 and 2 (needs and concept validation)
+
+Enterprise B2B Buyers / IT
+
+Enterprise HR leaders and IT/HRIS administrators who evaluate and deploy API-integrated HR tools (Mode D). Harder to access; more commercially sensitive.
+
+Moderate access — Executive Network, warm referrals
+
+Phase 1 qual only; Phase 2 quant with panel
+
+
+
+
+
+
+
+
+
+
+
+R2  Existing Data Inventory — Needs Phase Coverage
+
+
+
+The following SHRM data assets are credited as partially satisfying needs-phase research questions. Primary research is scoped only where material gaps remain.
+
+Data Asset
+
+Relevant Findings
+
+Needs Questions Addressed
+
+Remaining Gap
+
+AI Adoption & Maturity Survey (SHRM, via ILS Strategy Brief)
+
+69.8% of HR professionals use AI weekly; 48.2% is ad hoc individual experimentation. Only 7.3% of organizations have enterprise-approved AI tools for HR. SHRM not yet seen as the cutting-edge AI authority.
+
+Establishes urgency for KCDE&apos;s Modes B/C — practitioners are already using AI tools for HR guidance; KCDE positions SHRM&apos;s reasoning as the authoritative version. Quantifies the scale of the addressable population.
+
+Does not capture what specific HR question types practitioners are currently using AI for — critical for corpus prioritization and Mode B/C design.
+
+CHRO Priorities & Perspectives (SHRM, 2025/2026)
+n=212 / n=129
+
+Adapting to technological advances cited as a challenge by 29% of CHROs. Pressure to achieve financial goals (45%). Leadership development top priority (51%/46%).
+
+Informs the practice area priority weighting for KCDE corpus development — which topic areas should be prioritized in the initial ingestion and ontology mapping.
+
+Does not address enterprise buyer evaluation criteria for AI-powered HR guidance tools, or what would make a CHRO trust AI-generated HR compliance guidance.
+
+B2B Qualitative Leader Interviews (via ILS Strategy Brief)
+
+Perception vacuum: SHRM seen as authoritative but not cutting-edge. &apos;I don&apos;t feel like they&apos;re on the forefront… I don&apos;t feel like they&apos;re truly experts and cutting-edge from a knowledge perspective.&apos;
+
+Establishes the positioning challenge for KCDE&apos;s external deployment — SHRM&apos;s authority is an asset; its perceived recency is not. Informs concept framing.
+
+Small sample; not specific to KC users or HR compliance guidance seekers. Needs replication with KC advisor population on internal experience.
+
+SHRM State of the Workplace / Global Workplace Culture (2026)
+
+Broad member and workplace trend data. Covers AI confidence, workplace challenges, culture dimensions.
+
+General context for HR practitioner pain point landscape. Not specific to KC interaction or AI-assisted guidance seeking.
+
+Does not address KC-specific interaction patterns, question types, or what members find insufficient about current SHRM guidance delivery.
+
+KC Case Resolution History (Qualtrics XM Discover)
+
+Two years of resolved KC cases — question types, resolution paths, advisor framing, and outcome classifications. This is the KCDE&apos;s primary corpus — not research data per se, but directly diagnostic.
+
+The most direct evidence of what HR professionals are asking SHRM, what answers they are receiving, and which question types are highest volume and highest complexity. Corpus analysis is the primary needs-phase input for corpus prioritization decisions.
+
+Not systematically analyzed from a product design lens. Needs structured analysis of: top question categories by volume; questions where resolution took longest or required escalation; questions where regulatory conflict flags are most common; questions members asked but KC could not fully resolve.
+
+
+
+
+
+
+
+Needs Phase Summary Assessment
+
+
+
+The most valuable data for KCDE needs research is already in-house: the KC case resolution history. The primary Phase 1 task is not new primary data collection with external populations — it is structured corpus analysis of the two years of case data that will become the KCDE&apos;s reasoning foundation. External research (KC advisor interviews, member survey) supplements and validates the corpus analysis findings, not the other way around.
+
+
+
+
+
+
+
+
+
+
+
+R3  Phase 1: Needs Discovery
+
+
+
+
+
+Phase Status: ACTIVE
+
+
+
+R3.1  Track A — KC Case Corpus Analysis (Internal Data)
+
+
+
+This is the highest-priority Phase 1 activity. Before any primary research is commissioned, the KC case resolution corpus must be analyzed from a product design lens to answer the questions that will determine KCDE&apos;s initial corpus scope, ontology priorities, and deployment mode sequencing.
+
+Research Question
+
+Method
+
+Data Source
+
+Output
+
+What are the highest-volume question categories in the KC case history, and how are they distributed across HR-X practice areas?
+
+Quantitative corpus analysis using Qualtrics Text IQ topic tags. Frequency distribution by topic, practice area, and question complexity.
+
+Qualtrics XM Discover — 2-year case history
+
+Topic volume heat map by HR-X practice area. Corpus prioritization recommendation for Phase 0 ontology mapping.
+
+Which question types require the longest resolution time or most frequently escalate to senior advisors?
+
+Case-level analysis: resolution time distribution; escalation flag rate by topic category.
+
+Qualtrics case data — resolution time and escalation fields
+
+Complexity map: high-volume / high-complexity quadrant identified as KCDE highest-value corpus segment.
+
+Which question categories most frequently trigger regulatory currency issues — where the correct answer depends on jurisdiction or changes over time?
+
+Tag-based extraction: cases where regulatory references appear; cases where advisors noted a law change during resolution.
+
+Qualtrics Text IQ tags; advisor notes fields
+
+Regulatory sensitivity map: identifies which topics most need the live citation anchor layer in Phase 0.
+
+Are there systematic question types that KC advisors currently cannot fully resolve — where members are referred elsewhere or receive an incomplete answer?
+
+Escalation and referral pattern analysis. Cases flagged as &apos;referred out&apos; or &apos;resolution incomplete.&apos;
+
+Qualtrics case resolution status fields
+
+Capability gap identification: where KCDE could either close or explicitly flag limits of SHRM&apos;s advisory authority.
+
+
+
+
+
+
+
+R3.2  Track B — KC Advisor In-Depth Interviews
+
+
+
+KC advisors are the primary internal user population for Mode A and the human experts whose reasoning the KCDE is designed to augment and scale. Their experience is the ground truth for what the engine must replicate — and what it must not attempt to automate.
+
+Parameter
+
+Specification
+
+Target population
+
+Current SHRM Knowledge Center advisors across tenure levels. Mix of generalists and topic specialists (labor & employment, benefits, compliance).
+
+Sample size
+
+n=10–15 interviews (sufficient for saturation given homogeneous population)
+
+Recruitment
+
+Internal. Coordinated via KC leadership. No incentive required.
+
+Interview length
+
+45–60 minutes
+
+Discussion guide topics
+
+Current workflow: how advisors research and draft responses today; where they spend the most time; which question types they find most and least tractable. Quality standards: what makes a &apos;good&apos; KC response; how advisors know they&apos;ve got it right. Augmentation tolerance: which parts of the workflow would they want AI to help with; which parts require human judgment and cannot be automated. Risk perception: what would make them distrust an AI-drafted response; what would they be most worried about if KCDE produced an incorrect answer. Regulatory currency: how they currently stay current on regulatory changes; how they handle cases where the law has changed mid-resolution.
+
+Analysis
+
+Thematic analysis. Key outputs: workflow map; automation boundary recommendations (what KCDE should and should not attempt to do in Mode A); trust calibration requirements; error scenario taxonomy.
+
+Timeline
+
+Weeks 1–6 from research plan activation
+
+
+
+
+
+
+
+R3.3  Track C — Member / HR Professional Survey (Needs Validation)
+
+
+
+A quantitative survey with SHRM members validates the directional findings from corpus analysis and advisor interviews, and establishes the member-side needs baseline for Modes B and C deployment design.
+
+Parameter
+
+Specification
+
+Target population
+
+HR professionals (manager through VP level) who have contacted the SHRM Knowledge Center in the prior 12 months, or who regularly use AI tools for HR guidance.
+
+Sample size
+
+n=300–400 (sufficient for cross-tabs by role level, org size, and KC usage frequency)
+
+Recruitment
+
+SHRM Voice of Work Research Panel (primary). Oversample of recent KC users using behavioral data from Qualtrics.
+
+Instrument topics
+
+Current information-seeking behavior for HR questions: what tools and sources they use, in what order; where they currently turn for AI-assisted HR guidance and how satisfied they are; what they currently go to SHRM for, and what they go elsewhere for; unmet needs in HR guidance — question types where they feel they don&apos;t have a reliable source; trust calibration: what would make them trust or distrust AI-generated HR compliance guidance; attribution sensitivity: does it matter to them whether the guidance is &apos;from SHRM&apos; vs. &apos;powered by SHRM&apos; in a third-party interface.
+
+Analysis
+
+Frequency distributions and cross-tabs. Key outputs: information-seeking behavioral map; trust threshold profile; attribution sensitivity findings; unmet need topic ranking.
+
+Timeline
+
+Weeks 4–10 from research plan activation (follows initial corpus analysis to allow instrument refinement)
+
+
+
+
+
+
+
+R3.4  Phase 1 Validation Criteria (Gate to Phase 2)
+
+
+
+
+
+Corpus analysis complete: top-10 question category priorities identified and ranked by volume × complexity score
+
+
+
+
+
+Automation boundary defined: clear taxonomy of question types KC advisors will accept AI augmentation for vs. question types requiring full human resolution — documented with specific examples
+
+
+
+
+
+Member trust threshold characterized: minimum conditions under which HR professionals will act on AI-generated HR guidance identified from survey data
+
+
+
+
+
+Regulatory sensitivity map complete: topic categories requiring live citation anchor layer prioritized for Phase 0 engineering scope
+
+
+
+
+
+
+
+
+
+
+
+R4  Phase 2A: Concept Validation (Quantitative)
+
+
+
+
+
+Phase Status: PLANNED — pending Phase 1 gate
+
+
+
+R4.1  Research Questions
+
+
+
+
+
+How appealing is the KCDE concept to SHRM members when described as an AI-powered HR guidance tool grounded in SHRM&apos;s expert advisory history?
+
+
+
+
+
+Which deployment mode (internal KC augmentation, AI assistant embed, HRIS integration) is most resonant with different HR practitioner segments?
+
+
+
+
+
+How does concept appeal vary by: role level, HR function specialty, organization size, and current AI tool adoption?
+
+
+
+
+
+What is the perceived value differential between &apos;SHRM-grounded AI guidance&apos; and a generic LLM answer to the same HR question?
+
+
+
+
+
+What trust-building elements are most important: SHRM branding, human advisor review, citation of specific SHRM standards, or regulatory currency?
+
+
+
+
+
+
+
+R4.2  Method
+
+Parameter
+
+Specification
+
+Target population
+
+HR professionals (all levels). Two segments: SHRM members (existing relationship) and non-member HR professionals (new audience potential for Modes B/C).
+
+Sample size
+
+n=400–500 total (n=250 members, n=150–250 non-members)
+
+Recruitment
+
+SHRM Voice of Work Research Panel (member segment); commercial panel or LinkedIn sampling (non-member segment)
+
+Instrument design
+
+Concept stimulus: written description of KCDE capability (not a prototype) presented in three deployment mode variants — internal KC tool, SHRM AI assistant in ChatGPT/Claude, embedded in Workday. Reaction battery: overall appeal; likelihood to use; differentiation from current alternatives; trust-building element ranking (max-diff); attribution preference (SHRM-branded vs. SHRM-powered); willingness to pay / willingness to adopt (framed as employer decision for Mode D).
+
+Key analytical methods
+
+Appeal distribution and mean by segment; mode preference profiling; trust element max-diff analysis; member vs. non-member comparison; regression of appeal on trust elements
+
+Timeline
+
+Weeks 8–16 from research plan activation
+
+
+
+
+
+
+
+R4.3  Phase 2A Validation Criteria
+
+
+
+
+
+Overall concept appeal mean ≥7.0/10 among SHRM member segment
+
+
+
+
+
+&apos;SHRM-grounded AI guidance&apos; rated significantly more trustworthy than generic LLM answer for compliance questions (paired comparison)
+
+
+
+
+
+At least one deployment mode (A, B, C, or D) achieves >60% &apos;likely to use&apos; among target segment
+
+
+
+
+
+Top trust-building elements identified — feeds Mode A and B/C interface design requirements
+
+
+
+
+
+
+
+
+
+
+
+R5  Phase 2B: Concept Validation (Qualitative)
+
+
+
+
+
+Phase Status: PLANNED — concurrent with Phase 2A
+
+
+
+R5.1  Research Questions
+
+
+
+
+
+In their own words, what do HR professionals say the KCDE does — and does that match the intended positioning?
+
+
+
+
+
+What are the spontaneous objections to using AI for HR compliance guidance, and which are addressable through design vs. fundamental barriers?
+
+
+
+
+
+How do HR professionals react when told the KCDE&apos;s output is &apos;drafted by AI, reviewed by a SHRM KC advisor&apos;? Does the human-in-the-loop framing increase trust — or raise questions about why AI is involved at all?
+
+
+
+
+
+What specific scenario types do HR professionals most want KCDE to handle — and where do they draw the line on AI guidance sufficiency?
+
+
+
+
+
+How do KC advisors react to seeing a prototype of the Mode A internal tool? What do they find reassuring, and what do they find threatening or unreliable?
+
+
+
+
+
+
+
+R5.2  Method
+
+Parameter
+
+Specification
+
+Format
+
+Two separate session types: (1) Focus groups with HR professionals (external, Modes B/C framing); (2) Working sessions with KC advisors (internal, Mode A framing). These populations should not be mixed.
+
+HR professional focus groups
+
+n=4 sessions × 5–6 participants. Mix of role levels and industries. Recruited from SHRM VoW Panel and Executive Network. 90 minutes. Online.
+
+KC advisor working sessions
+
+n=2 structured working sessions × 4–6 advisors. Co-design format: advisors react to Mode A concept and co-define automation boundary requirements. 90 minutes. In-person preferred.
+
+Stimulus materials
+
+For HR professional sessions: written concept cards per deployment mode; sample KCDE output for 3 HR question types (benefits eligibility, disciplinary process, jurisdiction-specific leave). For KC advisor sessions: Mode A workflow mockup; sample AI-drafted response for 3 question types with advisor editing interface.
+
+Discussion guide topics
+
+HR professionals: initial reactions; comprehension check; objections and trust conditions; scenario-based reactions (&apos;would you act on this for a termination question?&apos;); SHRM attribution value. KC advisors: reaction to AI-drafted response quality; editing interface requirements; error scenario concerns; quality standards the tool must meet before they would endorse output to a member.
+
+Analysis
+
+Thematic analysis per population. Key outputs: objection taxonomy with addressability rating; trust condition map; KC advisor quality standard specifications; scenario coverage requirements.
+
+Timeline
+
+Weeks 10–18 from research plan activation
+
+
+
+
+
+
+
+R5.3  Phase 2B Validation Criteria
+
+
+
+
+
+No fatal objections among HR professional population that are not addressable through product design or positioning
+
+
+
+
+
+KC advisors define a clear set of quality standards the Mode A output must meet — documented as testable criteria for Phase 3 usability
+
+
+
+
+
+Human-in-the-loop framing (AI draft / KC advisor review) increases stated trust in ≥3 of 4 HR professional focus group sessions
+
+
+
+
+
+Concept language passes the &apos;own words&apos; test — HR professionals can explain what KCDE does in terms consistent with intended positioning
+
+
+
+
+
+
+
+
+
+
+
+R6  Phase 3: Usability & UX Testing
+
+
+
+
+
+Phase Status: FUTURE-GATED — requires working Phase 0 prototype of Mode A internal tool
+
+
+
+Phase 3 usability testing is gated behind completion of the Phase 0 prototype — specifically the Mode A internal advisor augmentation tool, which is the first deployment mode that can be meaningfully tested with real users against real KC workflows. External mode testing (B, C, D) follows internal validation.
+
+
+
+R6.1  Research Questions
+
+
+
+
+
+Can a KC advisor, without training, use the Mode A interface to review an AI-drafted response, assess its accuracy, edit it where needed, and approve it for member delivery — within a time window that represents a net efficiency gain over the current manual process?
+
+
+
+
+
+Where in the Mode A workflow do advisors stop trusting the AI draft and rewrite from scratch — and what specific output characteristics trigger that loss of trust?
+
+
+
+
+
+Does the KCDE output for a sample of real-world question types meet the quality standards defined by advisors in Phase 2B?
+
+
+
+
+
+For Mode C (branded assistant in consumer AI interfaces), can an HR professional ask a real HR question, receive a KCDE-grounded response, and correctly interpret when to act on it vs. when to escalate?
+
+
+
+
+
+
+
+R6.2  Method
+
+Parameter
+
+Specification
+
+Round 1: Mode A internal usability
+
+n=6–8 KC advisors. Think-aloud moderated sessions. 60 minutes. Task scenarios: review and approve a correctly framed AI draft; identify and correct an error in an AI draft; handle a case where KCDE flags a Regulatory Conflict. Metrics: task completion rate; time-on-task vs. current baseline; error detection rate; SUS score.
+
+Round 2: Mode C external usability
+
+n=8–10 HR professionals from VoW Panel. Think-aloud. 45 minutes. Task scenarios: ask a jurisdiction-specific leave question; ask a termination procedure question; encounter a Human Escalation Path trigger and evaluate the handoff. Metrics: comprehension of response; action confidence rating; escalation trigger comprehension; SUS score.
+
+Validation thresholds
+
+Mode A: SUS ≥68; net time-per-case efficiency gain vs. current baseline; error detection rate ≥80% on seeded error cases. Mode C: correct action taken on AI response in ≥75% of scenarios; escalation trigger correctly interpreted in ≥85% of cases.
+
+Timeline
+
+Initiated at Phase 0 prototype completion — estimated M4–M6 of Phase 0 build.
+
+
+
+
+
+
+
+
+
+
+
+R7  Research Governance
+
+Element
+
+Specification
+
+Research owner
+
+Barry Reicherter, Director Market Research & VoC (SHRM / Scale Free Strategy)
+
+Review authority
+
+Alex Alonso reviews all research plans and findings before internal distribution. KC leadership reviews Phase 1 Track B findings (KC advisor interviews) before any operational implications are communicated to the KC team.
+
+Sequencing rule
+
+Corpus analysis (Track A) initiates before external research. External findings do not override corpus analysis — they validate and supplement it. Phase 1 internal track findings are not shared with the KC team until synthesis is complete to avoid priming effects in subsequent interviews.
+
+James awareness
+
+Given Thought Leadership&apos;s oversight of the KC function and James&apos;s noted skepticism of synthetic data approaches, KCDE research findings that touch on KC quality or advisor workflow are routed through Alex before any communication to James or his team. Framing emphasizes KCDE as advisor augmentation, not advisor replacement.
+
+VoW Synthetic boundary
+
+VoW Synthetic is not used to substitute for primary research in any phase. Once VoW validation is complete, synthetic personas may be used to supplement sub-threshold panel cells in quantitative phases — documented explicitly when used and not represented as primary human research.
+
+Synthesis cadence
+
+Phase 1: corpus analysis summary at Week 4; full Phase 1 synthesis at Week 10. Phase 2: synthesis report within 3 weeks of final session. Phase 3: findings report within 2 weeks of each usability round.
+
+
+
+
+
+
+
+
+
+
+
+R8  Research Budget Estimate
+
+Phase
+
+Activity
+
+Estimated Cost
+
+Notes
+
+Phase 1
+
+Corpus analysis (Track A) — structured analysis of KC case history
+
+$0–$5,000
+
+Primarily analyst time. No external cost if Qualtrics XM Discover access and Text IQ tags are already applied.
+
+Phase 1
+
+KC advisor interviews (Track B) — n=12
+
+$0–$2,000
+
+Internal population. No recruiter or incentive cost. Transcription and analysis time only.
+
+Phase 1
+
+Member survey (Track C) — n=350
+
+$10,000–$16,000
+
+SHRM VoW Panel internal rate. Programming, fielding, and top-line analysis.
+
+Phase 2A
+
+Concept validation quant — n=450
+
+$16,000–$24,000
+
+Member segment at internal rate; non-member segment at commercial panel rate. Full analysis report.
+
+Phase 2B
+
+Focus groups (HR professionals) — 4 sessions
+
+$16,000–$24,000
+
+Recruiter, incentives ($150/participant), moderation, analysis.
+
+Phase 2B
+
+KC advisor working sessions — 2 sessions
+
+$0–$2,000
+
+Internal. Facilitation time and synthesis only.
+
+Phase 3
+
+Usability testing — 2 rounds × 2 populations
+
+$6,000–$10,000
+
+Internal population (Mode A) at minimal cost. External HR professional participants require incentives.
+
+All phases
+
+Analysis, synthesis, and reporting
+
+$8,000–$12,000
+
+Research analyst time across full program.
+
+
+
+Total Estimated Range
+
+$56,000–$95,000
+
+Full program across 12–18 months. Phase 1 subset: $10,000–$23,000.
+
+
+
+
+
+
+
+— End of Document —
+
+
+
+ILS-KCDE-01  |  Revision 2  |  SHRM Intelligence Layer Studio  |  Internal Use Only  |  April 2026
+
+
+
+
+

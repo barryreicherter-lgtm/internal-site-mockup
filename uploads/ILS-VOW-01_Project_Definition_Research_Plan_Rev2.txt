@@ -1,0 +1,1634 @@
+
+
+
+
+SHRM Intelligence Layer Studio
+
+
+
+Project Definition: Voice of Work Synthetic
+
+
+
+ILS-VOW-01  |  Rev. 2 — April 2026  |  Phased Architecture + Integrated VoC Research Plan
+
+Project Code
+
+ILS-VOW-01
+
+Parent Initiative
+
+SHRM Intelligence Layer Studio (ILS)
+
+Classification
+
+Proprietary Computational Infrastructure / Enterprise Digital Twin Ecosystem
+
+Status
+
+Phase 0 — MVP & Accuracy Validation
+
+Date
+
+April 2026 — Revision 2 (phased stack architecture clarified)
+
+Prior Versions
+
+v1.0 Google-stack (March 24, 2026) — retired; v1.1 Microsoft-native (March 24, 2026) — retired; v2.0 Consolidated (April 2026) — superseded by this document
+
+Operative Stack
+
+Phased: Google stack (Phase 0–1); Microsoft-native (Phase 2+)
+
+Document Owner
+
+Barry Reicherter, Director Market Research & VoC / Scale Free Strategy
+
+ILS Sponsor
+
+Syed Wasey, EVP SHRM Business
+
+
+
+
+
+
+
+
+
+§1  Executive Summary & Strategic Intent
+
+
+
+Voice of Work (VoW) Synthetic is SHRM&apos;s workforce simulation and digital twin infrastructure — the engine that converts SHRM&apos;s longitudinal member data into machine-executable intelligence that can predict workforce behavior, audit AI systems against HR standards, and enable enterprise clients to simulate workforce decisions before committing to them.
+
+
+
+VoW Synthetic represents the most architecturally ambitious element of the Intelligence Layer Studio. Where KCDE converts SHRM&apos;s advisory expertise into a reasoning engine, VoW Synthetic converts SHRM&apos;s member population data into a computational workforce — a governed population of evidence-based personas that reflect how HR professionals and the workforces they manage actually think, behave, and respond.
+
+
+
+Its strategic value is threefold: it eliminates survey lag for SHRM&apos;s internal research function (estimated $200K+ annual cost avoidance); it creates a commercially licensable intelligence asset with no direct market equivalent; and it provides the precision calibration layer that makes the HR-X Solution Hub&apos;s Tier 3 predictive simulation capability architecturally unique among all competitors.
+
+
+
+STRATEGIC UPDATE — Phased Architecture Clarification
+
+
+
+This document is Revision 2, superseding the April 2026 consolidated version. Key correction: VoW Synthetic uses a phased technical architecture — not a single Microsoft-native stack. Phase 0 and Phase 1 operate on the Google stack (Qualtrics → BigQuery for the Memory Layer, GWI reference data for the Extension Layer, Vertex AI Vector Search for retrieval, Gemini via Vertex AI for inference, Looker for validation). The Microsoft-native stack (Azure Fabric, Azure OpenAI, Azure AI Search, Dataverse, Purview) becomes the operative architecture at Phase 2 when enterprise-scale deployment, tenant isolation, SOC2 Type II compliance, and Microsoft ecosystem integration are required. This phasing lowers Phase 0 cost substantially, avoids cross-cloud data movement during validation, and defers enterprise governance overhead until it is actually needed.
+
+
+
+
+
+
+
+
+
+§2  Persona Architecture — Phased Layer Introduction
+
+
+
+A VoW Synthetic respondent is an Evidence-Based Workforce Persona constructed from up to four grounding layers. However, not all four layers are required to prove the 90% accuracy benchmark — and not all four are required for Phase 0 or Phase 1 operation. The phased introduction of layers is deliberate: each phase adds the minimum data architecture required to deliver the phase&apos;s objectives, avoiding overengineering before it is justified by validation evidence.
+
+Layer
+
+Depth
+
+Phase 0 Implementation
+
+Later Phase Expansion
+
+Memory Layer
+(Longitudinal Survey History)
+
+Three years of longitudinal survey responses from SHRM member panel
+
+Qualtrics → BigQuery ingestion. Text IQ topic tagging pre-applied. Embeddings via Vertex AI Vector Search. This layer alone is sufficient to construct the initial ~13,000 personas and validate the 90% accuracy benchmark.
+
+Phase 2+: migration to Microsoft Fabric + Azure OpenAI embeddings + Azure AI Search with per-persona isolation for enterprise scale.
+
+Extension Layer
+(Non-HR Workforce Representation)
+
+Global workforce attitudinal data (GWI) for constructing non-HR employee personas
+
+GWI reference dataset ingested into BigQuery alongside the SHRM Qualtrics corpus. Enables simulation of enterprise workforces — not just HR practitioner populations. Critical for Mode D enterprise twin use cases (RTO, compensation, workforce reduction) where the population being simulated is the broader employee base.
+
+Phase 2+: GWI reference data migrates into Fabric Lakehouse as part of the unified enterprise architecture.
+
+Identity Layer
+(Professional Reality)
+
+Verified employment, demographic, and career attributes
+
+Not required in Phase 0. Basic demographic anchoring handled within the Qualtrics panel data itself (roles, industries, tenure, company size all captured in survey metadata).
+
+Phase 1–2: NetSuite ingested for verified professional identity; Phase 2+: canonicalized in Microsoft Dataverse with business rule enforcement for commercial and enterprise deployment.
+
+Journey Layer
+(Behavioral Telemetry)
+
+Real-time and historical behavioral signals
+
+Not required in Phase 0. Adobe CJA ingestion is explicitly Phase 2+ — behavioral telemetry is not necessary for the Phase 0 accuracy validation or for early Mode A internal research use cases.
+
+Phase 2+: Adobe CJA ingested via Fabric Eventhouse for commercial and enterprise modes that require say/do gap modeling.
+
+
+
+
+
+
+
+Phase 0 Simplification Rationale
+
+
+
+The 90% accuracy benchmark that Phase 0 must prove is a correlation between human survey responses and synthetic survey responses on the same instrument. That comparison requires only the Memory Layer (survey history) plus demographic anchoring from the panel metadata. Behavioral telemetry (Journey Layer) and verified external identity (Identity Layer via NetSuite/Dataverse) do not improve Phase 0 accuracy validation — they add architecture before it is needed. Extension Layer (GWI) is the one Phase 0 addition to the original SHRM panel corpus because enterprise twin use cases in Mode D require representing non-HR employee populations that SHRM&apos;s member panel does not contain.
+
+
+
+
+
+
+
+
+
+§3  Intelligence Layer — HR-X and the BASK Standard
+
+
+
+The Intelligence Layer distinguishes behavioral mimicry (replicating what the human seed would say) from standards-based expert reasoning (applying SHRM&apos;s authoritative HR standards to what the persona should do). Both modes are available; the Reasoning Dial governs which applies in a given operational context.
+
+
+
+
+
+
+
+3.1  SHRM BASK — Authoritative Logic Standard
+
+
+
+The SHRM Body of Applied Skills and Knowledge is treated as executable ground truth. In Phase 0, it is chunked and vectorized via Vertex AI Vector Search alongside the persona memory vectors. In Phase 2+, BASK vectors migrate to Azure AI Search with rich metadata (role, jurisdiction, discipline). BASK is retrieved prior to inference in all Standardized Excellence mode operations — it always constrains reasoning and is never a post-hoc filter.
+
+
+
+
+
+
+
+3.2  HR-X Reasoning Engine
+
+
+
+HR-X is the active reasoning orchestration layer. In Phase 0 and Phase 1, it runs on Vertex AI with Gemini as the inference model. At Phase 2, it migrates to Azure AI Studio Agents with Semantic Kernel orchestration and Azure OpenAI (GPT-4.1 / GPT-4o / o-series) inference. Core capabilities remain constant across both stacks: deterministic Think → Verify → Act reasoning loop; mandatory BASK retrieval and validation; recursive planning and tool invocation; token, persona, and scope enforcement.
+
+
+
+
+
+
+
+3.3  Adaptive Governance — The Reasoning Dial
+
+Mode Setting
+
+Applies To
+
+Behavior
+
+Use Case
+
+Behavioral Fidelity
+
+Modes A and C
+
+Minimal BASK intervention; safety and ethics filters only. Simulation mirrors real-world human sentiment including biases and suboptimal reasoning patterns.
+
+Predictive simulation of how an actual workforce will respond to a policy or structural change. Internal research and predictive analytics.
+
+Standardized Excellence
+
+Modes B and D
+
+Mandatory BASK override; bias suppression; policy normalization to SHRM standards. Simulation reflects how the workforce should respond under HR best practice conditions.
+
+Agentic auditing of third-party AI outputs. Enterprise workforce twin calibration for prescriptive guidance.
+
+
+
+
+
+
+
+
+
+§4  Operational Modes
+
+
+
+VoW Synthetic operates across four distinct modes, each serving a different user population with a different commercial model and a different governance posture. The Reasoning Dial setting differs by mode; all modes operate under the Proprietary Intelligence Boundary — persona infrastructure, BASK vectors, and simulation outputs remain in SHRM-owned infrastructure at all times.
+
+Mode
+
+Name
+
+Primary User
+
+Reasoning Dial
+
+Commercial Model
+
+A
+
+Predictive Simulator (Internal)
+
+SHRM Research / Insights team
+
+Behavioral Fidelity
+
+Internal cost avoidance (~$200K+ annual). No external revenue. Phase 0 operational target.
+
+B
+
+Agentic Auditor (SaaS Certification)
+
+SHRM Business / enterprise SaaS partners
+
+Standardized Excellence
+
+Per-engagement certification fee ($35K–$100K). Phase 1 commercial target.
+
+C
+
+Proxy Partner (Commercial)
+
+Commercial data partners / sponsors
+
+Behavioral Fidelity
+
+Usage-based API licensing and executive dashboard subscriptions. Phase 1–2 commercial target.
+
+D
+
+Enterprise Workforce Twin (Consultative)
+
+Enterprise CHROs and CFOs (via Hub Tier 3)
+
+Standardized Excellence
+
+Included in Hub Tier 3 subscription plus per-sprint simulation fees. Phase 2 enterprise target.
+
+
+
+
+
+
+
+
+
+
+
+4.1  The Precision Loop — Hub Tier 3 Integration
+
+
+
+Mode D represents VoW Synthetic&apos;s most architecturally distinctive capability and the direct integration point with the HR-X Solution Hub. The precision loop works as follows:
+
+
+
+
+
+Enterprise completes the HR-X Assessment (Tier 1). Subpractice maturity scores computed by SHRM-owned scoring API.
+
+
+
+
+
+Subpractice scores become calibration parameters injected into the VoW Synthetic Digital Twin for that enterprise. The twin is not built on generic workforce archetypes — it is calibrated to this organization&apos;s specific capability profile.
+
+
+
+
+
+Enterprise submits a Simulation Sprint scenario (return-to-office policy, L&D reallocation, compensation restructure, workforce reduction) to run against their calibrated twin.
+
+
+
+
+
+VoW Synthetic runs inference in Standardized Excellence mode — applying SHRM BASK standards to surface not just what will happen but what should happen given HR best practices.
+
+
+
+
+
+Results returned to Hub Mode 2b as a CHRO-facing simulation report. SHRM Solutions Architect reviews before client delivery.
+
+
+
+
+
+
+
+The competitive moat: no HR technology vendor can replicate this because no vendor has SHRM&apos;s combination of a validated organizational maturity instrument, a proprietary longitudinal workforce intelligence corpus, and a simulation engine calibrated to HR professional behavior. The assessment generates the calibration data. The corpus generates the personas. The simulation engine connects them.
+
+
+
+
+
+
+
+
+
+
+
+
+§5  Phased Technical Architecture
+
+
+
+
+
+
+
+5.1  Phase 0 (Months 1–6) — Google Stack
+
+
+
+Phase 0 objective: prove 90% Ground Truth correlation between synthetic and human responses on a matched validation sample, and establish board confidence for continued investment. Scope: approximately 13,000 synthetic personas including non-HR employee personas (via GWI), limited reasoning depth, internal use (Mode A) only.
+
+Component
+
+Google Stack Service
+
+Function in Phase 0
+
+Corpus Storage
+
+BigQuery
+
+Houses the Qualtrics three-year survey history (Memory Layer) and GWI global workforce data (Extension Layer). Single-cloud architecture eliminates cross-cloud data movement during validation.
+
+Vectorization & Retrieval
+
+Vertex AI Vector Search
+
+Persona memory vectors and BASK embeddings stored natively alongside BigQuery. Retrieval at inference time with no data movement overhead.
+
+Inference
+
+Gemini via Vertex AI
+
+LLM inference for persona simulation and synthetic response generation. Model version selected dynamically by task rigor (Gemini 1.5 Pro for complex reasoning; Gemini Flash for high-volume low-complexity runs).
+
+Reasoning Orchestration
+
+Vertex AI Agent Engine
+
+Implements the Think → Verify → Act reasoning loop. Handles multi-step task execution and BASK enforcement.
+
+Validation Dashboards
+
+Looker
+
+Real-time human vs. synthetic response delta analysis. Scientific adjudication layer for the 90% accuracy benchmark. Produces the Parallel Human vs. Synthetic Delta Report as the formal Phase 0 board deliverable.
+
+PII Masking
+
+Qualtrics automated PII masking + BigQuery column-level security
+
+Qualtrics pre-masks PII before data egress to BigQuery. BigQuery column-level security enforces additional access restrictions. No Purview governance overhead in Phase 0.
+
+
+
+
+
+
+
+
+
+
+
+5.2  Phase 1 (Months 7–12) — Google Stack with Selective Enterprise Additions
+
+
+
+Phase 1 continues on the Google stack for core architecture. Selective additions are introduced as specific commercial or enterprise use cases require them:
+
+
+
+
+
+NetSuite identity data ingestion begins for commercial Mode B and Mode C use cases that require verified professional identity anchoring beyond what Qualtrics panel metadata provides
+
+
+
+
+
+Adobe CJA behavioral telemetry ingestion begins only if commercial partner Phase 1 use cases demand say/do gap modeling — not added speculatively
+
+
+
+
+
+Microsoft-native stack migration planning begins in parallel but no architecture migration occurs during Phase 1
+
+
+
+
+
+
+
+
+
+
+
+5.3  Phase 2 (Year 2+) — Microsoft-Native Migration
+
+
+
+Phase 2 triggers migration to the Microsoft-native stack when three conditions are met: (1) Phase 0 accuracy benchmark validated and Mode A operational; (2) first commercial Mode B / Mode C engagements demonstrate market demand; (3) enterprise Mode D commitments via Hub Tier 3 justify the governance and tenant isolation overhead. The migration rationale at Phase 2 is not cost or capability — it is enterprise integration and compliance:
+
+
+
+
+
+Tenant-isolated enterprise twin data (required for Mode D multi-tenant commercial deployment)
+
+
+
+
+
+SOC2 Type II compliance at enterprise scale (Microsoft Purview + Entra ID governance)
+
+
+
+
+
+Native integration with enterprise customer Microsoft environments (Azure API Management, M365 Copilot)
+
+
+
+
+
+Full four-layer persona architecture (Memory + Extension + Identity via Dataverse + Journey via Adobe CJA / Fabric Eventhouse)
+
+
+
+
+
+Capability
+
+Phase 0–1 (Google)
+
+Phase 2+ (Microsoft)
+
+Corpus Storage
+
+BigQuery
+
+Microsoft Fabric (OneLake, Lakehouse, Eventhouse)
+
+Vector Store
+
+Vertex AI Vector Search
+
+Azure AI Search
+
+Inference
+
+Gemini (Vertex AI)
+
+Azure OpenAI (GPT-4.1 / GPT-4o / o-series)
+
+Orchestration
+
+Vertex AI Agent Engine
+
+Azure AI Studio Agents + Semantic Kernel
+
+Identity / Metadata
+
+Qualtrics panel metadata + (Phase 1) NetSuite
+
+Microsoft Dataverse (canonical identity, business rules)
+
+API Gateway
+
+Vertex AI endpoints
+
+Azure API Management
+
+Validation Dashboards
+
+Looker
+
+Power BI Direct Lake
+
+PII & Governance
+
+Qualtrics masking + BigQuery column-level security
+
+Microsoft Purview + Entra ID
+
+
+
+
+
+
+
+
+
+§6  Phase 0 Investment & Revenue
+
+
+
+
+
+
+
+6.1  Phase 0 Cost Estimate — Google Stack
+
+
+
+The phased architecture materially reduces Phase 0 cost compared to a Microsoft-native deployment at the same scale. Google stack services for a ~13,000-persona validation deployment, six-month duration, internal use only:
+
+Cost Category
+
+Phase 0 Estimate
+
+Driver
+
+Gemini inference (Vertex AI)
+
+$6,000–$10,000
+
+Persona construction and validation inference runs. Gemini Flash for high-volume generation; Gemini 1.5 Pro for validation delta scoring.
+
+BigQuery storage and compute
+
+$2,000–$4,000
+
+Qualtrics corpus ingestion + GWI reference data. Storage and analytical query workload at validation scale.
+
+Vertex AI Vector Search
+
+$2,000–$4,000
+
+Persona and BASK vector indexing for ~13,000 personas. Query volume for retrieval during inference.
+
+Data Activation (Qualtrics → BigQuery)
+
+$6,000–$8,000
+
+ETL pipeline development; scheduled sync; Text IQ tag preservation; GWI dataset integration.
+
+Ontology Mapping (HR-X / BASK tagging)
+
+$6,000–$10,000
+
+Automated tagging of corpus against HR-X practice areas and BASK competency taxonomy.
+
+Looker validation dashboards
+
+$2,000–$4,000
+
+Parallel Human vs. Synthetic Delta Report infrastructure. Scientific adjudication layer setup.
+
+Phase 0 Total
+
+$24,000–$40,000
+
+Go/No-Go gate cost. Substantially lower than the prior $30K–$45K Microsoft-native estimate due to single-cloud architecture and deferred governance overhead.
+
+
+
+
+
+
+
+Investment Cascade Note
+
+
+
+Revised VoW Synthetic Phase 0 estimate ($24K–$40K) runs in parallel with KCDE Phase 0 ($45K). Combined maximum sunk cost before board go/no-go is approximately $69K–$85K — lower than the prior $75K–$90K estimate. University Nodes ($225K activation) are gated behind both Phase 0 validations. Hub Tier 3 integration is gated behind VoW Phase 0 achieving the 90% accuracy benchmark.
+
+
+
+
+
+
+
+
+
+
+
+6.2  Revenue Model & Cost Avoidance
+
+Revenue Stream
+
+Year 1
+
+Year 2
+
+Notes
+
+Internal cost avoidance (Mode A)
+
+$200,000
+
+$450,000
+
+Survey lag elimination. Phase 0 operational — requires only Google stack.
+
+Agentic Auditing / AI Certification (Mode B)
+
+$35,000–$100,000
+
+$200,000–$400,000
+
+Per-engagement certification sprints. Initiates Phase 1 on Google stack; may migrate to Microsoft stack if enterprise clients require it.
+
+API Licensing / Executive Dashboards (Mode C)
+
+$25,000
+
+$100,000–$225,000
+
+Usage-based commercial partner access. Microsoft-native stack required if commercial partner integration demands Azure API Management.
+
+Hub Tier 3 / Simulation Sprint revenue (Mode D)
+
+Included in Hub projections
+
+Included in Hub projections
+
+Phase 2 — requires Microsoft-native stack for enterprise tenant isolation.
+
+Cash-flow positive milestone
+
+Month 14
+
+Recurring
+
+Driven primarily by Mode A cost avoidance and first Mode B engagements, both achievable on Google stack.
+
+
+
+
+
+
+
+
+
+
+
+6.3  Accuracy Benchmark & Validation Framework
+
+
+
+The 90% Ground Truth correlation threshold is the sole Phase 0 go/no-go criterion. Validation methodology (on Google stack):
+
+
+
+
+
+Parallel fielding: identical survey instrument deployed simultaneously to human panel sample and matched synthetic persona cohort
+
+
+
+
+
+Automated delta measurement in BigQuery: response distributions compared across item-level, scale-level, and construct-level metrics
+
+
+
+
+
+Looker serves as the scientific adjudication layer — producing the Parallel Human vs. Synthetic Delta Report that is the formal Phase 0 deliverable to the board
+
+
+
+
+
+Threshold: if synthetic response distribution exceeds 10% delta from human baseline on any major construct, that construct&apos;s logic or weighting is adjusted before re-validation
+
+
+
+
+
+University Nodes escalation: divergent patterns that persist after internal adjustment are referred to the Indiana University Kelley Node for behavioral benchmarking and independent scientific validation
+
+
+
+
+
+
+
+
+
+§7  ILS Portfolio Positioning
+
+ILS Project
+
+Relationship to VoW Synthetic
+
+Dependency
+
+ILS-KCDE-01 (Knowledge Center Decision Engine)
+
+Parallel Phase 0 investment on same Google stack. KCDE&apos;s corpus is advisor case history; VoW Synthetic&apos;s corpus is member panel data. Distinct capabilities — not substitutes.
+
+Parallel; independent validation tracks. Shared Vertex AI infrastructure keeps combined Phase 0 spend efficient.
+
+ILS-XHUB-01 (HR-X Hub)
+
+Mode D enterprise twin is the Hub&apos;s Tier 3 predictive simulation capability. VoW Synthetic Phase 0 gates Hub Tier 3 activation.
+
+One-directional: Hub Tier 3 consumes VoW Synthetic. VoW Phase 0 must complete before Hub Tier 3 can be sold.
+
+ILS-UNODE-01 (University Nodes)
+
+Indiana University Kelley Node provides independent scientific validation of the 90% accuracy benchmark. University Nodes are gated behind VoW Phase 0 internal validation.
+
+Phase 0 internal validation precedes University Nodes external validation.
+
+ILS-HACK-01 (Staff Hackathons)
+
+Hackathon prototypes that require workforce simulation capability are natural Mode A use cases and may generate additional internal demand for VoW outputs.
+
+Independent; VoW availability informs hackathon scope.
+
+
+
+
+
+
+
+
+
+
+
+
+§8  Integrated VoC Research Plan — ILS-VOW-01
+
+
+
+This research plan governs all primary and secondary research conducted in support of VoW Synthetic development, validation, and market readiness. Phase status indicators reflect current state. VoW Synthetic&apos;s research plan has a distinctive structural feature relative to KCDE and XHUB: because the product is a platform with no direct market comparator, needs and concept validation research must be designed to help respondents understand and react to a genuinely novel capability — not evaluate a variation on something they already know.
+
+
+
+
+
+
+
+Phase 1: Needs Discovery
+
+
+
+▶ ACTIVE
+
+
+
+Phase 2A: Concept Validation (Quant)
+
+
+
+◷ PLANNED
+
+
+
+Phase 2B: Concept Validation (Qual)
+
+
+
+◷ PLANNED
+
+
+
+Phase 3: Usability / UX Testing
+
+
+
+○ FUTURE-GATED
+
+
+
+
+
+
+
+
+
+
+
+R1  Research Rationale & The Novel Concept Problem
+
+
+
+VoW Synthetic presents a research design challenge that XHUB-01 and KCDE-01 do not: it has no direct market comparator that respondents can use as an anchor for their reactions. HR leaders understand consulting engagements (XHUB analogue) and AI-assisted guidance tools (KCDE analogue). They do not have a readily available mental model for a synthetic workforce population that can simulate their organization&apos;s response to a policy change before they implement it.
+
+
+
+This means research instruments must do more educational work than is typical for concept testing. Stimulus materials must be richer. Qualitative sessions must include time for concept familiarization before reaction measurement. And needs discovery must frame questions in terms of concrete problems the respondent already experiences — not in terms of features VoW Synthetic provides — so that the connection between their existing pain and the platform&apos;s capability is made inductively rather than imposed.
+
+
+
+VoW Synthetic also serves three user populations with fundamentally different needs, different sophistication levels, and different decision-making authority:
+
+Population
+
+Description
+
+Primary Mode
+
+Access Level
+
+Research Priority
+
+SHRM Internal Research Team
+
+Barry&apos;s direct team and adjacent research/insights staff who will use VoW Synthetic in Mode A to replace or supplement traditional survey fielding. Fully captive, high-sophistication audience.
+
+A — Predictive Simulator
+
+Full access — no recruitment
+
+Phase 1 (needs) and Phase 3 (usability). Concept testing less critical — they understand the problem intimately.
+
+Commercial Data Partners / Sponsors
+
+Market research firms, HR technology vendors, and corporate sponsors who license access to SHRM&apos;s workforce intelligence (Mode C). Mid-sophistication; procurement-driven.
+
+C — Proxy Partner
+
+Moderate — warm outreach via SHRM partnerships team
+
+Phase 1 (needs) and Phase 2 (concept). Usability testing limited to API documentation and governance interface.
+
+Enterprise CHROs / People Analytics Leaders
+
+Senior HR executives who will use Mode D simulation outputs (via the Hub) for workforce decision support. High decision-making authority; limited technical sophistication; need to trust outputs without understanding how they are produced.
+
+D — Enterprise Twin (via Hub)
+
+Moderate — Executive Network, Hub pilot clients
+
+Phase 2 (concept) primary. Needs largely captured through Hub research. Usability testing through Hub Phase 3.
+
+
+
+
+
+
+
+
+
+
+
+R2  Existing Data Inventory — Needs Phase Coverage
+
+
+
+VoW Synthetic has the thinnest existing data coverage of the three ILS projects requiring research plans. Most of what exists speaks to the market opportunity for AI-powered HR intelligence in general — not to the specific needs VoW Synthetic addresses for each of its three user populations. Primary research fills larger gaps here than in XHUB or KCDE.
+
+Data Asset
+
+Relevant Findings
+
+Needs Questions Addressed
+
+Remaining Gap
+
+AI Adoption & Maturity Survey (SHRM, via ILS Strategy Brief)
+
+69.8% of HR professionals use AI weekly. 7.3% enterprise-approved. Structural divide between identic (ad hoc) and agentic (enterprise) AI.
+
+Establishes the market context for a governed, enterprise-grade AI workforce intelligence platform. Validates urgency of the agentic AI gap that VoW Synthetic helps fill.
+
+Does not address commercial data partner appetite for synthetic workforce data specifically, or enterprise CHRO demand for pre-decisional workforce simulation as a category.
+
+CHRO Priorities & Perspectives 2025/2026
+
+Financial pressure (45% cite as challenge). Leadership development top priority. AI adaptation challenge cited by 29%.
+
+Frames the decision scenarios VoW Synthetic Mode D simulation will need to address — attrition under financial pressure, L&D ROI, workforce restructuring.
+
+Does not address how CHROs currently make workforce decisions — what data they use, what they wish they had, what they trust vs. distrust in workforce analytics.
+
+ILS Strategy Brief — B2B Qualitative Interviews
+
+Perception vacuum on SHRM&apos;s AI currency. Enterprise leaders not yet seeing SHRM as a cutting-edge AI infrastructure provider.
+
+Contextualizes the positioning challenge for VoW Synthetic&apos;s commercial modes — SHRM&apos;s authority is an asset; its perceived AI capability is not yet a selling point.
+
+Small sample; not specific to synthetic data or simulation capability. Does not address commercial partner willingness to license synthetic data vs. traditional panel data.
+
+Hub Spec v4.1 — §8 AI Architecture Section
+
+Clear articulation of VoW Synthetic&apos;s unique competitive advantage: no vendor has SHRM&apos;s combination of validated maturity instrument + longitudinal workforce corpus + simulation engine.
+
+Provides the competitive differentiation framing that concept testing instruments should test — does this perceived advantage actually resonate with enterprise buyers?
+
+Internal-facing document; not validated against external buyer reactions. Competitive moat framing is hypothesis, not confirmed.
+
+
+
+
+
+
+
+Needs Phase Assessment
+
+
+
+Unlike KCDE where the case corpus answered most needs questions before external research was commissioned, VoW Synthetic&apos;s needs phase requires more genuine primary discovery — particularly for the commercial partner and enterprise CHRO populations. The SHRM internal research team&apos;s needs are well-understood through direct experience. The commercial and enterprise populations require dedicated qualitative work before concept instruments can be designed with confidence.
+
+
+
+
+
+
+
+
+
+
+
+R3  Phase 1: Needs Discovery
+
+
+
+
+
+Phase Status: ACTIVE
+
+
+
+R3.1  Track A — SHRM Internal Research Team Needs (Mode A)
+
+
+
+The internal research team is the first deployment target for VoW Synthetic and the population with the clearest, most articulable needs. Their input directly shapes Mode A product design and the accuracy validation framework. Research here is primarily a structured needs elicitation — not exploratory discovery.
+
+Research Question
+
+Method
+
+Output
+
+Which research use cases currently cause the greatest survey lag, and what is the cost (time and budget) of that lag per study?
+
+Structured interviews with SHRM research leads and VoC team. Work-back from project timelines to quantify lag.
+
+Survey lag cost model. Prioritized Mode A use case list ranked by internal value.
+
+What accuracy threshold does the internal team require before substituting synthetic responses for human responses on a given use case — and does that threshold vary by question type?
+
+Interview + working session. Present hypothetical accuracy scenarios and ask for go/no-go decisions.
+
+Accuracy threshold requirements by use case type. Inputs to Phase 0 validation framework design.
+
+What output format does the internal team need from Mode A — raw response distributions, narrative summaries, automated slide decks, or API-accessible data?
+
+Interview + prototype reaction (paper prototype of Mode A output formats).
+
+Mode A interface requirements for Phase 3 usability testing scope.
+
+What are the non-negotiable quality gates before the internal team would stake a published research finding on synthetic data?
+
+Structured working session with research leadership. Scenario-based: &apos;Would you publish this finding if the data came from VoW Synthetic alone?&apos;
+
+Internal publication standard for synthetic-augmented research. Governance policy input.
+
+
+
+
+
+
+
+R3.2  Track B — Commercial Partner Needs (Mode C)
+
+
+
+Commercial data partners — market research firms, HR technology vendors, and corporate sponsors — represent the Mode C revenue opportunity. Their needs are the least documented in existing data. This track is the most genuinely exploratory of the three.
+
+Parameter
+
+Specification
+
+Target population
+
+Market research and analytics leaders at: (1) HR technology vendors with survey-based research programs (Qualtrics, Workday, ADP, Ceridian); (2) management consulting firms with HR practice groups using workforce survey data (Mercer, Aon, Willis Towers Watson); (3) corporate HR departments with large-scale workforce research programs that currently purchase external panel data.
+
+Sample size
+
+n=12–16 in-depth interviews across the three segments (4–6 per segment)
+
+Recruitment
+
+Warm outreach via SHRM partnerships team and existing sponsor relationships. SHRM business development contacts as entry point.
+
+Interview length
+
+60 minutes
+
+Discussion guide topics
+
+Current data sourcing for workforce research: what panels they use, what they pay, what they find insufficient; synthetic data familiarity and current usage or non-usage; what would make synthetic workforce data credible enough to use in client-facing deliverables; governance and provenance requirements — what documentation they need before licensing synthetic data; SHRM brand as a provenance signal — does SHRM&apos;s authority make the synthetic data more credible than a generic synthetic data provider; pricing model preferences for API-based access vs. per-study licensing.
+
+Analysis
+
+Thematic analysis by segment. Key outputs: credibility requirements map; governance documentation requirements; pricing model preferences; SHRM provenance value assessment.
+
+Timeline
+
+Weeks 3–10 from research plan activation
+
+
+
+
+
+
+
+R3.3  Track C — Enterprise CHRO / People Analytics Needs (Mode D)
+
+
+
+Enterprise workforce decision-makers are the Mode D population. Their needs are partially addressed by XHUB Phase 1 research — both research programs study the same CHRO population. Coordination between the two research plans avoids duplication and allows VoW-specific questions to be appended to XHUB interview guides where the same respondents are accessed.
+
+Parameter
+
+Specification
+
+Coordination with XHUB research
+
+VoW Mode D needs questions are incorporated as a module within XHUB Phase 1 enterprise buyer interviews wherever the same respondent is accessible. Separate VoW-only recruitment is limited to People Analytics leaders who may not be reached in the CHRO-focused XHUB sample.
+
+Unique VoW research questions
+
+How do CHROs currently test workforce decisions before implementing them — what data, models, or consultants do they use for pre-decisional analysis? What workforce decisions have they made in the past 24 months where they wished they had better predictive data before acting? What would make them trust a simulation of their workforce&apos;s response to a policy change — and who in the organization would need to validate the methodology before they would act on it?
+
+People Analytics supplement
+
+n=6–8 additional interviews specifically with VP-level People Analytics leaders who are technically sophisticated and can evaluate the simulation methodology in more depth than a generalist CHRO.
+
+Recruitment for supplement
+
+SHRM Executive Network; LinkedIn outreach to People Analytics leaders at mid-to-large enterprises.
+
+Timeline
+
+Concurrent with XHUB Phase 1 (Weeks 1–8). People Analytics supplement Weeks 6–12.
+
+
+
+
+
+
+
+R3.4  Phase 1 Validation Criteria (Gate to Phase 2)
+
+
+
+
+
+Internal Mode A: accuracy threshold requirements documented by use case type; top-3 use case priorities ranked by internal value; Mode A output format requirements specified
+
+
+
+
+
+Commercial Mode C: at least one credibility requirement theme and one governance requirement theme identified across all partner segments; SHRM provenance value assessed (positive, neutral, or negative signal)
+
+
+
+
+
+Enterprise Mode D: pre-decisional analysis current practice documented; trust threshold conditions identified; at least three simulation scenario types confirmed as high-value by CHRO population
+
+
+
+
+
+No fatal market barrier identified — no finding that synthetic workforce data is categorically unacceptable to any target population for reasons that cannot be addressed through design or validation
+
+
+
+
+
+
+
+
+
+
+
+R4  Phase 2A: Concept Validation (Quantitative)
+
+
+
+
+
+Phase Status: PLANNED — pending Phase 1 gate
+
+
+
+Phase 2A quantitative concept validation faces the novel concept problem identified in R1. Standard concept testing instruments assume respondents can evaluate appeal relative to existing alternatives. VoW Synthetic requires a more structured educational stimulus before reaction measurement — otherwise appeal ratings reflect confusion, not genuine assessment.
+
+
+
+R4.1  Instrument Design Principle — Education Before Evaluation
+
+
+
+The Phase 2A survey instrument must include a comprehension-building stimulus section before any appeal or reaction items. The stimulus section presents three concrete simulation scenarios in plain language — not technical descriptions of the platform — and asks respondents to evaluate the scenarios as workforce decision-support tools. Only after the scenarios are understood and reacted to does the instrument reveal that the outputs are produced by a synthetic workforce population grounded in SHRM member data.
+
+
+
+This &apos;scenario-first, platform-second&apos; sequencing prevents the instrument from asking respondents to evaluate a concept they cannot fully picture, and prevents SHRM branding from contaminating initial reactions to the underlying capability.
+
+
+
+R4.2  Research Questions
+
+
+
+
+
+How appealing are concrete VoW Synthetic simulation outputs — presented as scenario results before the platform is explained — to each target population?
+
+
+
+
+
+After the platform is explained, does overall appeal increase, decrease, or hold? What drives the direction of change?
+
+
+
+
+
+How does appeal and credibility vary by: role level, organization size, People Analytics function maturity, and current data sophistication?
+
+
+
+
+
+Which simulation scenario types generate the highest appeal: return-to-office, workforce reduction, L&D ROI, compensation restructure, or org redesign?
+
+
+
+
+
+What is the perceived value differential between VoW Synthetic outputs (&apos;grounded in SHRM&apos;s 330,000-member longitudinal data&apos;) vs. generic AI workforce simulation (&apos;trained on public workforce data&apos;)?
+
+
+
+
+
+For commercial partners: how does synthetic data framed as &apos;SHRM-governed&apos; compare to human panel data in terms of perceived credibility for client-facing deliverables?
+
+
+
+
+
+
+
+R4.3  Method
+
+Parameter
+
+Specification
+
+Target populations and samples
+
+Three separate samples, fielded concurrently: (1) SHRM members / HR professionals (n=250) — VoW Research Panel; (2) People Analytics and workforce research practitioners (n=150) — commercial panel or LinkedIn; (3) Market research / commercial data buyers (n=100) — warm outreach supplement to interview sample.
+
+Stimulus design
+
+Section 1 (Education): Three simulation scenario vignettes presented as &apos;workforce intelligence reports&apos; — no mention of synthetic data or SHRM. Respondents evaluate each vignette on usefulness and credibility. Section 2 (Reveal): Platform description explaining that outputs are produced by VoW Synthetic — a synthetic workforce population grounded in three years of SHRM member data. Section 3 (Evaluation): Full appeal and differentiation battery now that the platform is understood.
+
+Key measures
+
+Pre-reveal vignette usefulness and credibility ratings; post-reveal overall appeal (0–10); comprehension check items; differentiation vs. generic AI simulation (paired comparison); SHRM provenance premium (willingness to pay more for SHRM-governed vs. unbranded synthetic data); scenario type preference ranking; adoption intent by population segment.
+
+Analysis
+
+Pre/post reveal appeal comparison (within-subject); segment-level appeal profiles; provenance premium quantification; scenario type preference ranking; adoption intent drivers via regression.
+
+Timeline
+
+Weeks 10–18 from research plan activation
+
+
+
+
+
+
+
+R4.4  Phase 2A Validation Criteria
+
+
+
+
+
+Pre-reveal scenario vignette usefulness mean ≥6.5/10 across all three populations — confirms the underlying output is valuable before the platform framing is introduced
+
+
+
+
+
+Post-reveal overall appeal does not decline significantly from pre-reveal usefulness rating — confirms the platform framing does not create net negative reactions
+
+
+
+
+
+SHRM provenance premium confirmed: SHRM-governed framing rated more credible than unbranded synthetic data by statistically significant margin in at least two of three populations
+
+
+
+
+
+At least two simulation scenario types achieve >60% &apos;very useful&apos; or &apos;extremely useful&apos; ratings among enterprise CHRO / People Analytics segment
+
+
+
+
+
+
+
+
+
+
+
+R5  Phase 2B: Concept Validation (Qualitative)
+
+
+
+
+
+Phase Status: PLANNED — concurrent with Phase 2A
+
+
+
+R5.1  Research Questions
+
+
+
+
+
+After a structured concept familiarization exercise, what do target users say VoW Synthetic does — and does their characterization match the intended positioning?
+
+
+
+
+
+What is the primary objection to acting on VoW Synthetic outputs — methodological skepticism, data provenance concerns, governance uncertainty, or organizational politics — and which objections are addressable through design vs. fundamental?
+
+
+
+
+
+For commercial partners: what would need to be true about VoW Synthetic&apos;s documentation, governance, and validation record before they would include its outputs in a client deliverable?
+
+
+
+
+
+For enterprise CHROs: who else in the organization would need to approve the use of synthetic workforce simulation before a CHRO would act on it — CFO, legal, board, People Analytics team?
+
+
+
+
+
+What language resonates when describing VoW Synthetic&apos;s core capability? What language creates confusion or credibility concerns? (Specific terms to test: &apos;Digital Twin,&apos; &apos;synthetic respondents,&apos; &apos;workforce simulation,&apos; &apos;evidence-based personas,&apos; &apos;predictive workforce intelligence.&apos;)
+
+
+
+
+
+
+
+R5.2  Method
+
+Parameter
+
+Specification
+
+Format
+
+Three separate session types, one per population: (1) Internal SHRM research team working session; (2) Commercial partner focus groups; (3) Enterprise CHRO / People Analytics sessions. Populations are never mixed — their sophistication levels, vocabulary, and decision contexts are too different.
+
+Internal working session
+
+1 session × 6–8 SHRM research team members. Co-design format: team reacts to Mode A workflow concept and validates accuracy threshold requirements from Phase 1 Track A interviews. 90 minutes. In-person preferred.
+
+Commercial partner focus groups
+
+2 sessions × 4–5 participants per session. Online. 90 minutes. Recruited from Phase 1 Track B interview pool plus additional warm outreach. Stimulus: governance documentation mock-up plus a sample synthetic data output report.
+
+Enterprise CHRO / People Analytics sessions
+
+2 sessions × 4–5 participants. Online. 90 minutes. Separate sessions for CHRO generalists and People Analytics specialists — different stimulus depth. Stimulus: simulation scenario narrative with methodology summary; no technical architecture detail for CHRO session; full methodology brief for People Analytics session.
+
+Discussion guide focus
+
+All populations: concept familiarization exercise (explain VoW Synthetic back in your own words); spontaneous objections; trust conditions; language testing. Commercial partners additionally: governance documentation requirements; client-facing disclosure requirements. Enterprise: internal approval process; CFO/legal involvement thresholds.
+
+Analysis
+
+Thematic analysis per population. Cross-session synthesis on shared objection themes. Language resonance matrix. Internal approval process map for enterprise population.
+
+Timeline
+
+Weeks 12–20 from research plan activation
+
+
+
+
+
+
+
+R5.3  Phase 2B Validation Criteria
+
+
+
+
+
+At least two of three populations can articulate VoW Synthetic&apos;s core capability in terms consistent with intended positioning after the familiarization exercise
+
+
+
+
+
+Objection taxonomy complete — all major objection types categorized as: addressable through product design; addressable through governance documentation; addressable through validation evidence; or fundamental barrier
+
+
+
+
+
+No fundamental barriers identified among the commercial partner or enterprise CHRO populations
+
+
+
+
+
+Language resonance matrix complete — at least one resonant phrase per population identified for core positioning; at least one term flagged per population as confusing or credibility-reducing
+
+
+
+
+
+
+
+
+
+
+
+R6  Phase 3: Usability & UX Testing
+
+
+
+
+
+Phase Status: FUTURE-GATED — requires working Phase 0 prototype achieving 90% accuracy benchmark
+
+
+
+Phase 3 usability testing is gated behind Phase 0 achieving the 90% Ground Truth accuracy benchmark. Without a validated accuracy result, usability testing of Mode A would expose internal users to a tool that may not yet meet the quality standard they require — poisoning their perception of the platform before it is ready.
+
+
+
+Mode C and Mode D usability testing is additionally gated behind the relevant API documentation (Mode C) and Hub Phase 1 platform build (Mode D). Mode D usability testing is coordinated with Hub Phase 3 usability research rather than run independently.
+
+
+
+R6.1  Research Questions — Mode A (Internal, Priority)
+
+
+
+
+
+Can a SHRM researcher, without training, use the Mode A interface to commission a synthetic fielding run, specify parameters (persona characteristics, question set, scenario conditions), and receive output in a format usable for analysis within their existing workflow?
+
+
+
+
+
+Does the researcher trust the output enough to act on it for internal decision-making purposes — and where does that trust break down?
+
+
+
+
+
+What is the actual time savings compared to traditional survey fielding for an equivalent use case?
+
+
+
+
+
+Where does the Mode A output fall short of what the researcher needs — what do they have to manually supplement or verify before they would rely on the result?
+
+
+
+
+
+
+
+R6.2  Method Overview
+
+Round
+
+Population
+
+Format
+
+Key Metrics
+
+Gate Requirement
+
+Round 1: Mode A
+
+SHRM research team (n=6–8)
+
+Think-aloud moderated sessions. 60 minutes. Task scenarios: commission a synthetic concept test; interpret the delta report; identify a finding they would and would not publish from synthetic data alone.
+
+Task completion rate; time-on-task vs. traditional survey baseline; trust rating per output type; SUS score. Threshold: SUS ≥68; net time savings confirmed.
+
+Phase 0 at 90% accuracy benchmark
+
+Round 2: Mode C API documentation
+
+Commercial partner technical contacts (n=4–6)
+
+Documentation review and API walkthrough. 45 minutes. Tasks: locate governance documentation; find data dictionary; understand consent and provenance disclosures.
+
+Documentation comprehension rate; time to locate governance requirements; identified gaps in provenance documentation.
+
+Phase 0 complete; API documentation draft available
+
+Round 3: Mode D (via Hub)
+
+Enterprise CHROs / People Analytics (n=6–8)
+
+Coordinated with Hub Phase 3 usability research. Simulation output comprehension tasks added to Hub Mode 2b usability protocol.
+
+Simulation output comprehension; confidence in acting on simulation results; escalation appropriateness (would they verify with an internal expert before acting?).
+
+Hub Phase 1 platform build; VoW Phase 0 complete
+
+
+
+
+
+
+
+
+
+
+
+R7  Research Governance
+
+Element
+
+Specification
+
+Research owner
+
+Barry Reicherter, Director Market Research & VoC (SHRM / Scale Free Strategy)
+
+Review authority
+
+Alex Alonso reviews all research plans and findings before internal distribution. Phase 1 Track B commercial partner findings are reviewed with SHRM partnerships leadership before any commercial implications are communicated externally.
+
+XHUB coordination
+
+Phase 1 Track C (enterprise CHRO needs) is coordinated with XHUB Phase 1 to avoid duplicate interviews. A single interview guide module covering VoW Mode D needs is appended to XHUB enterprise buyer interviews wherever the same respondents are accessed. VoW findings from joint interviews are attributed to both research plans.
+
+James awareness
+
+Given Thought Leadership&apos;s role in SHRM research and James&apos;s noted skepticism of synthetic data approaches, VoW Synthetic research findings are routed through Alex before any communication to Thought Leadership. The framing in all internal communication emphasizes synthetic data as a supplement to and accelerator of traditional research — not a replacement for it.
+
+Circular validation boundary
+
+VoW Synthetic outputs are not used to inform the design of the VoW Synthetic research plan or to answer research questions about VoW Synthetic needs. This is a strict boundary: human research answers questions about VoW Synthetic; VoW Synthetic is not used to answer questions about itself.
+
+Synthesis cadence
+
+Phase 1: interim summary at Week 6 (Tracks A and B); full synthesis at Week 12 (all tracks). Phase 2: synthesis report within 4 weeks of final session. Phase 3: findings report within 2 weeks of each usability round.
+
+
+
+
+
+
+
+
+
+
+
+R8  Research Budget Estimate
+
+Phase
+
+Activity
+
+Estimated Cost
+
+Notes
+
+Phase 1
+
+Internal team working sessions (Track A)
+
+$0–$2,000
+
+Internal. Facilitation and synthesis time only.
+
+Phase 1
+
+Commercial partner interviews (Track B) — n=14
+
+$14,000–$20,000
+
+Recruiter and warm outreach coordination fees; incentives ($250/interview for senior-level commercial contacts); transcription and analysis.
+
+Phase 1
+
+Enterprise CHRO supplement — coordinated with XHUB
+
+$0–$4,000
+
+Marginal cost of VoW module added to XHUB interviews. People Analytics specialist supplement: incentives only.
+
+Phase 2A
+
+Quantitative concept validation — n=500 total (3 populations)
+
+$20,000–$30,000
+
+Mixed panel costs: SHRM VoW Panel (internal rate) for member segment; commercial panel for People Analytics and commercial buyer segments. Scenario vignette stimulus design adds complexity vs. standard concept tests.
+
+Phase 2B
+
+Qualitative concept sessions — 5 sessions across 3 populations
+
+$18,000–$26,000
+
+Recruiter fees, incentives ($200–$250/participant by seniority), governance stimulus material production, moderation, and analysis.
+
+Phase 3
+
+Usability testing — 3 rounds across 3 modes
+
+$8,000–$14,000
+
+Mode A primarily internal (low cost). Mode C requires technical contacts (moderate). Mode D coordinated with Hub Phase 3 (marginal cost).
+
+All phases
+
+Analysis, synthesis, and reporting
+
+$10,000–$15,000
+
+Research analyst time including cross-plan coordination with XHUB research.
+
+
+
+Total Estimated Range
+
+$70,000–$111,000
+
+Full program across 14–20 months. Phase 1 subset: $14,000–$26,000.
+
+
+
+
+
+
+
+Cross-Plan Coordination Note
+
+
+
+The three ILS research plans (XHUB-01, KCDE-01, VOW-01) share the same enterprise CHRO population at the Phase 1 stage. Coordinating recruitment across all three plans — rather than recruiting independently — reduces total program cost by an estimated $15,000–$25,000 and reduces respondent burden on a limited-access population. A unified enterprise buyer interview guide with plan-specific modules is the recommended approach for joint recruitment phases.
+
+
+
+
+
+
+
+— End of Document —
+
+
+
+ILS-VOW-01  |  Revision 2  |  SHRM Intelligence Layer Studio  |  Internal Use Only  |  April 2026
+
+
+
+
+

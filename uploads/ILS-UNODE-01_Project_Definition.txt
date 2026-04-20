@@ -1,0 +1,1038 @@
+
+
+
+
+SHRM Intelligence Layer Studio
+
+
+
+Project Definition: University Nodes
+
+
+
+ILS-UNODE-01  |  April 2026  |  Scientific Validation & Research Partnership Network
+
+Project Code
+
+ILS-UNODE-01
+
+Parent Initiative
+
+SHRM Intelligence Layer Studio (ILS)
+
+Classification
+
+Scientific Validation & Deep-Tech Research Network
+
+Status
+
+Phase 0 — Planning & Outreach (Pre-Activation)
+
+Date
+
+April 2026 (updated from March 30, 2026)
+
+Prior Version
+
+v1.0 (March 30, 2026) — superseded by this document. Status corrected from &apos;Network Activation / Node Onboarding&apos; to &apos;Planning & Outreach&apos;; three-phase project lifecycle added.
+
+Operative Stack
+
+Google stack (firewalled Vertex AI instances for academic research teams). Consistent with KCDE and VoW Synthetic Phase 0 architecture.
+
+Document Owner
+
+Barry Reicherter, Director Market Research & VoC / Scale Free Strategy
+
+ILS Sponsor
+
+Syed Wasey, EVP SHRM Business
+
+
+
+
+
+
+
+
+
+§1  Executive Summary & Strategic Intent
+
+
+
+The ILS University Nodes network is the scientific validation, peer-review, and deep-tech research layer of the Intelligence Layer Studio. Where internal tiger teams (ILS core) focus on speed and staff hackathons (HACK-01) focus on cultural agility, the University Nodes provide the scientific rigor, ethical validation, and high-stakes logic testing required for SHRM to serve as a genuine computational authority in the HR profession.
+
+
+
+By partnering with three specialized academic institutions — Cornell, Indiana, and the University of Denver — SHRM establishes a &apos;National Labs&apos; style infrastructure. This network ensures that when SHRM standards are embedded into third-party AI interfaces, enterprise HRIS systems, or simulation engines, they are backed by peer-reviewed evidence, transparent ethics, and state-of-the-art engineering that exceeds the capabilities of general-purpose AI systems.
+
+
+
+University Nodes is not a product. It is a research and validation partnership network that serves the entire ILS portfolio. Its outputs are scientific credibility, independent validation of accuracy claims, and the SHRM Validation Seal that gates ILS prototypes before they reach enterprise launch. For this reason, UNODE-01 does not require a product VoC research plan of the kind appended to XHUB-01, KCDE-01, and VOW-01 — its function is to conduct research for ILS, not to be researched.
+
+
+
+
+
+
+
+
+
+§2  Current State — Honest Accounting
+
+
+
+This project is in an earlier state than the prior v1.0 project definition suggested. The prior document characterized the project as &apos;Network Activation / Node Onboarding&apos; — which overstated readiness. This revision corrects that characterization.
+
+
+
+Current state reality
+
+
+
+No MOUs are in place. No lead principal investigators are secured at any of the three target institutions. No data-sharing protocols have been drafted for academic partner access. The Research Council has not been constituted. The $225,000 activation budget has not been authorized and remains gated behind KCDE Phase 0 and VoW Synthetic Phase 0 validation outcomes. The project&apos;s substantive work today is Phase 0 — Planning & Outreach — and that work is largely not yet underway.
+
+
+
+This honest accounting is deliberate. The University Nodes concept is strategically sound and architecturally consistent with the ILS model. It is not operationally activated. Overstating activation status creates organizational risk (commitments to leadership that cannot be met on timeline) and diminishes the credibility of the ILS investment cascade model. Accurately characterizing current state preserves the integrity of the cascade.
+
+
+
+
+
+
+
+
+
+§3  Node Architecture — Three Specialized Institutions
+
+
+
+The University Nodes network is organized around three target institutions, each selected for a specific intersection of HR/organizational authority and technical capability. Each node is intended to handle a distinct category of validation work. No two nodes perform the same function; the institutional specialization is the architecture.
+
+
+
+
+
+
+
+3.1  Node 1 — The Deep-Tech Node (Cornell University)
+
+Dimension
+
+Specification
+
+Target Partners
+
+School of Industrial and Labor Relations (ILR) + College of Engineering
+
+Strategic Rationale
+
+Cornell ILR is the premier institution for human resources and labor relations globally. Pairing the ILR&apos;s authoritative HR corpus with Cornell&apos;s elite computer engineering department creates a sandbox for Graph-RAG optimization, BASK mapping accuracy, and deterministic reasoning architecture — the technical plumbing of KCDE.
+
+Specialized Function
+
+Deep-tech validation of KCDE reasoning architecture. Ensures SHRM BASK is mapped with ≥99% retrieval accuracy. Validates that reasoning loops remain deterministic and audit-ready. Graph-RAG logic audit. Reasoning chain validation.
+
+Primary ILS Project Served
+
+ILS-KCDE-01 (primary); ILS-HACK-01 prototype logic audits (secondary)
+
+Known Risk Factors
+
+Cornell has significant HR technology vendor relationships (Workday, Cornerstone, Taleo among notable alumni-affiliated companies). Institutional IP policies for engineering school projects can be strict. Lead PI identification requires someone with cross-school authority (ILR + Engineering joint appointment or formal collaboration).
+
+
+
+
+
+
+
+
+
+
+
+3.2  Node 2 — The Scalable Practitioner Node (Indiana University)
+
+Dimension
+
+Specification
+
+Target Partners
+
+Kelley School of Business + Luddy School of Informatics, Computing, and Engineering
+
+Strategic Rationale
+
+Kelley is a national powerhouse for business and HR, with a massive corporate recruiting network and SHRM-aligned programs. Luddy&apos;s Intelligent Systems Engineering focus provides the bridge between traditional HR management and modern AI adoption.
+
+Specialized Function
+
+Behavioral benchmarking and human-in-the-loop validation. Tests how HR practitioners interact with agentic SHRM. Conducts longitudinal studies on AI-augmented workflow effects on decision quality and professional burnout. Primary validation node for VoW Synthetic accuracy benchmark.
+
+Primary ILS Project Served
+
+ILS-VOW-01 (primary — 90% accuracy benchmark validation); ILS-KCDE-01 advisor augmentation studies (secondary)
+
+Known Risk Factors
+
+Kelley has extensive corporate recruiting partnerships that may create perceived conflicts in HR technology validation work. Luddy&apos;s AI research focus means the node may be in demand from other AI-focused partnerships. Lead PI identification requires someone comfortable with applied (not purely theoretical) research on short sprint cycles.
+
+
+
+
+
+
+
+
+
+
+
+3.3  Node 3 — The Agile Corporate Node (University of Denver)
+
+Dimension
+
+Specification
+
+Target Partners
+
+Daniels College of Business + Ritchie School of Engineering and Computer Science
+
+Strategic Rationale
+
+DU offers a practitioner-focused environment with deep ties to the Denver Tech Center. Daniels&apos;s Master&apos;s in Strategic HR program is uniquely agile, enabling live laboratory testing with regional enterprise and Fortune 500 partners who need real-world B2B integration validation.
+
+Specialized Function
+
+Implementation hub for SHRM API connectors. Stress-tests SHRM standards within active corporate environments. Pilots integration logic in messy, multi-tenant enterprise data environments before global rollout.
+
+Primary ILS Project Served
+
+ILS-XHUB-01 (HR-X Hub enterprise integration stress-testing); ILS-KCDE-01 Mode D API service validation (secondary)
+
+Known Risk Factors
+
+DU&apos;s smaller scale vs. Cornell and Indiana means fewer institutional resources in reserve if lead PI transitions. Denver Tech Center corporate relationships may create specific vendor conflicts. Regional focus is an asset but limits sample diversity for some validation studies.
+
+
+
+
+
+
+
+
+
+
+
+
+§4  Three-Phase Project Lifecycle
+
+
+
+University Nodes has a distinct three-phase lifecycle that differs from the product project phasing used for KCDE, VoW, and XHUB. The phases reflect the temporal reality of building academic research partnerships — a process that begins long before any activation budget is spent and operates on institutional timelines that cannot be fully compressed.
+
+
+
+
+
+
+
+Phase 0: Planning & Outreach
+
+
+
+▶ CURRENT STATE
+
+
+
+Phase 1: Activation & MOU Execution
+
+
+
+◷ GATED
+
+
+
+Phase 2: Research Distribution & Ops
+
+
+
+○ FUTURE
+
+
+
+
+
+
+
+
+
+
+
+4.1  Phase 0 — Planning & Outreach (Pre-Activation)
+
+
+
+This is where the project actually sits today. Phase 0 work must complete before the $225,000 activation budget is relevant. If Phase 0 outreach does not produce viable partners at all three institutions, the project does not activate — or activates with substitute institutions (see risks in §12).
+
+
+
+
+
+Phase 0 Activities
+
+Workstream
+
+Activity
+
+Owner
+
+Output
+
+Partner Identification
+
+Identify lead principal investigator at each target institution. Must have standing to commit institution, but also agility to work on sprint-based timelines. For Cornell: ILR + Engineering joint authority. For Indiana: Kelley + Luddy cross-school capability. For DU: Daniels + Ritchie collaboration.
+
+Barry Reicherter (primary); Syed Wasey (exec sponsor for senior introductions)
+
+Named lead PI per institution; alternative contacts per institution (in case of departure or conflict)
+
+Initial Outreach
+
+Warm introductions via Barry&apos;s academic network, SHRM Executive Network member contacts at these institutions, and existing SHRM research relationships. Preliminary conversations to establish mutual fit.
+
+Barry Reicherter
+
+Initial meeting log; go/no-go signal per institution
+
+Institutional Fit Assessment
+
+Understand each institution&apos;s IP policies, data use restrictions, faculty time commitment models, conflict-of-interest policies for industry-funded research, and any existing industry partnerships that create conflicts with SHRM scope.
+
+Barry Reicherter + legal/IP advisor consultation
+
+Institutional fit memo per institution; conflict flag list
+
+Pre-MOU Working Sessions
+
+Co-design sessions with each lead PI to define the node&apos;s specific scope, data access model, and validation protocol. Structured to avoid commitment of institutional resources but establish design agreement before MOU drafting.
+
+Barry Reicherter + lead PI
+
+Node scope document per institution; preliminary data access architecture
+
+SHRM-Side Readiness
+
+Prepare the data-sharing architecture for academic partner access: firewalled Vertex AI research instances, Proprietary Intelligence Boundary documentation for academic review, data de-identification pipeline validation, ILS Fellow program structure and stipend policy.
+
+Barry Reicherter + ILS technical lead + SHRM Legal
+
+Academic partner access architecture doc; IP boundary memo; Fellow program policy
+
+Research Council Design
+
+Define the Research Council operating model — monthly cadence, decision rights, conflict resolution, publication policy, and the interface between academic findings and ILS internal decisions.
+
+Barry Reicherter + Alex Alonso review
+
+Research Council charter (draft)
+
+
+
+
+
+
+
+
+
+Phase 0 Gate Criteria (Before Phase 1 Activation)
+
+
+
+
+
+Named lead PI at all three target institutions with demonstrated mutual interest in the sprint-based MOU model
+
+
+
+
+
+No fatal institutional conflicts identified at any of the three institutions (see §12 risks — if one institution proves unworkable, a backup institution must be identified before Phase 1 activation)
+
+
+
+
+
+Pre-MOU scope document signed off by each lead PI; no fundamental design disagreements outstanding
+
+
+
+
+
+SHRM-side data-sharing architecture ready to support academic partner access without compromising the Proprietary Intelligence Boundary
+
+
+
+
+
+KCDE Phase 0 validated at board gate; VoW Synthetic Phase 0 validated at board gate. These gates must clear before the UNODE-01 $225K activation budget is authorized.
+
+
+
+
+
+
+
+
+
+
+
+4.2  Phase 1 — Activation & MOU Execution
+
+
+
+Phase 1 begins only when Phase 0 has produced viable partners at all three institutions AND both KCDE and VoW Synthetic have passed their Phase 0 board validations. Activation deploys the $225,000 budget and operationalizes the network.
+
+
+
+
+
+Phase 1 Activities
+
+Activity
+
+Duration
+
+Budget Allocation
+
+Milestone
+
+Sprint-based MOU execution with each of the three nodes. MOUs cover: data access architecture, publication rights, IP protection (No-Download policy), Fellow placement, sprint commissioning process, and termination terms.
+
+M1–M2
+
+Node Retainers ($120K baseline activation, $40K per institution) covers first six months of commitment
+
+Three signed MOUs
+
+Data-sharing protocol deployment. Firewalled Vertex AI research environments provisioned for each node. Proprietary Intelligence Boundary enforcement documented and tested.
+
+M2–M3
+
+Partial draw from Node Retainers
+
+Academic partner access operational; first test access completed
+
+First ILS Fellow cohort recruited and onboarded. Graduate students in AI ethics, HR analytics, and organizational science placed as ILS Fellows across the three institutions.
+
+M2–M4
+
+ILS Fellowships ($45K; stipends for 6 graduate researchers)
+
+Six active Fellows; Fellow onboarding complete
+
+Research Council constituted. Three lead PIs + ILS architect meet for inaugural session. Operating model activated. Conflict resolution protocols walked through.
+
+M3
+
+Minimal direct cost (covered under retainer)
+
+Research Council operational; monthly meeting cadence established
+
+First logic audit sprint commissioned. Cornell Node commissioned for initial KCDE reasoning architecture audit. Demonstrates sprint commissioning process end-to-end.
+
+M3–M5
+
+Validation Sprints ($60K discretionary bounty fund for high-priority audits)
+
+First audit completed and delivered; lessons learned applied to future sprint commissioning
+
+
+
+
+
+
+
+
+
+Phase 1 Budget Summary
+
+Cost Category
+
+Phase 1 Allocation
+
+Purpose
+
+Node Retainers
+
+$120,000
+
+Baseline funding for 3 university partner nodes ($40K each) for initial 6-month activation
+
+ILS Fellowships
+
+$45,000
+
+Stipends for 6 PhD/Masters researchers across nodes
+
+Validation Sprints
+
+$60,000
+
+Discretionary bounty funds for high-priority logic audits and validation work
+
+Phase 1 Total
+
+$225,000
+
+Gated behind KCDE and VoW Phase 0 board validation
+
+
+
+
+
+
+
+Investment Cascade Position
+
+
+
+UNODE-01 is the third tier of the ILS investment cascade. Tier 1: KCDE Phase 0 ($45K). Tier 2: VoW Synthetic Phase 0 ($24K–$40K). Tier 3: UNODE-01 Phase 1 activation ($225K). Combined total ILS Phase 0 + UNODE activation commitment: approximately $294K–$310K. Each tier&apos;s authorization is gated behind the prior tier&apos;s board validation. No commitment beyond the current authorized tier is authorized in advance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.3  Phase 2 — Research Distribution & Ongoing Operations
+
+
+
+Phase 2 is steady-state network operation. The three nodes are active, MOUs are in force, the Research Council meets monthly, and the research distribution pipeline routes ILS work to the appropriate node based on specialization. Phase 2 begins approximately M6 following Phase 1 activation and continues as long as the network is productive.
+
+
+
+
+
+4.3.1  Research Distribution Pipeline
+
+
+
+The pipeline routes work from ILS source projects to the appropriate validation node based on the work&apos;s type and the node&apos;s specialization:
+
+Input Source
+
+Input Type
+
+Routed To
+
+Validation Outcome
+
+ILS-HACK-01 (Staff Hackathons)
+
+Vibe-coded prototypes from staff hackathons — low-code/no-code HR utilities that need scientific logic audit before enterprise launch
+
+Cornell (Deep-Tech)
+
+Scientific logic audit. Identifies hallucination risks, reasoning gaps, compliance issues. Prototype either advances to enterprise launch or returns to staff team for remediation.
+
+ILS-KCDE-01
+
+New prompt-chains, Graph-RAG architecture variants, and reasoning modes for the Knowledge Center Decision Engine
+
+Cornell (primary, architecture) + University of Denver (secondary, enterprise integration stress-test)
+
+Cornell validates reasoning determinism and BASK retrieval accuracy. DU validates integration stability in active corporate environments.
+
+ILS-VOW-01
+
+Synthetic persona batches generated by VoW Synthetic for validation against human benchmark panels
+
+Indiana (Kelley + Luddy)
+
+Behavioral benchmarking. Validates 90% accuracy benchmark. Flags constructs where synthetic response distribution diverges from human baseline.
+
+ILS-XHUB-01
+
+Hub platform integrations, enterprise data pipeline implementations, and Tier 3 VoW Synthetic precision loop outputs
+
+University of Denver (primary) + Indiana (secondary, for synthetic validation of Tier 3 outputs)
+
+Enterprise integration stress-testing. Validates platform behavior in multi-tenant regional corporate environments.
+
+
+
+
+
+
+
+
+
+4.3.2  Referral Mechanism — Who Decides What Gets Referred
+
+
+
+A governance question the prior UNODE-01 definition did not address: when multiple ILS projects compete for node capacity, who decides what gets referred, when, on what criteria. The Research Council is the coordinating body, but referral decisions are operationally faster than the monthly Council cadence can support.
+
+Decision Type
+
+Decision Authority
+
+Cadence
+
+Routine validation sprints (budgeted under the $60K Validation Sprint bounty fund)
+
+ILS Architect (Barry) authorizes; source project lead proposes; Node lead accepts based on capacity
+
+Rolling; decisions within 5 business days
+
+High-priority sprints that exceed bounty fund budget or require multiple nodes simultaneously
+
+Research Council approval required; Alex Alonso consulted for any sprint touching external partnerships or commercial implications
+
+Monthly Research Council meeting; ad hoc convene if urgent
+
+Sprints involving sensitive data (live enterprise customer data, internal staff data, pre-publication research findings)
+
+Research Council plus SHRM Legal review; Syed Wasey approval if enterprise customer data involved
+
+Ad hoc; no fixed SLA
+
+Cross-node sprints (multi-node coordination required)
+
+Research Council; source project lead owns coordination
+
+Monthly or ad hoc
+
+
+
+
+
+
+
+
+
+4.3.3  The Triple-Gate Review — SHRM Validation Seal
+
+
+
+A critical Phase 2 function is the issuance of the SHRM Validation Seal. No ILS prototype advances to Layer 4 (Public Release) without passing a three-gate review across the three nodes:
+
+
+
+
+
+Technical Gate (Cornell): Is the code deterministic? Is the Graph-RAG mapping accurate? Are reasoning chains auditable?
+
+
+
+
+
+Practitioner Gate (Indiana): Does the tool actually save time for a real HR manager? Does it improve decision quality? Does it create new burnout risks?
+
+
+
+
+
+Commercial Gate (University of Denver): Is the integration stable in a third-party ERP or HRIS? Does it handle messy enterprise data? Does it perform at commercial scale?
+
+
+
+A prototype that fails any gate is returned to the source project for remediation. A prototype that passes all three gates receives the SHRM Validation Seal and can be commercially deployed under SHRM branding.
+
+
+
+
+
+
+
+
+
+§5  Operational Modes
+
+
+
+Across Phase 2 operations, the University Nodes operate in four distinct modes — the analytical activities the nodes perform across ILS projects:
+
+Mode
+
+Description
+
+Primary Node
+
+A — Logic Auditor
+
+Universities peer-review the prompt-chains, reasoning architectures, and vector embeddings of ILS projects. Identifies hallucination risks, reasoning gaps, and compliance concerns. Issues pass/fail/remediate recommendations.
+
+Cornell (primary)
+
+B — Synthetic Benchmarker
+
+Node researchers use VoW Synthetic persona pools to conduct simulated experiments that would be too costly or slow in the real world. Validates synthetic accuracy against human benchmark panels. Supports methodological research on synthetic data applications in HR.
+
+Indiana (primary)
+
+C — Ethical Red-Teamer
+
+Nodes perform bias audits on predictive models, reasoning systems, and synthetic persona populations. Ensures compliance with DE&I standards and global labor laws. Surfaces ethical issues before external deployment.
+
+All three nodes (distributed)
+
+D — Talent Pipeline
+
+Graduate students in AI ethics, HR analytics, and organizational science serve as ILS Fellows — providing structured academic research capacity at below-market cost while building SHRM&apos;s relationships with emerging scholars.
+
+All three nodes (distributed)
+
+
+
+
+
+
+
+
+
+§6  Technical Infrastructure
+
+
+
+The University Nodes network operates on the same Google stack as the rest of the ILS Phase 0 and Phase 1 architecture — maintaining infrastructure consistency with KCDE and VoW Synthetic and avoiding cross-cloud data movement for validation work.
+
+Component
+
+Service
+
+Function
+
+Academic Research Compute
+
+Firewalled Vertex AI research instances (dedicated per node)
+
+Node researchers access ILS reasoning infrastructure in dedicated tenants. No access to production systems. Compute consumption charged to the Validation Sprints bounty fund.
+
+Data Access Protocol
+
+BigQuery dataset sharing with academic reader-only access + view-level row filtering
+
+Researchers query SHRM data within governed environments. Only the minimum necessary data for each sprint is exposed. Aggregate-only queries by default; individual-level access requires explicit SHRM Legal approval.
+
+No-Download Policy
+
+Policy enforced via Google Cloud IAM restrictions and audit logging
+
+No data leaves SHRM&apos;s controlled environment. Researchers work within ILS-controlled Vertex AI and BigQuery environments. Research outputs (findings, code, models) are transferred; source data is not. Prevents IP leakage and supports Proprietary Intelligence Boundary enforcement.
+
+Fellow Access Architecture
+
+Scoped Google Workspace accounts for ILS Fellows with time-limited access tied to Fellowship term
+
+Fellows operate under the same No-Download policy. Access automatically deprovisioned at Fellowship end.
+
+Publication Protocol
+
+Pre-publication review via Research Council; SHRM review of any research involving proprietary data
+
+Academic partners retain publication rights with SHRM pre-publication review for proprietary data handling. Standard academic timelines preserved. Research Council handles disputes.
+
+
+
+
+
+
+
+
+
+§7  ILS Portfolio Positioning & Investment Cascade
+
+
+
+
+
+
+
+7.1  Relationship to Other ILS Projects
+
+ILS Project
+
+Relationship to University Nodes
+
+Dependency Direction
+
+ILS-KCDE-01
+
+Cornell provides Graph-RAG optimization validation for KCDE reasoning architecture. DU validates KCDE Mode D enterprise integration.
+
+KCDE Phase 0 must validate before UNODE-01 Phase 1 activation is authorized. Post-activation, KCDE submits work to Cornell and DU through the research distribution pipeline.
+
+ILS-VOW-01
+
+Indiana provides behavioral benchmarking validation for VoW Synthetic. The 90% accuracy benchmark is independently validated by Indiana post-activation.
+
+VoW Phase 0 must validate before UNODE-01 Phase 1 activation is authorized. Post-activation, VoW Synthetic validation batches route to Indiana through the research distribution pipeline.
+
+ILS-XHUB-01
+
+DU provides enterprise integration stress-testing for the HR-X Solution Hub. Indiana provides secondary validation for Hub Tier 3 outputs involving VoW Synthetic precision loop.
+
+Independent of UNODE-01 activation timing — Hub can proceed on its own timeline. Post-UNODE-01 activation, Hub gains access to node validation resources.
+
+ILS-HACK-01
+
+Cornell audits staff hackathon prototypes for scientific logic and hallucination risk before enterprise launch. Represents the Triple-Gate Review entry point for staff-generated innovations.
+
+Independent of UNODE-01 activation. Post-activation, hackathon prototypes can flow to Cornell for logic audit.
+
+
+
+
+
+
+
+
+
+
+
+7.2  Investment Cascade Gating
+
+
+
+UNODE-01 Gating — Non-Negotiable
+
+
+
+UNODE-01 Phase 1 activation ($225,000) is gated behind BOTH of the following: (1) KCDE Phase 0 passes board validation with reasoning architecture accepted for advancement; (2) VoW Synthetic Phase 0 achieves the 90% accuracy benchmark and passes board validation. If either KCDE or VoW Phase 0 fails validation, UNODE-01 Phase 1 activation is not authorized — even if Phase 0 planning and outreach have produced viable university partners. In that scenario, partner relationships built during Phase 0 are preserved via low-cost maintenance (quarterly check-ins, occasional informal consultation) pending resolution of the failed validation and eventual re-authorization.
+
+
+
+
+
+
+
+
+
+§8  Success Metrics & Milestones
+
+
+
+
+
+
+
+8.1  Phase 0 Milestones
+
+
+
+
+
+M-90 days before Phase 1 activation: Lead PI identified at all three institutions; preliminary mutual fit confirmed
+
+
+
+
+
+M-60 days: Institutional fit assessment complete for all three; no fatal conflicts outstanding
+
+
+
+
+
+M-30 days: Pre-MOU scope documents signed off by each lead PI
+
+
+
+
+
+M-0 (Phase 1 activation day): KCDE Phase 0 validated; VoW Phase 0 validated; UNODE-01 $225K authorized; MOU execution begins
+
+
+
+
+
+
+
+8.2  Phase 1 Milestones
+
+
+
+
+
+M1 (60 days post-activation): Finalize MOUs with Cornell, Indiana, and DU; data-sharing protocols operational
+
+
+
+
+
+M2 (120 days post-activation): First logic audit completed on a VoW Synthetic validation batch by Indiana Node
+
+
+
+
+
+M3 (180 days post-activation): 90% accuracy benchmark for VoW Synthetic independently validated by Indiana Node
+
+
+
+
+
+M4 (180 days post-activation): Six ILS Fellows actively placed across the three nodes
+
+
+
+
+
+
+
+8.3  Phase 2 Year 1 Goals
+
+
+
+
+
+At least 5 hackathon prototypes advance through Triple-Gate Review to Enterprise Launch
+
+
+
+
+
+Research Council meets monthly without gaps; at least 3 Council decisions executed successfully
+
+
+
+
+
+At least 2 academic publications in-flight with SHRM data attribution and pre-publication review completed
+
+
+
+
+
+At least 1 enterprise customer deployment benefits demonstrably from Validation Seal — cited in the Hub Mode 1 narrative or sales conversation
+
+
+
+
+
+
+
+
+
+§9  Critical Risks & Mitigations
+
+Risk
+
+Likelihood
+
+Impact
+
+Mitigation
+
+Academic inertia — traditional multi-year grant expectations clash with sprint-based MOU model
+
+Medium
+
+High — prevents activation
+
+Sprint-based MOU structure designed specifically to address this. Pre-MOU working sessions in Phase 0 confirm willingness to operate on sprint timelines before any commitment. If a lead PI cannot operate on sprint cadence, they are not the right partner regardless of their credentials.
+
+IP leakage via academic researcher misuse of SHRM data
+
+Low
+
+Very High — undermines Proprietary Intelligence Boundary
+
+Enforced No-Download policy. All research occurs within SHRM-controlled Vertex AI and BigQuery environments. IAM restrictions prevent data egress. Publication pre-review. IP terms documented in MOU.
+
+Alignment risk — node work drifts from ILS priorities over time
+
+Medium
+
+Medium
+
+Monthly Research Council meetings. Clear scope documents per sprint. Bounty fund structure creates natural re-prioritization at each sprint commission.
+
+Partner dependency risk — lead PI departs their institution
+
+Medium (academic turnover is real)
+
+High — node effectiveness depends on the PI
+
+Alternative contact identified per institution during Phase 0. MOU structure is institutional (not PI-specific) with transition clauses. Relationship-building at the department level, not just the individual level.
+
+Institutional conflicts — existing industry partnerships create conflicts with SHRM scope (e.g., Cornell HR tech vendor relationships; Kelley corporate recruiting ties)
+
+Medium
+
+Medium–High
+
+Institutional fit assessment in Phase 0 specifically screens for conflict. Scope carve-outs in MOU if necessary. Research Council reviews any emerging conflicts as they arise.
+
+One of three target institutions proves unworkable
+
+Low–Medium (aggregated across three)
+
+Medium — requires backup institution identification
+
+Shortlist of backup institutions identified during Phase 0 for each specialization: for Cornell — MIT Sloan + CSAIL or Stanford GSB + CS; for Indiana — Michigan Ross + CSE or Ohio State Fisher + Engineering; for DU — Arizona State W.P. Carey or University of Colorado Leeds. Backup not engaged unless primary fails.
+
+KCDE or VoW Phase 0 fails — UNODE-01 activation delayed indefinitely
+
+Low–Medium
+
+Medium — affects project timing but not viability
+
+Phase 0 partner relationships are low-cost to maintain (quarterly check-ins, occasional informal consultation) during delay. Partners informed honestly about gating logic during Phase 0 outreach so they understand the contingency.
+
+University publication interests conflict with SHRM commercial interests
+
+Medium (inevitable at some scale)
+
+Low–Medium if well-managed
+
+Pre-publication review protocol in MOU. Research Council conflict resolution. Standard academic timelines preserved to maintain partner trust.
+
+
+
+
+
+
+
+
+
+§10  Conclusion — The Scientific Moat
+
+
+
+The University Nodes network ensures SHRM does not simply participate in the AI transformation of HR — it leads that transformation with an unassailable scientific moat. By tethering computational speed to the academic rigor of institutions like Cornell, Indiana, and the University of Denver, the ILS guarantees that SHRM remains the definitive, trusted authority for people decisions in an era of algorithmic uncertainty.
+
+
+
+This project definition corrects the status overstatement in the prior v1.0 document. It acknowledges honestly that University Nodes is in Phase 0 — Planning & Outreach — and will remain there until the Phase 1 activation gate clears (KCDE + VoW Phase 0 validation + viable partners identified at all three institutions). The work of Phase 0 is substantial, requires executive sponsor engagement for senior introductions at the target institutions, and cannot be compressed without compromising the partnership quality that makes the Validation Seal credible.
+
+
+
+The scientific moat is not built by spending the activation budget. It is built by the quality of the partnerships that survive the investment cascade&apos;s gates.
+
+
+
+
+
+
+
+— End of Document —
+
+
+
+ILS-UNODE-01  |  SHRM Intelligence Layer Studio  |  Internal Use Only  |  April 2026
+
+
+
+
+

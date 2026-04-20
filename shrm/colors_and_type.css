@@ -1,0 +1,332 @@
+/* SHRM Design System — colors & type
+   Source: SHRM Master Brand Guidelines (Updated 2025)
+   All hex values verified against Section "Colors" (BSG p.48) and
+   Master Brand logo color codes (BSG p.31, p.44).
+
+   Font strategy:
+   - Display + marketing: Proxima Nova (licensed, installed in fonts/)
+   - Body (non-creative, long-form, documents): Arial (system-available)
+*/
+
+/* ---------- Fonts ---------- */
+
+/* Proxima Nova — licensed brand webfont. Eight weights × italic, mapped to the
+   SHRM Master Brand's typography scale (BSG p.47). */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Thin.otf") format("opentype");
+  font-weight: 100; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-ThinIt.otf") format("opentype");
+  font-weight: 100; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Light.otf") format("opentype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-LightIt.otf") format("opentype");
+  font-weight: 300; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Reg.otf") format("opentype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-RegIt.otf") format("opentype");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Sbold.otf") format("opentype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-SboldIt.otf") format("opentype");
+  font-weight: 600; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Bold.otf") format("opentype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-BoldIt.otf") format("opentype");
+  font-weight: 700; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Xbold.otf") format("opentype");
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-XboldIt.otf") format("opentype");
+  font-weight: 800; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Extrabld.otf") format("opentype");
+  font-weight: 850; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Black.otf") format("opentype");
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-BlackIt.otf") format("opentype");
+  font-weight: 900; font-style: italic; font-display: swap;
+}
+
+:root {
+  /* ================================================================
+     COLOR TOKENS — raw brand palette
+     ================================================================ */
+
+  /* Primary blues (BSG p.48) */
+  --shrm-bright-blue:   #0076BE;  /* PMS 285C — Master Brand block */
+  --shrm-dark-blue:     #1B3C69;  /* PMS 534C — Master Brand block */
+  --shrm-medium-blue:   #265D93;  /* PMS 641C */
+  --shrm-super-dark:    #00093E;  /* PMS 282C — backgrounds */
+
+  /* Secondary blues (BSG p.48) */
+  --shrm-powder-blue:   #79ADD8;  /* PMS 542C */
+  --shrm-ice-blue:      #C5E5FF;  /* PMS 290C */
+  --shrm-royal-blue:    #4030D6;  /* PMS 2369C — digital only */
+
+  /* Accent / secondary brand (BSG p.31 / p.44) */
+  --shrm-melon:         #F26A42;  /* PMS 1645C */
+  --shrm-lemon:         #FBB533;  /* PMS 143C — CTA for revenue actions */
+  --shrm-olive:         #A7AB20;  /* PMS 7745C */
+  --shrm-plum:          #8B1377;  /* PMS 7649C */
+
+  /* Neutrals (BSG p.48) */
+  --shrm-white:         #FFFFFF;
+  --shrm-gray-3:        #DDDDDD;  /* Cool Gray 3C */
+  --shrm-gray-9:        #787878;  /* Cool Gray 9C */
+  --shrm-black:         #000000;
+
+  /* ================================================================
+     SEMANTIC COLOR TOKENS
+     ================================================================ */
+
+  /* Foregrounds */
+  --fg-1:           var(--shrm-super-dark);        /* headlines, max contrast */
+  --fg-2:           var(--shrm-dark-blue);         /* subheads */
+  --fg-3:           #3B4A66;                        /* body on light */
+  --fg-muted:       var(--shrm-gray-9);             /* captions, utility */
+  --fg-on-dark:     var(--shrm-white);
+  --fg-on-dark-2:   var(--shrm-ice-blue);
+  --fg-link:        var(--shrm-bright-blue);
+  --fg-link-hover:  var(--shrm-dark-blue);
+
+  /* Backgrounds */
+  --bg-page:        var(--shrm-white);
+  --bg-subtle:      #F4F6FA;                        /* soft neutral, very SHRM */
+  --bg-muted:       var(--shrm-gray-3);
+  --bg-invert:      var(--shrm-super-dark);
+  --bg-brand:       var(--shrm-bright-blue);
+  --bg-brand-deep:  var(--shrm-dark-blue);
+  --bg-brand-soft:  var(--shrm-ice-blue);
+
+  /* Borders */
+  --border-default: #E4E8EE;
+  --border-strong:  var(--shrm-gray-3);
+  --border-brand:   var(--shrm-bright-blue);
+
+  /* Status — derived, AA-safe */
+  --status-success: #1E7A4D;
+  --status-warning: var(--shrm-lemon);
+  --status-error:   #C0392B;
+  --status-info:    var(--shrm-bright-blue);
+
+  /* CTA */
+  --cta-primary-bg:       var(--shrm-bright-blue);
+  --cta-primary-bg-hover: var(--shrm-dark-blue);
+  --cta-primary-fg:       var(--shrm-white);
+
+  --cta-emphasis-bg:       var(--shrm-lemon);        /* revenue-driving only */
+  --cta-emphasis-bg-hover: #E9A52A;
+  --cta-emphasis-fg:       var(--shrm-super-dark);
+
+  --cta-ghost-fg:          var(--shrm-bright-blue);
+  --cta-ghost-border:      var(--shrm-bright-blue);
+
+  /* ================================================================
+     TYPOGRAPHY TOKENS
+     ================================================================ */
+
+  /* Font families */
+  --font-display: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+  --font-body:    "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+  --font-doc:     Arial, "Helvetica Neue", sans-serif;   /* long-form, decks */
+  --font-mono:    ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Weights — mapped to the 8 Proxima Nova weights */
+  --fw-thin:      100;
+  --fw-light:     300;
+  --fw-regular:   400;
+  --fw-medium:    500;
+  --fw-semibold:  600;
+  --fw-bold:      700;
+  --fw-extrabold: 800;
+  --fw-black:     900;
+
+  /* Digital type scale (BSG p.47) */
+  --fs-xl-headline:          48px;   /* Extrabold */
+  --fs-large-headline:       36px;   /* Extrabold */
+  --fs-medium-headline:      24px;   /* Extrabold */
+  --fs-medium-skinny:        24px;   /* Regular */
+  --fs-small-headline:       18px;   /* Semibold */
+  --fs-tiny-headline:        14px;   /* Semibold */
+  --fs-body:                 16px;   /* Regular */
+  --fs-utility:              14px;   /* Regular — descriptors, captions */
+  --fs-micro:                12px;
+
+  /* Line heights */
+  --lh-tight:    1.1;
+  --lh-snug:     1.25;
+  --lh-normal:   1.45;
+  --lh-loose:    1.6;
+
+  /* Letter spacing — SHRM display type is slightly tightened, utility is normal */
+  --ls-display:  -0.01em;
+  --ls-normal:   0;
+  --ls-caps:     0.06em;
+
+  /* ================================================================
+     SPACING / RADII / SHADOW
+     ================================================================ */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+
+  /* Block pattern: SHRM uses square/rectilinear corners in masthead + buttons.
+     Pill and larger radii are reserved for tags and avatars. */
+
+  --shadow-xs: 0 1px 2px rgba(0, 9, 62, 0.06);
+  --shadow-sm: 0 2px 6px rgba(0, 9, 62, 0.08);
+  --shadow-md: 0 8px 20px rgba(0, 9, 62, 0.10);
+  --shadow-lg: 0 20px 40px rgba(0, 9, 62, 0.14);
+  --shadow-focus: 0 0 0 3px rgba(0, 118, 190, 0.35);
+}
+
+/* ================================================================
+   SEMANTIC TYPE CLASSES (map directly to BSG digital hierarchy)
+   ================================================================ */
+
+.shrm-type-xl-headline,
+.shrm-h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl-headline);
+  font-weight: var(--fw-extrabold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-display);
+  color: var(--fg-1);
+}
+
+.shrm-type-large-headline,
+.shrm-h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-large-headline);
+  font-weight: var(--fw-extrabold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-display);
+  color: var(--fg-1);
+}
+
+.shrm-type-medium-headline,
+.shrm-h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-medium-headline);
+  font-weight: var(--fw-extrabold);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+}
+
+.shrm-type-medium-skinny {
+  font-family: var(--font-display);
+  font-size: var(--fs-medium-skinny);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-snug);
+  color: var(--fg-2);
+}
+
+.shrm-type-small-headline,
+.shrm-h4 {
+  font-family: var(--font-display);
+  font-size: var(--fs-small-headline);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-normal);
+  color: var(--fg-1);
+}
+
+.shrm-type-tiny-headline,
+.shrm-h5 {
+  font-family: var(--font-display);
+  font-size: var(--fs-tiny-headline);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--fg-1);
+}
+
+.shrm-type-body,
+.shrm-p {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-loose);
+  color: var(--fg-3);
+}
+
+.shrm-type-utility,
+.shrm-caption {
+  font-family: var(--font-body);
+  font-size: var(--fs-utility);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--fg-muted);
+}
+
+.shrm-type-eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--fs-utility);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--shrm-bright-blue);
+}
+
+.shrm-type-tag {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+}
+
+/* Long-form document class — swap display stack for Arial per BSG p.47 */
+.shrm-doc { font-family: var(--font-doc); }

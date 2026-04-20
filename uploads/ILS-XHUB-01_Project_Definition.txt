@@ -1,0 +1,521 @@
+SHRM Intelligence Layer Studio
+Project Definition: HR-X Intelligence Hub
+ILS-XHUB-01  |  Including: Integrated VoC Research Plan
+Project Code
+ILS-XHUB-01
+Parent Initiative
+SHRM Intelligence Layer Studio (ILS)
+Classification
+Enterprise B2B Intelligence Platform / Persistent Assessment Hub
+Status
+MVP Active — Hub Phase 1 Design
+Date
+April 2026
+Spec Version
+v4.1 — Aligned to Hub Product Specification v4.1 (April 2026)
+Document Owner
+Barry Reicherter, Director Market Research &amp; VoC / Scale Free Strategy
+Executive Sponsor
+Syed Wasey, EVP SHRM Business
+Product Lead
+Stephanie Laguna, SVP Product Development
+
+§1  Executive Summary &amp; Strategic Intent
+The HR-X Intelligence Hub is the enterprise B2B product at the center of SHRM&apos;s repositioning from a manual assessment and consulting vendor to a scalable, data-driven workforce decision intelligence provider. It is simultaneously the most commercially advanced ILS project and the most architecturally complex — a five-mode platform serving two distinct user populations across a three-tier intelligence model.
+The Hub is built on three proprietary assets SHRM already owns: the HR-X Assessment (a validated 95-item diagnostic instrument across 4 dimensions, 16 practice areas, and 71 subpractice areas); the SHRM BASK (the authoritative Body of Applied Skills and Knowledge, serving as the content standard for all prescriptive recommendations); and SHRM Member and Workforce Data (longitudinal survey history, behavioral telemetry, and verified professional identity across 330,000+ members, forming the foundation of the benchmark panel and the VoW Synthetic simulation engine).
+Strategic Reframe
+A maturity score tells an enterprise where they are. The HR-X Solution Hub tells them where they are, what to do about it, and — uniquely — lets them simulate what happens if they act. That progression — Diagnostic → Prescriptive → Predictive — is the architecture of the platform and the logic of the commercial offer.
+The Hub is currently in market as a manually operated consulting engagement (the MVP), generating revenue with named enterprise pilot clients including Amazon, MasterCard, Progressive, Albemarle, and Cooper&apos;s Hawk. The MVP validates that enterprise HR leaders will pay for a structured, SHRM-grounded diagnostic with a guided results conversation. The Hub is the scalable architecture that makes what the solutions team does today available to 10x the enterprise client volume without 10x the headcount.
+This project definition establishes the Hub as a full ILS project (ILS-XHUB-01), aligns its architecture to the strategic principles governing the Intelligence Layer Studio, and appends a three-phase VoC research plan covering needs discovery, concept validation, and usability testing across the Hub&apos;s primary user populations.
+
+§2  Strategic Context &amp; ILS Alignment
+2.1  Relationship to ILS Architecture
+The Hub occupies a distinct position within the ILS portfolio. Unlike KCDE (which is a reasoning engine) or VoW Synthetic (which is a simulation infrastructure), the Hub is a commercial product — the delivery surface through which ILS capabilities reach enterprise paying customers. Its relationship to the other ILS projects is as follows:
+ILS Project
+Role Relative to Hub
+Integration Status
+ILS-KCDE-01
+Future integration — compliance and policy guidance layer within Tier 2 prescriptive recommendations. Not a load-bearing component of Hub Phase 1.
+Future-gated; not in current spec
+ILS-VOW-01
+Active integration — VoW Synthetic personas are the mechanism for Tier 3 predictive simulation. Subpractice maturity scores from Tier 1 calibrate the Digital Twin.
+Phase 3 dependency; VoW Phase 0 gate required
+ILS-UNODE-01
+Validation layer — University Nodes provide scientific validation of Hub outputs as Hub matures. Not required for Phase 1.
+Future-gated behind KCDE/VoW validation
+ILS-HACK-01
+Demand generation — staff hackathons build internal familiarity with Hub concepts and generate bottom-up support for the platform.
+Ongoing; independent of Hub build phases
+
+2.2  Proprietary Intelligence Boundary — Non-Negotiable Principle
+Regardless of whether SHRM builds the Hub internally, licenses a third-party platform, or pursues a hybrid architecture, one principle governs every architectural decision: SHRM&apos;s proprietary intelligence must never reside inside a vendor&apos;s platform.
+The Proprietary Intelligence Boundary: SHRM&apos;s scoring engine, vectorized BASK corpus, benchmark panel data, member longitudinal data, and VoW Synthetic persona infrastructure constitute the moat that makes the Hub defensible. These assets live in SHRM&apos;s own data layer. Any vendor platform accesses SHRM intelligence via API. The vendor provides the delivery shell, the UX, and the visualization layer. SHRM retains the intelligence. A vendor who requires SHRM&apos;s data to live in their platform is structurally disqualifying regardless of other capabilities.
+
+§3  Platform Architecture
+3.1  Three-Tier Intelligence Model
+Tier
+Name
+Core Capability
+Current Status
+1
+Diagnostic Intelligence
+95-item HR-X Assessment; automated scoring to 71 subpractice areas; benchmark percentile comparison; multi-respondent divergence detection; longitudinal tracking; NLQ interface
+MVP active (manual). Phase 1 automates and scales.
+2
+Prescriptive Intelligence
+C-suite strategy configuration; Priority Index ranking across all 71 subpractices; BASK-grounded recommendations; SHRM product pathway; jurisdiction-aware compliance guidance; editable report exports
+Phase 2 (M4–M12)
+3
+Predictive Intelligence
+VoW Synthetic Digital Twin calibrated by subpractice maturity scores; workforce decision simulation (RTO, RIF, L&amp;D ROI, compensation restructure)
+Phase 3 (M9–M18); gated behind VoW Phase 0 validation
+
+3.2  Five-Mode Operating Model
+The Hub operates across five distinct modes, each serving a different user with a different purpose at a different stage of the customer relationship. Understanding these modes is essential for product design, technical architecture, commercial positioning, and the VoC research plan in §10.
+Mode
+Name
+Primary User
+When Active
+Core Question
+1
+SHRM Internal — Build
+Solutions Architect
+After assessment closes; before customer visibility
+What do we publish to this client?
+2a
+Enterprise — Setup &amp; Deployment
+HR Operations contact
+Account activation through assessment close
+Who is taking the assessment and are they completing it?
+2b
+Enterprise — Results Hub
+CHRO and HR leadership
+After Mode 1 publish; ongoing
+What does our HR maturity profile say and what should we do?
+3a
+SHRM Internal — Customer Success
+Solutions team / CSM
+Ongoing post-delivery across account portfolio
+How are our accounts progressing and which need attention?
+3b
+Enterprise — Progression &amp; Re-Assessment
+CHRO and HR leadership
+Ongoing; most active after second assessment period
+How have we improved and what is our next step?
+
+§4  Commercial Model
+4.1  MVP Pricing (Current)
+Participants
+Client Price
+Gross Margin
+5–9
+$6,500
+69–71%
+10–19
+$7,500
+71–73%
+20–30
+$8,500
+72–74%
+30+
+Custom
+TBD
+
+4.2  Hub Subscription Pricing (Indicative)
+Tier
+Annual Contract (Indicative)
+Primary Buyer
+Retention Driver
+Tier 1: Diagnostic
+$25,000–$40,000
+CHRO / VP People Ops
+Annual re-assessment and benchmark updates
+Tier 2: Prescriptive
+$60,000–$90,000
+CHRO + CLO
+Roadmap progress tracking; BASK evolution
+Tier 3: Predictive
+$120,000–$200,000+
+CHRO + CFO + CSO
+Continuous twin sync; annual scenario capacity
+
+4.3  Revenue Projections
+Revenue Stream
+Year 1 (Conservative)
+Year 2 (Conservative)
+MVP manual engagements (ongoing)
+$1.2M target (per SHRM Business goal)
+Converting to platform subscriptions
+Tier 1 subscriptions (10 accounts @ $32K avg)
+$320,000
+$1,120,000
+Tier 2 subscriptions (4 accounts @ $75K avg)
+$300,000
+$1,050,000
+Tier 3 subscriptions (1 account @ $150K avg)
+$150,000
+$750,000
+Simulation Sprints (3 @ $45K avg)
+$135,000
+$540,000
+Total Hub Revenue
+$905,000
+$3,460,000
+Internal cost avoidance (VoW R&amp;D acceleration)
+$200,000
+$450,000
+
+§5  Internal Stakeholders &amp; Ownership
+Stakeholder
+Role
+Decision / Dependency
+Stephanie Laguna, SVP Product Development
+Executive sponsor; product strategy alignment
+Platform build approval and roadmap prioritization
+Syed Wasey, EVP SHRM Business
+Primary internal customer; executive sponsor for ILS
+Enterprise client requirements; sales motion design; Hub commercial model validation
+Charles Glover
+HR-X scoring logic and coefficient ownership
+API specification for scoring service; coefficient confirmation for Appendix B formulas
+Kaitlyn Harrington
+Product recommendation mapping — practice area to SHRM portfolio
+Finalize Priority/Secondary product mapping for all 71 subpractice areas
+Mark Davila / Product Team
+Platform technical ownership; Member AI integration
+API architecture; platform vendor evaluation; Project Buffalo alignment
+Carolyn Johnson
+Leads Center for Inclusion &amp; Diversity
+I&amp;D module: first planned expansion of Hub assessment capability
+Barry Reicherter
+Market Research, VoC, ILS architecture (SHRM / Scale Free Strategy)
+Spec authorship; VoW Synthetic design; enterprise offer structure; this document and research plan
+
+§6  Implementation Roadmap
+
+Phase 1 (M1–M6)
+Phase 2 (M4–M12)
+Phase 3 (M9–M18)
+Primary Focus
+Tier 1 platform — automated delivery, scoring API, benchmarking dashboard, NLQ interface
+Tier 2 — recommendation engine, strategy configuration, SHRM product mapping, report exports
+Tier 3 — VoW Synthetic integration, Digital Twin construction, Simulation Sprint model
+MVP Parallel Activity
+Continue manual engagements; all pilot data feeds benchmark panel
+MVP engagements generate benchmark data; Tier 1 clients begin migrating to platform
+Tier 2 platform clients generating outcome data for DELTA coefficient validation
+Phase Gate
+HR-X scoring API operational; first assessment scored and benchmarked against panel
+Priority Index engine live; first prescriptive roadmap delivered through platform
+First Digital Twin constructed; 90% accuracy validation complete (VoW Phase 0 gate: $35K)
+Key Dependencies
+HR-X scoring coefficients (Charles Glover); BASK vectorization; platform decision; IP Boundary architecture
+BASK-grounded intervention library; product mapping (Kaitlyn Harrington); strategy taxonomy validation
+VoW Synthetic Phase 0; enterprise data pipeline; SOC2 audit; DELTA effect size initial estimates
+
+§7  Open Architecture Questions for Leadership Resolution
+The following items require explicit decision before Phase 1 development proceeds. They are not resolvable at the ILS level alone.
+Platform build vs. license decision
+The Proprietary Intelligence Boundary is architectural, not preferential. The decision about whether to build the delivery shell internally, license a third-party platform (Qualtrics, Perceptyx, Alchemer, ThoughtSpot), or pursue a hybrid depends on vendor capability to consume external APIs for scoring rather than implementing scoring logic natively. This capability must be the first evaluation criterion in any vendor assessment.
+Approval authority model (Mode 1)
+Who on the SHRM Business team can publish deliverables to enterprise clients, and whether a second-reviewer is required for certain account tiers, is a SHRM Business governance decision. The platform should support configurable approval tiers; the default should require Solutions Architect approval for all publishes.
+BASK crosswalk to HR-X subpractices
+A formal empirical crosswalk between the BASK competency taxonomy and HR-X practice area/subpractice structure has been identified as a gap. The BASK-grounded intervention library in Tier 2 depends on this mapping. Charles Glover&apos;s team owns this dependency.
+Temporal / change architecture
+The Hub currently measures HR maturity at a point in time. The re-assessment cadence creates longitudinal data, but no formal mechanism exists for detecting and surfacing maturity changes that occur between assessment periods. This architectural gap should be addressed before Tier 2 design is finalized.
+Team-level unit of analysis
+The Hub currently operates at the organizational level (via the HR-X instrument) and the individual level (via BASK credentialing). A team-level unit of analysis — sitting between individual practitioner assessment and whole-organization HR maturity — has been identified as a gap relevant to enterprise buyer needs. Scoping this as a future module should be a Phase 2 design decision.
+AI disruption as first-class capability dimension
+Neither the HR-X framework nor the BASK taxonomy currently addresses AI disruption as a distinct HR capability domain. Given the pace of AI adoption in HR functions (69.8% weekly AI use, only 7.3% with enterprise-approved AI tools), this represents a credibility gap in the framework that will surface in buyer conversations. Formal treatment of AI capability in the Hub&apos;s prescriptive recommendations should be scoped before Tier 2 launch.
+
+§8  Integrated VoC Research Plan — ILS-XHUB-01
+This research plan is a standing governance document. Phase status indicators reflect the current state of each research phase. Research findings feed directly into Hub product decisions; this plan is reviewed and updated at each phase gate.
+
+Phase 1: Needs Discovery
+▶ ACTIVE
+Phase 2A: Concept Validation (Quant)
+◷ PLANNED
+Phase 2B: Concept Validation (Qual)
+◷ PLANNED
+Phase 3: Usability / UX Testing
+○ FUTURE-GATED
+
+R1  Research Rationale &amp; Scope
+The HR-X Solution Hub serves two distinct user populations across five operating modes. Research must address both populations — the enterprise buyer and decision-maker (CHRO and HR leadership) and the SHRM Business operator (Solutions Architects, Customer Success Managers) — because each population has distinct needs, distinct success criteria, and distinct usability requirements. The research plan is structured to address both in sequence, prioritizing the enterprise buyer in the needs and concept phases (where insight is most scarce) and incorporating SHRM internal users more heavily in usability testing (where access is greatest).
+The Hub also has an existing proof point in the market — the MVP. This is both an asset and a constraint: it means some needs-level data already exists from pilot engagement debriefs, but it also means concept testing must be designed carefully to separate reactions to the current MVP from reactions to the Hub&apos;s expanded capability set.
+
+R2  Existing Data Inventory — Needs Phase Coverage
+The following SHRM data assets are credited as partially or substantially satisfying specific needs-phase research questions. New primary research is scoped only for gaps not covered by existing data.
+Data Asset
+Relevant Findings
+Needs Questions Addressed
+Gap
+Business Case for HR Excellence (SHRM, 2025)
+n=1,153–1,284 HR directors+
+80% of organizations sit in average HR maturity (3.85/6 overall). Only 12% achieve high maturity. Talent Optimizer is lowest-scoring dimension (6% high maturity). Strong correlation between HR maturity and financial outcomes (44% → 90% likelihood of meeting financial objectives).
+Market sizing for a maturity-improvement platform. Severity and prevalence of the gap the Hub addresses. Business case framing for the enterprise buyer.
+Does not address how CHROs currently evaluate and select assessment vendors, or what they find lacking in current market solutions.
+CHRO Priorities &amp; Perspectives (SHRM, 2025/2026)
+n=212 (2025), n=129 (2026)
+Leadership &amp; manager development top priority (51%/46%). Adapting to AI (29% report as challenge). Pressure to achieve financial goals (45% as challenge). Employee engagement, attraction, and retention as top talent challenges.
+Enterprise buyer pain points and priority areas that the Hub&apos;s prescriptive layer must address. Strategic orientation inputs for the Hub&apos;s Priority Index framework.
+Does not address buyer willingness to pay for an assessment-as-subscription model vs. point-in-time consulting, or procurement decision-making process.
+CHRO Benchmarking Data Brief (SHRM, 2025)
+Salary as % of operating expense rising (40.9% → 45.1%). CFO-CHRO relationship as critical lever for addressing financial pressures.
+Financial pressure context establishing urgency for the Hub&apos;s ROI modeling and Strategic Investment Case capabilities.
+Does not address enterprise buyer&apos;s current benchmarking vendors or what they find credible vs. not credible in existing benchmarking products.
+AI Adoption &amp; Maturity Survey (SHRM, via ILS Strategy Brief)
+69.8% of HR professionals use AI weekly. 48.2% ad hoc individual experimentation. Only 7.3% of organizations have enterprise-approved AI tools for HR. Perception vacuum: SHRM not seen as cutting-edge AI authority.
+Urgency of the AI disruption capability gap in the Hub&apos;s framework. Internal SHRM organizational readiness context.
+Does not address how CHROs specifically evaluate AI-powered HR assessment tools vs. traditional consulting-led assessment.
+B2B Qualitative Leader Interviews (via ILS Strategy Brief)
+Hospitality SVP: &apos;I don&apos;t feel like they&apos;re on the forefront… I don&apos;t feel like they&apos;re truly experts and cutting-edge from a knowledge perspective.&apos; Perception vacuum between SHRM&apos;s content authority and AI/infrastructure positioning.
+Buyer perception gap that the Hub&apos;s positioning must address. Qualitative context on enterprise buyer expectations.
+Small sample; not specific to assessment buyers. Needs systematic replication with CHRO-level buyers in target segments.
+MVP Pilot Engagement Data (Amazon, MasterCard, Progressive, Albemarle, Cooper&apos;s Hawk, et al.)
+Pilots validated willingness to pay at current MVP pricing. Results Call identified as primary value delivery moment. Limitation: manual delivery process cannot scale to enterprise volume demands.
+Proof of enterprise buyer appetite at the Tier 1 price point. Qualitative input on what the Results Call delivers that the Hub must preserve and scale.
+Not systematically collected as research. Anecdotal. No systematic capture of what pilot clients found insufficient, what they compared the MVP to, or what would drive upgrade to Tier 2/3.
+
+Needs Phase Summary Assessment
+The existing data inventory is strong on market sizing and buyer pain points but thin on three critical topics: (1) vendor selection criteria and competitive comparison — what CHROs look for and where current offerings fall short; (2) subscription vs. point-in-time commercial model receptivity — whether the retained relationship model is compelling or creates friction at the procurement stage; and (3) the SHRM Business operator experience — what Solutions Architects and CSMs need from the Hub to do their jobs better than the current manual process. Primary research in Phase 1 targets these specific gaps.
+
+R3  Phase 1: Needs Discovery
+Phase Status: ACTIVE
+Phase 1 establishes the foundational needs baseline for both user populations. It uses a qualitative-led approach — in-depth interviews as the primary method — supplemented by a targeted quantitative survey to validate directional findings at scale. Because the SHRM Business operator population is internal and fully accessible, it is treated as the priority population for immediate research initiation.
+R3.1  Research Questions — Enterprise Buyer Population
+How do CHROs currently assess their own HR function&apos;s maturity, and how formal or informal is that process?
+What vendors, frameworks, or internal processes do enterprise HR leaders currently use to benchmark their HR function against peers? What do they find credible, and what do they distrust?
+What would motivate a CHRO to shift from a point-in-time consulting engagement to a retained annual subscription relationship for HR maturity guidance?
+What level of evidence does a CHRO require before acting on an assessment finding — and who else in the organization needs to be convinced (CFO, CEO, business unit heads)?
+What are the most frequent blockers to acting on the prioritized recommendations that come out of an assessment engagement?
+How does the AI disruption dimension factor into how CHROs think about HR capability gaps today?
+What is the CHRO&apos;s experience with competitive offerings (PwC Saratoga, Mercer, McLean)? Where do those offerings fall short?
+
+R3.2  Research Questions — SHRM Business Operator Population
+In the current manual MVP process, where does the Solutions Architect spend the most time, and where does the process create the most friction?
+What does the Solutions Architect currently add to the AI-generated narrative that could not be automated — and what parts of the current manual process could be automated without losing quality?
+What account signals currently go undetected because there is no systematic tracking mechanism — and what would a Solutions Architect want to be alerted to automatically?
+How does the CSM currently monitor account health across the book of business, and what makes an account feel &apos;at risk&apos; vs. &apos;progressing&apos;?
+What information from the Discovery Audit (Appendix A) is most impactful in improving the quality of the assessment output — and what is hardest to get from enterprise clients?
+
+R3.3  Method: In-Depth Interviews
+Parameter
+Enterprise Buyer
+SHRM Business Operator
+Target population
+CHROs and senior HR leaders (VP+) at organizations with 1,000+ employees. Mix of current MVP pilot clients and non-SHRM assessment buyers.
+Solutions Architects and Customer Success Managers currently delivering the MVP. Internal SHRM Business team.
+Sample size
+n=15–20 interviews (minimum 12 for saturation across industry verticals)
+n=8–12 interviews (full coverage of current SA/CSM team)
+Recruitment
+SHRM Executive Network (primary); SHRM member panel (secondary); warm outreach via Syed Wasey and solutions team to pilot clients
+Internal recruitment via SHRM Business leadership. No incentive required.
+Interview length
+60 minutes
+45–60 minutes
+Format
+Semi-structured; one interviewer, one note-taker. Video preferred. Recorded with consent.
+Semi-structured; same format. May be conducted by Barry directly or with research team.
+Instrument
+Discussion guide covering: current assessment practices; vendor evaluation criteria; commercial model receptivity; action barriers; AI disruption lens
+Discussion guide covering: workflow pain points; Mode 1 and 3a needs; automation vs. human judgment tradeoffs; account health signals; discovery data challenges
+Analysis
+Thematic analysis. Key outputs: needs hierarchy, barriers map, competitive perception summary, commercial model receptivity findings.
+Process mapping + thematic analysis. Key outputs: Mode 1 workflow specification input; Mode 3a requirement prioritization; automation boundary recommendations.
+Timeline
+Weeks 1–8 from research plan activation
+Weeks 1–4 from research plan activation (shorter due to full access)
+
+R3.4  Method: Supplementary Quantitative Survey (Needs Validation)
+Following thematic analysis of Phase 1 interviews, a targeted quantitative survey validates the directional findings at a larger n and provides the statistical confidence required for internal business case documentation.
+Parameter
+Specification
+Target population
+HR directors and above at organizations with 500+ employees. Excludes current SHRM pilot clients (to avoid demand artifacts).
+Sample size
+n=200–300 (sufficient for segment-level analysis by industry and org size)
+Recruitment
+SHRM Voice of Work Research Panel (primary); SHRM Executive Network (secondary)
+Instrument topics
+Current HR assessment practices and vendor usage; benchmarking credibility criteria; subscription model receptivity and willingness to pay; AI disruption priority in HR capability gaps; competitive brand perceptions (unaided, then aided)
+Analysis
+Frequency distributions; cross-tabulations by industry and org size; max-diff or rank-order for vendor criteria and feature prioritization; willingness-to-pay anchoring
+Timeline
+Weeks 6–12 from research plan activation (follows interview analysis to allow instrument refinement)
+
+R3.5  Phase 1 Validation Criteria (Gate to Phase 2)
+Phase 2 concept validation initiates when the following criteria are met from Phase 1 findings:
+At least 3 primary need themes identified and ranked by enterprise buyer population with sufficient saturation across industry verticals
+Commercial model receptivity finding is directionally clear (subscription model understood and acceptable OR specific friction points identified and addressable)
+Competitive perception map complete — at least 3 competitor offerings evaluated and SHRM&apos;s relative positioning characterized
+SHRM Business operator workflow needs sufficiently documented to inform Mode 1 and Mode 3a platform requirements
+Quantitative survey fielded and top-line results available
+
+R4  Phase 2A: Concept Validation (Quantitative)
+Phase Status: PLANNED — pending Phase 1 gate
+Phase 2A presents the Hub concept to a larger sample of enterprise HR leaders via a quantitative survey instrument designed to test concept comprehension, appeal, and differentiation. It runs concurrently with Phase 2B (qualitative) but produces independent outputs that complement the qualitative findings.
+R4.1  Research Questions
+How appealing is the Hub concept as described — and which elements drive the most and least appeal?
+How clearly do enterprise HR leaders understand the three-tier Diagnostic → Prescriptive → Predictive progression?
+Which Hub capabilities are perceived as most differentiated from existing offerings — and which are seen as table stakes?
+How does receptivity vary by organization size, industry, and current assessment maturity?
+What is the perceived value of the subscription model relative to a per-engagement consulting fee at equivalent price points?
+Which tier entry point (Diagnostic / Prescriptive / Predictive) aligns with enterprise buyer intent, and what would drive tier upgrade?
+
+R4.2  Method
+Parameter
+Specification
+Target population
+HR directors and above at organizations with 1,000+ employees. Excludes current SHRM pilot clients.
+Sample size
+n=250–400
+Recruitment
+SHRM Voice of Work Research Panel; SHRM Executive Network; supplemented by SHRM member panel if needed for enterprise org size quotas
+Instrument design
+Concept description presented as a standardized stimulus (written description of the Hub, not a prototype). Structured reaction battery covering: overall appeal (0–10); comprehension check items; differentiation ratings vs. named competitors; feature-level appeal ratings (max-diff or 5-point rating); willingness to pay anchoring by tier; intended tier entry point; upgrade trigger identification.
+Key analytical methods
+Overall appeal distribution and mean; segment-level appeal by industry and org size; importance-performance mapping of feature set; conjoint or max-diff for commercial model structure (if budget permits); banner tables for subgroup comparisons
+Stimulus design
+Concept stimulus must be tested with a blind review panel (internal) before fielding to ensure SHRM branding does not inflate appeal relative to a non-branded baseline. Both branded and unbranded variants tested if sample permits.
+Timeline
+Weeks 10–18 from research plan activation
+
+R4.3  Phase 2A Validation Criteria
+Overall concept appeal mean ≥ 7.0/10 among target population
+Tier 1 (Diagnostic) as the preferred entry point for ≥50% of respondents at intended pricing
+VoW Synthetic simulation capability identified as a top-3 differentiating feature by ≥40% of respondents
+Comprehension of three-tier model ≥70% correct on check items
+
+R5  Phase 2B: Concept Validation (Qualitative)
+Phase Status: PLANNED — concurrent with Phase 2A
+Phase 2B uses qualitative methods to probe the mechanisms behind quantitative reactions, test concept language and framing, and surface objections that closed-ended survey items cannot capture. It is the primary research method for validating the Hub&apos;s value proposition language and commercial model framing.
+R5.1  Research Questions
+In the respondent&apos;s own words, what does the Hub promise — and does that match the intended value proposition?
+What objections arise spontaneously when the Hub concept is presented? Which are fatal vs. addressable?
+How do enterprise HR leaders react to the AI draft / human approval model in Mode 1? Is the involvement of the SHRM Solutions Architect perceived as a feature or unnecessary friction?
+What language resonates when describing the three-tier progression (Diagnostic → Prescriptive → Predictive)? What language creates confusion or skepticism?
+How do enterprise buyers react to SHRM as the provider of this platform? What credibility assets does SHRM bring — and what credibility gaps surface?
+How do buyers in organizations with existing assessment relationships (PwC Saratoga, Mercer, McLean) respond to the Hub concept? What would it take to displace an incumbent?
+
+R5.2  Method: Focus Groups and Concept Testing Sessions
+Parameter
+Specification
+Target population
+CHROs and VP-level HR leaders at organizations with 1,000+ employees. Separate groups for: (a) organizations with no current formal HR assessment process; (b) organizations with existing assessment vendor relationships.
+Format
+Mini-groups of 4–6 participants. Online (Teams/Zoom). 90 minutes per session.
+Number of sessions
+4–6 sessions (2 per population segment)
+Recruitment
+SHRM Executive Network (primary); warm referrals via solutions team to non-pilot enterprise contacts (secondary). Screened for decision-making authority and org size.
+Stimulus
+Concept boards presenting: Hub overview with three-tier model; Mode 2b (Results Hub) interface description; Mode 1 (SHRM Internal Build) narrative with AI draft / human approval model explanation; Tier pricing structure (no SHRM branding on stimulus in first round to minimize halo effects).
+Discussion guide topics
+Initial reactions (unaided); concept comprehension check; value proposition resonance; objections and barriers; SHRM credibility as provider; competitive displacement conditions; commercial model reactions; language testing for key terms (&apos;Digital Twin,&apos; &apos;Priority Index,&apos; &apos;Computational Authority&apos;)
+Analysis
+Session-level thematic summaries; cross-session pattern identification; objection taxonomy; language resonance matrix; competitive displacement conditions map
+Timeline
+Weeks 12–20 from research plan activation
+
+R5.3  Phase 2B Validation Criteria
+Value proposition language passes the &apos;own words&apos; test — participants can articulate the Hub&apos;s core promise in terms that match the intended positioning without prompting
+No fatal objections surfaced that are not addressable through product design or positioning adjustment
+SHRM credibility as platform provider rated positively (net positive spontaneous mentions) in ≥3 of 4 qualitative sessions
+AI draft / human approval model understood and accepted by majority of participants as value-adding rather than a quality control concern
+
+R6  Phase 3: Usability &amp; UX Testing
+Phase Status: FUTURE-GATED — requires working prototype (Phase 1 platform build, minimum Tier 1)
+Phase 3 usability testing requires a functional or high-fidelity prototype of the Hub interface. It cannot be initiated until Phase 1 of the platform build is sufficiently advanced to support a testable Mode 2b (Results Hub) experience. Research scope and method will be confirmed once a prototype is available; the framework below defines the intended approach.
+R6.1  Research Questions
+Can a CHRO, without guidance, navigate to and interpret their dimension scores, practice area drill-downs, and Priority Action Roadmap from a cold start?
+Does the natural language query interface (NLQ) produce results that feel responsive and accurate to the enterprise buyer&apos;s intent? Where does it fail or produce confusing output?
+Can the Solutions Architect complete the Mode 1 workflow — reviewing scores, editing AI narrative, approving product recommendations, and publishing — within a reasonable time window without training? Where does the workflow create friction or confusion?
+Does the Mode 3a account health dashboard surface the right signals to allow a CSM to prioritize account interventions? What is missing or misleading?
+How do CHROs react to the visual presentation of benchmark percentile comparisons? Does the comparison feel credible and useful or raise questions about panel composition?
+
+R6.2  Method
+Parameter
+Specification
+Target population
+Two separate test populations: (1) CHRO / HR leadership for Mode 2b testing; (2) Solutions Architects and CSMs for Mode 1 and 3a testing. SHRM internal operators are accessible immediately; enterprise user testing requires participant recruitment.
+Format
+Moderated think-aloud usability sessions. 60–75 minutes. Screen-shared remote sessions (Teams/Zoom). Facilitator + observer. Recordings with consent.
+Sample size
+n=6–8 per user population (standard usability threshold for issue saturation). Two rounds planned: Round 1 after initial prototype; Round 2 after design iteration.
+Recruitment
+Enterprise users: SHRM Executive Network and warm referrals via solutions team. Internal users: direct recruitment from SHRM Business team.
+Task scenarios
+Mode 2b: cold-start navigation tasks (find dimension score; compare to financial services peers; identify top-priority gap; navigate to SHRM product recommendation). NLQ tasks (ask 3 pre-defined questions; evaluate response accuracy and usefulness). Mode 1: end-to-end publish workflow (review scores; edit 2 narrative sections; approve / suppress 3 product recommendations; publish). Mode 3a: account health triage (identify top 3 at-risk accounts; locate next best action for each).
+Metrics
+Task completion rate; time-on-task; error rate; System Usability Scale (SUS) score; qualitative friction points and delight moments.
+Validation threshold
+SUS score ≥68 (industry-standard &apos;good&apos; threshold) across both user populations after design iteration round. Critical task completion rate ≥85% without facilitator assistance.
+Timeline
+Initiated when Phase 1 platform build has a testable Mode 2b prototype (estimated M6–M9 of platform build).
+
+R6.3  UX Testing Governance
+All usability findings are documented in a standardized Issue Log categorized by severity (Critical / Major / Minor) and user population (Enterprise / SHRM Internal). Critical issues block platform release. Major issues are addressed before external client access. Minor issues are prioritized in the next sprint cycle. The Issue Log is maintained by the Product team and reviewed at each Phase gate with SHRM Business and Product leadership.
+
+R7  Research Governance
+Element
+Specification
+Research owner
+Barry Reicherter, Director Market Research &amp; VoC (SHRM / Scale Free Strategy)
+Review authority
+Alex Alonso (Chief Data &amp; Insights Officer) reviews all research plans and findings before internal distribution. Syed Wasey reviews findings with commercial implications before sharing with SHRM Business team.
+Sequencing rule
+Research findings are routed through Alex before being shared with product, sales, or leadership stakeholders. No findings are shared directly with external stakeholders.
+Synthesis cadence
+Phase 1 findings: interim summary at Week 4 (qualitative only); full synthesis at Week 12 (qualitative + quantitative). Phase 2 findings: synthesis report within 4 weeks of final session. Phase 3: findings report within 2 weeks of each usability round.
+Existing data credit
+All existing SHRM data assets credited in §R2 are documented with sample details and fieldwork dates. Where existing data is credited as satisfying a needs question, new primary research is not commissioned for that question unless Phase 1 interviews surface material contradictions.
+Research disclosure
+Scale Free Strategy&apos;s involvement in research design and analysis is disclosed to Alex Alonso proactively. Research methodology documentation notes the dual role.
+VoW Synthetic note
+VoW Synthetic is not used to substitute for primary research in any phase of this plan. Once VoW Synthetic achieves Phase 0 validation (90% accuracy benchmark), it may be used to supplement quantitative sample where enterprise panel cells fall below N=30 minimum — this will be documented explicitly when it occurs and will not be represented as primary human research.
+
+R8  Research Budget Estimate
+Phase
+Activity
+Estimated Cost
+Notes
+Phase 1
+Enterprise buyer interviews (n=18 avg)
+$18,000–$24,000
+Includes recruiter fees, incentives ($150/interview), transcription, and analysis time
+Phase 1
+SHRM Business operator interviews
+$0–$2,000
+Internal population; minimal incentive cost. Recruiter not required.
+Phase 1
+Quantitative needs validation survey (n=250)
+$12,000–$18,000
+Panel costs via SHRM VoW Panel (internal rate); programming and analysis
+Phase 2A
+Concept validation quantitative survey (n=300)
+$15,000–$22,000
+Panel costs; programming; analysis; potential conjoint module adds $8K–$12K
+Phase 2B
+Focus groups / concept testing (4–6 sessions)
+$20,000–$30,000
+Recruiter fees, incentives ($200/participant), moderation, analysis
+Phase 3
+Usability testing (2 rounds × 2 populations)
+$8,000–$14,000
+Primarily internal for operator population; enterprise participant incentives
+All phases
+Analysis, synthesis, and reporting
+$10,000–$15,000
+Research analyst time for thematic analysis, survey data processing, and report production
+
+Total Estimated Range
+$83,000–$125,000
+Across all phases, 18–24 month program. Phase 1 subset: $30,000–$44,000.
+
+Budget Note
+Phase 1 research can be initiated within existing VoC research budget. Phases 2 and 3 require incremental allocation linked to the Phase 1 go/no-go gate. Budget estimates assume SHRM VoW Research Panel is used for quantitative phases at internal rates, reducing cost vs. external panel vendors by an estimated 30–40%.
+
+— End of Document —
+ILS-XHUB-01  |  SHRM Intelligence Layer Studio  |  Internal Use Only  |  April 2026

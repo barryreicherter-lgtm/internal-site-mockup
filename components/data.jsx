@@ -1,0 +1,177 @@
+// Public-facing data for ils.shrm.org. Strips internal-only fields
+// (leadership names, budgets, risks, governance language) and reframes
+// status/phase language in public-safe, thought-leadership terms.
+
+const ILS_PROJECTS = [
+  {
+    id: "xhub",
+    code: "HR-X Solutions Hub",
+    name: "HR-X Solutions Hub",
+    tagline: "From maturity score, to action plan, to simulation.",
+    oneLiner: "HR-X Solutions Hub is SHRM's enterprise intelligence platform: a three-tier system that tells an organization where their HR function stands, what to do about it, and — uniquely — lets them simulate what happens if they act. Built on the HR-X Assessment, the SHRM BASK, and 330,000+ members of workforce data.",
+    classification: "Enterprise B2B Intelligence Platform",
+    status: "active",
+    statusLine: "In market as MVP · Hub Phase 1 in design",
+    accent: "#2A8F6B",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #1B3C69 45%, #2A8F6B 100%)",
+    kpis: [
+      { n: "95",      l: "HR-X Assessment items, validated across 4 dimensions" },
+      { n: "71",      l: "Subpractice areas benchmarked to a SHRM-member panel" },
+      { n: "3 Tiers", l: "Diagnostic → Prescriptive → Predictive" },
+      { n: "5 Modes", l: "Serving two distinct user populations" },
+    ],
+    modes: [
+      { code: "T1", name: "Diagnostic Intelligence",  platform: "HR-X Assessment · benchmark panel · NLQ interface",   user: "The 95-item assessment, automated scoring to 71 subpractice areas, benchmark-percentile comparison, and longitudinal maturity tracking — delivered as a platform, not a consulting deliverable.", phase: "Tier 1 · MVP active · Phase 1 automates" },
+      { code: "T2", name: "Prescriptive Intelligence", platform: "Priority Index · BASK-grounded roadmap",              user: "C-suite strategy configuration, Priority Index ranking across all 71 subpractices, BASK-grounded interventions, SHRM product pathway, and editable enterprise report exports.",                       phase: "Tier 2 · Phase 2 (M4–M12)" },
+      { code: "T3", name: "Predictive Intelligence",   platform: "VoW Synthetic Digital Twin · Simulation Sprints",    user: "An enterprise Digital Twin calibrated by subpractice maturity scores. Simulate RTO, RIF, L&D ROI, and compensation restructure decisions before the first conversation.",                        phase: "Tier 3 · Phase 3 · gated on VoW Phase 0 validation" },
+      { code: "5×",  name: "Five Operating Modes",     platform: "Two user populations · five moments",                 user: "Solutions Architect build. Enterprise setup & deployment. CHRO results hub. SHRM Customer Success. Enterprise progression & re-assessment — one platform, five moments, two distinct users.",    phase: "Operating model · across all tiers" },
+    ],
+  },
+  {
+    id: "kcde",
+    code: "KCDE",
+    name: "Knowledge Center Decision Engine",
+    tagline: "Expert HR reasoning, at the speed of software.",
+    oneLiner: "KCDE converts SHRM's two-year Knowledge Center case archive into a proprietary reasoning engine — deployable as internal advisor tooling, agentic skills for enterprise copilots, and a certified API for HRIS systems.",
+    classification: "Proprietary Reasoning Infrastructure",
+    status: "phase0",
+    statusLine: "In development · Mode A advisor augmentation preview",
+    accent: "#0076BE",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #1B3C69 45%, #0076BE 100%)",
+    kpis: [
+      { n: "2 yrs",  l: "Expert case resolutions in the reasoning corpus" },
+      { n: "4",      l: "Deployment modes, from advisor tooling to HRIS API" },
+      { n: "99%",    l: "BASK retrieval accuracy benchmark" },
+      { n: "SHRM",   l: "Proprietary Intelligence Boundary — IP never leaves" },
+    ],
+    modes: [
+      { code: "A", name: "Advisor Augmentation",  platform: "SHRM Knowledge Center",                      user: "HR professionals receive faster, better-cited answers through SHRM's authoritative advisor channel.",         phase: "Mode A · available in preview" },
+      { code: "B", name: "Agent-Ready Skill",      platform: "Microsoft Copilot · enterprise copilots",    user: "KCDE shows up inside the assistants HR teams already use — calling SHRM standards, never embedding them.",      phase: "Mode B · coming next" },
+      { code: "C", name: "Skilled Assistant",      platform: "ChatGPT · Claude · Gemini",                  user: "SHRM members access KCDE reasoning directly from the consumer AI tools they already have.",                    phase: "Mode C · coming next" },
+      { code: "D", name: "HRIS API Service",       platform: "Workday · SAP · Rippling",                   user: "Enterprise HRIS systems call KCDE at decision points — compliance, eligibility, policy — with full auditability.", phase: "Mode D · on the roadmap" },
+    ],
+  },
+  {
+    id: "vow",
+    code: "VoW Synthetic",
+    name: "Voice of Work Synthetic",
+    tagline: "A computational workforce. Simulate before you decide.",
+    oneLiner: "Voice of Work Synthetic vectorizes three years of longitudinal SHRM workforce data into ~13,000 evidence-based personas — a digital twin of the HR profession that can predict workforce behavior at research speed.",
+    classification: "Enterprise Digital Twin",
+    status: "phase0",
+    statusLine: "In development · accuracy validation underway",
+    accent: "#4030D6",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #4030D6 55%, #0076BE 100%)",
+    kpis: [
+      { n: "~13,000", l: "Evidence-based synthetic personas" },
+      { n: "90%",     l: "Ground-truth correlation benchmark" },
+      { n: "3 yrs",   l: "Longitudinal survey history in the memory layer" },
+      { n: "4",       l: "Deployment modes — from simulator to enterprise twin" },
+    ],
+    modes: [
+      { code: "A", name: "Predictive Simulator",   platform: "SHRM Research",                              user: "Run scenarios that would be too slow or too costly to run in the real world — in minutes, not quarters.",       phase: "Mode A · in development" },
+      { code: "B", name: "Agentic Auditor",        platform: "Enterprise SaaS partnerships",               user: "SHRM-certified synthetic panels let enterprise tools self-test their HR features before rollout.",                phase: "Mode B · coming next" },
+      { code: "C", name: "Proxy Partner",          platform: "API licensing · executive dashboards",       user: "Commercial partners license evidence-based synthetic populations for product research and exec-level insight.",    phase: "Mode C · coming next" },
+      { code: "D", name: "Enterprise Workforce Twin", platform: "HR-X Solution Hub — Tier 3",              user: "CHROs and CFOs model workforce change against a digital twin of their own employee base — before the first conversation.", phase: "Mode D · on the roadmap" },
+    ],
+  },
+  {
+    id: "unode",
+    code: "University Nodes",
+    name: "University Nodes",
+    tagline: "The scientific backbone of the Intelligence Layer Studio.",
+    oneLiner: "University Nodes is ILS's research partnership network — specialized academic partners who peer-review reasoning architecture, benchmark synthetic workforce accuracy, and stress-test enterprise integrations before anything ships under SHRM branding.",
+    classification: "Scientific Validation & Research Partnership Network",
+    status: "planning",
+    statusLine: "Partnership outreach underway",
+    accent: "#8B1377",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #1B3C69 40%, #8B1377 100%)",
+    kpis: [
+      { n: "3",   l: "Specialized academic nodes — no two do the same work" },
+      { n: "3",   l: "Triple-Gate reviews earn the SHRM Validation Seal" },
+      { n: "4",   l: "Operational modes: audit, benchmark, red-team, fellows" },
+      { n: "HR+", l: "Every node pairs HR authority with technical capability" },
+    ],
+    modes: [
+      { code: "Cornell", name: "Deep-Tech Node",        platform: "ILR × College of Engineering",           user: "Peer-reviews reasoning architecture, validates retrieval accuracy, and audits determinism of SHRM's intelligence chains.",                          phase: "Primary validator for KCDE reasoning" },
+      { code: "Indiana", name: "Scalable Practitioner", platform: "Kelley × Luddy",                          user: "Benchmarks synthetic workforce outputs against human panels, and studies how AI-augmented workflows affect HR decision quality.",                    phase: "Primary validator for VoW Synthetic" },
+      { code: "Denver",  name: "Agile Corporate",       platform: "Daniels × Ritchie",                        user: "Stress-tests SHRM APIs and integrations inside real, messy enterprise environments before they deploy at commercial scale.",                        phase: "Primary validator for enterprise deployments" },
+      { code: "Council", name: "Research Council",      platform: "Three lead PIs + ILS architect",          user: "Coordinates the network, routes work to the right node, and governs publication, ethics, and the issuance of the SHRM Validation Seal.",            phase: "Cross-node governance" },
+    ],
+  },
+  {
+    id: "hack",
+    code: "Hackathon Series",
+    name: "SHRM Innovation Series",
+    tagline: "From Identic AI to Agentic fluency — the cultural engine of ILS.",
+    oneLiner: "The SHRM Innovation Series is the internal cultural accelerator of the Intelligence Layer Studio. Cross-functional flash teams spend one to two weeks solving real HR friction points — and every sprint contributes to the Vibe Experiments Library.",
+    classification: "Cultural Accelerator & Rapid Prototyping Series",
+    status: "active",
+    statusLine: "Active · rolling sprint cadence",
+    accent: "#F26A42",
+    accentDark: "#1B3C69",
+    gradient: "linear-gradient(135deg, #00093E 0%, #1B3C69 40%, #F26A42 100%)",
+    kpis: [
+      { n: "1–2",  l: "Week sprint window — vibe over polish" },
+      { n: "5",    l: "Disposition tracks, plus a universal library entry" },
+      { n: "100%", l: "Voluntary, cross-functional participation" },
+      { n: "Live", l: "Innovation Week executed · rolling Phase 2 begins" },
+    ],
+    modes: [
+      { code: "01", name: "One Problem Proposal", platform: "Any SHRM staffer",                              user: "Specific HR friction points, one paragraph each. The only constraint: it must help HR professionals and align with SHRM standards.", phase: "Continuous intake" },
+      { code: "02", name: "Flash Team Formation", platform: "2–4 cross-functional staffers",                  user: "Marketing paired with Knowledge Advisors, Member Services with Certification — homogeneous teams produce homogeneous outputs.",       phase: "Formed per sprint" },
+      { code: "03", name: "The 1–2 Week Sprint",   platform: "Lovable · Claude Code · Copilot Studio · SOC2 sandbox", user: "Intensive building inside approved sandboxes. Read-only APIs only. No PII. Vibe over polish.",                              phase: "Intensive window" },
+      { code: "04", name: "Layered Triage",        platform: "Five development tracks + Library",              user: "Every output lands in the Vibe Experiments Library. A subset receives an active development track — technical, program, strategic, or honorable discontinuation.", phase: "Routing decision" },
+    ],
+  },
+];
+
+// Public-safe research highlights / insights feed.
+const ILS_RESEARCH = [
+  { date: "April 2026", project: "kcde",  kind: "Architecture",
+    title: "A phased-stack architecture for HR reasoning infrastructure",
+    body: "Why ILS builds the reasoning layer on cloud-native Google infrastructure first — and migrates to enterprise-native Microsoft services only when integration triggers warrant it." },
+  { date: "April 2026", project: "vow",   kind: "Research note",
+    title: "Persona-vectorization from longitudinal member data",
+    body: "The methodology behind SHRM's ~13,000 evidence-based synthetic personas — and why the 90% ground-truth benchmark is non-negotiable before any commercial deployment." },
+  { date: "April 2026", project: "hack",  kind: "Program",
+    title: "From event to rolling cadence — lessons from Innovation Week",
+    body: "Moving the SHRM Innovation Series from a one-week event to continuous flash-team sprints. What changed, what held, and how the Vibe Experiments Library anchors institutional memory." },
+  { date: "March 2026", project: "kcde",  kind: "Insight",
+    title: "The automation boundary in HR advisory work",
+    body: "HR advisors welcome drafting augmentation — and reject automated final sign-off on termination and multi-jurisdiction leave. A pattern ILS treats as a design constraint, not a disagreement." },
+  { date: "March 2026", project: "unode", kind: "Partnership",
+    title: "Why a 'National Labs' model for HR research",
+    body: "Three specialized academic nodes. No two do the same work. How SHRM earns scientific credibility that general-purpose AI systems cannot replicate." },
+  { date: "March 2026", project: "vow",   kind: "Research note",
+    title: "Extending synthetic populations beyond the HR panel",
+    body: "How SHRM integrates third-party workforce datasets to cover non-HR employee populations — unlocking enterprise twin use cases SHRM's own member panel cannot populate." },
+  { date: "April 2026", project: "xhub", kind: "Architecture",
+    title: "Diagnostic → Prescriptive → Predictive — the architecture of the enterprise offer",
+    body: "How the HR-X Solutions Hub stages three tiers of intelligence on top of a single validated assessment — and why the three-tier progression is both the platform architecture and the logic of the commercial relationship." },
+];
+
+// Public newsroom items — press-style announcements only.
+const ILS_NEWSROOM = [
+  { date: "April 17, 2026", kind: "Announcement",
+    title: "SHRM launches Intelligence Layer Studio microsite",
+    dek: "ils.shrm.org consolidates the Studio's current project portfolio behind SHRM's computational reasoning infrastructure for work, workers, and the workplace." },
+  { date: "April 10, 2026", kind: "Research",
+    title: "KCDE preview: advisor augmentation mode enters internal trial",
+    dek: "SHRM Knowledge Center advisors begin working alongside the Decision Engine in drafting and citation workflows." },
+  { date: "March 24, 2026", kind: "Program",
+    title: "SHRM Innovation Week concludes under 'From Identic to Agentic' theme",
+    dek: "Rolling Phase 2 sprint cadence begins, formalizing the Vibe Experiments Library as institutional memory." },
+  { date: "March 12, 2026", kind: "Partnership",
+    title: "University Nodes outreach enters planning phase",
+    dek: "SHRM begins formal exploration of specialized academic partnerships across three research institutions." },
+];
+
+window.ILS_PROJECTS = ILS_PROJECTS;
+window.ILS_RESEARCH = ILS_RESEARCH;
+window.ILS_NEWSROOM = ILS_NEWSROOM;
+window.getProject   = (id) => ILS_PROJECTS.find(p => p.id === id);

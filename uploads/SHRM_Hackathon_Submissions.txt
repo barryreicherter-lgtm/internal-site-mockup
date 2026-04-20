@@ -1,0 +1,1183 @@
+SHRM Hackathon Submissions
+Overview
+This document compiles all hackathon app submissions. Each prototype is presented on its
+own page with a clear, executive‑ready summary.
+
+-- 1 of 61 --
+
+Imagine spending millions on employee training but still not having the
+right sk
+Submitted by: Nivrita Sharma | Team:
+Problem & Solution
+Imagine spending millions on employee training but still not having the right skills in your
+workforce. That’s the reality for most organizations today.
+Companies lack visibility into actual skill gaps.
+Training programs are generic, not role-specific, and not aligned with market standards.
+As a result, budgets are wasted, and productivity suffers.
+That’s where UpskillX comes in.
+Our AI-powered platform:
+• Evaluates the top 10 skills per employee
+• Compares them with market standards
+• Identifies exact skill gaps
+• Recommends personalized training
+• And automatically generates a complete L&D budget plan
+With UpskillX:
+• Training becomes targeted
+• Budget becomes optimized
+• And workforce becomes future-ready.
+We are not just identifying skill gaps; we are turning learning into a strategic advantage.
+
+-- 2 of 61 --
+
+I am developing a JohnnyGPT for helping staff understand how to
+evaluate communi
+Submitted by: Alex Alonso | Team:
+Problem & Solution
+I am developing a JohnnyGPT for helping staff understand how to evaluate communications
+and business concepts. It is an AI-based assistant designed to live on everyone's Microsoft
+communications tools (e.g., Outlook and Slack). There is a second use case to review
+financial business reporting and provide future-state predictions about the world of work.
+
+-- 3 of 61 --
+
+The HR Navigator prototype, designed in Lovable, empowers employees
+with a strea
+Submitted by: Denise Fenrick | Team:
+Problem & Solution
+The HR Navigator prototype, designed in Lovable, empowers employees with a streamlined,
+self-service platform for HR support. The portal provides automated responses to common
+HR inquiries, enabling employees to quickly access information and resolve issues
+independently. For questions that require personalized attention, employees can submit a
+support ticket directly through the portal. Tickets are automatically routed to the
+appropriate HR representative, ensuring efficient and accurate handling. An integrated
+dashboard allows employees to track the status of their tickets, view follow-up actions, and
+engage with HR reps as needed. This solution enhances employee experience, improves HR
+operational efficiency, and delivers real-time visibility into HR support interactions.
+
+-- 4 of 61 --
+
+SHRM Growth Compass is an AI-powered personal development
+companion built for em
+Submitted by: Niloufar Gomez | Team:
+Problem & Solution
+SHRM Growth Compass is an AI-powered personal development companion built for
+employees and HR professionals who want to make growth intentional, not accidental.
+The problem: Traditional performance tools focus on evaluation, not development.
+Employees lack a safe, judgment-free space to reflect, set meaningful goals, and track their
+growth over time.
+What it does:
+AI Coaching Chat — an empathetic copilot that remembers your journal entries and goals,
+offering personalized insights instead of generic advice
+Reflective Journaling — capture thoughts with mood tracking, linked to your growth goals
+Auto-Generated Goals & Milestones — describe a growth area in conversation and the AI
+creates a structured goal with weekly milestones
+Progress Insights — visualize patterns in your reflections and goal progress
+Who it's for: Individual contributors, managers, and HR teams who believe growth happens
+through self-awareness — not annual reviews.
+
+-- 5 of 61 --
+
+Create a daily 10-15 minute AI-generated audio digest podcast
+summarizing the to
+Submitted by: Veronica Magan | Team:
+Problem & Solution
+Create a daily 10-15 minute AI-generated audio digest podcast summarizing the top HR
+news from SHRM's HR Daily newsletter. This would be similar to NPR's Up First Podcast
+and allow us to provide our daily insights to our audiences in a new format without a lot of
+production and perhaps allow us to sell more sponsorships or ads.
+
+-- 6 of 61 --
+
+Pathnex is an AI-powered career development platform designed to solve
+one of th
+Submitted by: Karan Singh | Team:
+Problem & Solution
+Pathnex is an AI-powered career development platform designed to solve one of the most
+persistent challenges in HR - The lack of personalized, role-specific development.
+Today, most assessments and training programs are generic and disconnected from real job
+responsibilities, making it difficult for professionals to understand their actual skill gaps
+and take meaningful action.
+Pathnex addresses this by combining role intelligence, SHRM BASK-aligned competency
+mapping, and high-quality, scenario-based assessments to evaluate individuals in the
+context of their actual work. It then translates these insights into clear, actionable
+development plans and tracks progress through a live dashboard, enabling continuous
+improvement and reassessment.
+The solution is designed for working professionals, people managers, and HR teams who
+want a structured, data-driven, and practical approach to capability building and career
+growth.
+
+-- 7 of 61 --
+
+PROBLEM STATEMENT
+Submitted by: Nidhika Mishra | Team:
+Problem & Solution
+PROBLEM STATEMENT
+Title: The Learning–Application Gap
+Organizations invest heavily in leadership / managerial / HR programs and workshops.
+The real challenge is not learning - it is consistent application.
+Learning remains conceptual and episodic
+Managers struggle to apply what was taught in real situations
+No system exists to translate learning into role-specific action
+Organizations lack visibility on whether learning is actually showing up in behavior
+
+-- 8 of 61 --
+
+The A.V.E. Framework™ (Alumni Value Ecosystem) transforms employee
+exit from a t
+Submitted by: Nisha Kurup | Team:
+Problem & Solution
+The A.V.E. Framework™ (Alumni Value Ecosystem) transforms employee exit from a
+transactional endpoint into a continuous value engine for the enterprise.
+Today, organizations invest heavily in hiring and retention—but lose visibility and access to
+talent, networks, and influence the moment employees leave. This creates a blind spot
+where proven talent, trusted relationships, and potential business opportunities go
+untapped.
+Our prototype addresses this by introducing a simple, AI-enabled system that captures
+alumni value at exit, tracks their growth using publicly available data, and activates them
+across three outcomes: talent (rehire and referrals), brand (advocacy and influence), and
+business (lead generation and partnerships).
+Designed for HR, talent leaders, and business teams, A.V.E. converts a static alumni database
+into a dynamic, intelligence-led ecosystem—enabling faster hiring, stronger brand reach,
+and warmer revenue pipelines.
+
+-- 9 of 61 --
+
+Organizations today are sitting on a lot of employee data, but it’s
+fragmented,
+Submitted by: Animesh Rola | Team:
+Problem & Solution
+Organizations today are sitting on a lot of employee data, but it’s fragmented, delayed, and
+rarely actionable. By the time problems like burnout or attrition show up, it’s already too
+late.
+SignalForge solves this by acting as an always-on workforce intelligence engine. It
+continuously collects signals through surveys, productivity patterns, communication
+insights, and micro nudges, without adding friction for employees.
+It then converts this data into real-time insights—highlighting happiness, productivity, and
+attrition risk across teams. But more importantly, it goes beyond dashboards by giving
+clear, actionable plans to managers on what to do next.
+And we close the loop, by automatically following up with managers and employees to track
+whether those actions are actually working.
+In simple terms, SignalForge helps organizations move from reacting to problems to
+predicting and preventing them, improving both employee experience and business
+outcomes.”
+
+-- 10 of 61 --
+
+Our prototype is an AI-powered cross-cultural communication copilot
+designed to
+Submitted by: Amit Sethi | Team:
+Problem & Solution
+Our prototype is an AI-powered cross-cultural communication copilot designed to help
+managers navigate complex workplace interactions across global teams. In today’s
+distributed work environment, managers frequently struggle with miscommunication
+caused by cultural differences in directness, hierarchy, and feedback styles. These gaps
+often lead to misunderstandings, reduced trust, and delays in execution—especially in high-
+stakes situations like missed deadlines, performance conversations, or stakeholder
+escalations. Our solution addresses this by transforming a real-world scenario into
+culturally intelligent communication. The tool takes inputs such as the manager’s country,
+the colleague’s country, relationship context, tone, and scenario and instantly generates the
+following: A tailored one-on-one conversation script, A ready-to-send email draft, cultural
+insights, risk indicators, and interpretation cues What sets this apart is not just content
+generation, but decision support—helping managers understand how their message may be
+perceived and how to adapt their approach for better outcomes. This solution is designed
+for people managers, HR leaders, and global teams who regularly collaborate across
+geographies and need to communicate with clarity, confidence, and cultural awareness.
+
+-- 11 of 61 --
+
+Organizations struggle to align talent with business needs, especially
+during gr
+Submitted by: Daniel Hozik | Team:
+Problem & Solution
+Organizations struggle to align talent with business needs, especially during growth,
+restructuring or resource constraints, and employees lack visibility into opportunities
+beyond their immediate teams. The Internal Opportunity Exchange is an AI powered
+internal marketplace that fills these gaps, allowing managers (or anyone with a need) to
+post projects, to engage in cross departmental work. The project could be as small as
+needing help setting up chairs for an event or as large as taking on important tasks while a
+department is understaffed. this tool allows anyone (with optional approval flows) to post
+their need by sharing the project details, funding source. In addition, it gives people across
+companies the ability to see the skills employees posses by allowing them to create basic
+profiles to highlight their background.
+
+-- 12 of 61 --
+
+Corporate Visa Decision Engine (US Mobility)
+Submitted by: Judit Markarian | Team:
+Problem & Solution
+Corporate Visa Decision Engine (US Mobility)
+The Corporate Visa Decision Engine is a strategic decision-support system that helps global
+mobility and HR teams identify optimal US visa pathways based on business intent,
+employee profile, and organizational constraints. The system prioritizes business outcomes
+over visa categorization, providing ranked immigration strategies with risk, timeline, and
+strategic tradeoffs. The app is designed for global mobility professionals, HR business
+partners, immigration counsel teams, talent strategy leaders and workforce planning teams.
+
+-- 13 of 61 --
+
+Civility Compass is a practical, SHRM-aligned diagnostic tool that helps
+organiz
+Submitted by: Kristi Meacham | Team:
+Problem & Solution
+Civility Compass is a practical, SHRM-aligned diagnostic tool that helps organizations
+identify where workplace friction may be rooted in incivility, weak psychological safety,
+manager inaction, or broader culture breakdowns — and what to do next.
+The need is real. SHRM’s Civility Index shows that workplace incivility remains common,
+with recent workplace scores staying in Zone 3, the “Take Action” range. SHRM’s research
+also shows that incivility carries a significant business cost through lost productivity,
+absenteeism, lower morale, and higher turnover risk. Managers are a major variable: in
+recent waves, many workers said their manager could have done more to prevent incivility
+and cared more about business objectives than how people are treated.
+Civility Compass turns that research into action.
+A user enters a workplace issue in plain language — for example, tension after layoffs,
+repeated interruptions in meetings, passive-aggressive communication, exclusion, or
+conflict around political conversations. The tool analyzes the situation through a SHRM
+civility lens and returns a structured diagnosis, such as civility breakdown, manager-
+enabled incivility, low psychological safety, communication breakdown, or change-related
+civility stress. It then identifies key signals, assesses qualitative risk, surfaces likely root-
+cause hypotheses, and generates practical next steps.
+What makes this tool different is that it does not jump straight to blame or legal conclusions.
+It is designed to help HR, managers, and leaders frame problems more clearly and respond
+more constructively. It focuses on patterns, not accusations. It helps users separate
+symptoms from causes, distinguish isolated tension from broader culture issues, and
+identify when a problem may warrant direct HR or ER review.
+The recommendations are grounded in SHRM’s broader workplace culture framework:
+honest and unbiased management, civil behavior, meaningful work and opportunities, open
+communication, and empathy. They are also informed by SHRM’s findings that civility and
+psychological safety lead to better difficult conversations, stronger trust, greater innovation,
+and longer expected employee tenure.
+In short, Civility Compass helps organizations move from vague tension and reactive
+
+-- 14 of 61 --
+
+problem-solving to clearer diagnosis, stronger manager response, and more actionable
+culture repair — one conversation at a time.
+
+-- 15 of 61 --
+
+Too many workplace decisions start with assumptions instead of facts,
+which caus
+Submitted by: Daniel Hozik | Team:
+Problem & Solution
+Too many workplace decisions start with assumptions instead of facts, which causes
+inconsistent documentation, missing needed context, and managers struggling to
+understand what they should do. Document Document Document is an AI powered decision
+support tool designed for HR professionals and managers, guiding them through their
+situation and what they need to consider as documentation to build their case and take
+proper action. It prompts users to gather the right information, document consistently, and
+consider risks, helping HR and managers stay better aligned.
+
+-- 16 of 61 --
+
+This tool is a one-stop shop for filing for unemployment. When an
+employee is te
+Submitted by: Daniel Hozik | Team:
+Problem & Solution
+This tool is a one-stop shop for filing for unemployment. When an employee is terminated,
+the goal is to make the process as simple and clear as possible, including providing step-by-
+step guidance on how to file. State unemployment websites are often confusing and difficult
+to navigate, especially during a stressful time like job loss. This tool centralizes the
+information and breaks it into easy steps to reduce uncertainty and stress. Small support
+like this can make a huge difference in the offboarding experience.
+
+-- 17 of 61 --
+
+Organizations typically manage employee equipment (laptops, monitors,
+badges, ph
+Submitted by: Daniel Hozik | Team:
+Problem & Solution
+Organizations typically manage employee equipment (laptops, monitors, badges, phones,
+etc.) through spreadsheets, IT ticketing tools, and email chains. When employees are
+onboarded or offboarded, this can result in:
+Lost or unreturned equipment
+Delays in onboarding (employees waiting for devices)
+Security and compliance risks (especially with remote workers)
+Poor employee offboarding experiences
+Excess manual coordination between HR, IT, and managers
+Knowing what is company equipment vs client equipment
+This tool helps alleviate the burden on HR and IT teams by streamlining equipment tracking
+and returns. It creates a structured process based on a few simple inputs and provides a
+centralized dashboard for visibility.
+
+-- 18 of 61 --
+
+Implementing a new HRIS is one of the most complex transitions
+organizations go
+Submitted by: Daniel Hozik | Team:
+Problem & Solution
+Implementing a new HRIS is one of the most complex transitions organizations go through.
+A major pain point is developing test scripts that accurately reflect real HR processes across
+multiple functions. Most HR teams rely on manual documentation, spreadsheets, or IT
+input, which can lead to misinterpretation and gaps between how HR expects the system to
+work and how it is actually tested.
+This AI-driven tool helps HR teams generate structured, customized test scripts based on
+their specific processes and system configurations.
+
+-- 19 of 61 --
+
+Some of our most asked questions of our advisors are "What qualifies as
+FMLA?" o
+Submitted by: Ben Hood | Team:
+Problem & Solution
+Some of our most asked questions of our advisors are "What qualifies as FMLA?" or "Does
+this qualify as FMLA?" I created a simple tool, for both HR pros and employees, that walks
+the user through a decision tree- based on state- to make that determination. This also
+provides information about what is a serious illness, etc.
+
+-- 20 of 61 --
+
+This is an AI vent tool built for HR professionals because sometimes the
+ridicul
+Submitted by: Daniel Hozik | Team:
+Problem & Solution
+This is an AI vent tool built for HR professionals because sometimes the ridiculous happens
+and you need to just vent and laugh while also trying to be serious and do your job. You type
+in a frustration or situation that you shouldn't openly discuss in the workplace, and it
+creates a witty response, provides a fitting influential quote, and funny GIF. Its not about
+anything other than a lighthearted pressure release for the normal HR professional.
+
+-- 21 of 61 --
+
+HR professionals make high-risk decisions every day without real-time
+clarity on
+Submitted by: David Deir | Team:
+Problem & Solution
+HR professionals make high-risk decisions every day without real-time clarity on legal
+exposure, outcomes, or next steps.
+The HR Intelligence Engine is an AI-powered decision support platform that analyzes
+workplace scenarios, identifies applicable laws, predicts risk, and surfaces similar real-
+world cases.
+It is not designed to replace the legal department, but to support HR teams in making faster,
+more informed decisions and knowing when to escalate.
+What makes it different is that it goes beyond insight — it helps HR take action by
+generating ready-to-use communications (emails, investigation questions, documentation)
+and allows users to save and reference past cases.
+It is designed for HR professionals, especially teams of one or those without immediate
+access to legal support, helping them move from uncertainty to confident, informed
+decisions in seconds.
+
+-- 22 of 61 --
+
+LeadPulse is an AI-powered tracker that eliminates manual lead
+monitoring. While
+Submitted by: Apurva Ojha | Team:
+Problem & Solution
+LeadPulse is an AI-powered tracker that eliminates manual lead monitoring. While leads are
+already shared daily, teams still rely on manual effort to track follow-ups—leading to delays
+and missed opportunities. LeadPulse works on existing data to automatically track
+movement across stages, flag leads with no action in 48 hours, and highlight where the
+funnel is breaking. It turns passive data into real-time action—helping teams follow up
+faster, reduce lead leakage, and improve conversions without changing their current
+workflow.
+
+-- 23 of 61 --
+
+Inspired by Project Buffalo on Wednesday, April 15,2025, SHRM
+InsightBridge is
+Submitted by: Niloufar Gomez | Team:
+Problem & Solution
+Inspired by Project Buffalo on Wednesday, April 15,2025, SHRM InsightBridge is proposed
+as a new SHRM product that helps HR leaders translate people data into compelling
+business narratives leaders can act on. The core insight: HR professionals have abundant
+data but lack clear, executive-ready storytelling that connects metrics to strategic
+outcomes.Merge our people data and our SHRM expertise into one tool that turns HR
+metrics into an executive narrative — instantly.
+
+-- 24 of 61 --
+
+The HR Doc Genius / HR Doc Creator offers an easy-to-use service to
+members that
+Submitted by: Jessica Langlois | Team:
+Problem & Solution
+The HR Doc Genius / HR Doc Creator offers an easy-to-use service to members that
+Knowledge Advisors are unable to directly provide: policy, document, form, and
+communication creation. This is an interactive, HR document builder with a self-service
+function for policy and document review and creation. It can generate customizable
+employment-related letters, forms, general employee communications, and applies current
+state and federal laws where applicable. The builder includes a disclaimer that the
+documents are provided for general informational use and are not a substitute for
+professional legal advice.
+
+-- 25 of 61 --
+
+As economic volatility increases alongside shifts in government policy,
+many org
+Submitted by: Audrey Rodriguez | Team:
+Problem & Solution
+As economic volatility increases alongside shifts in government policy, many organizations
+remain structurally unprepared for downturn cycles, relying on reactive workforce
+decisions rather than proactive planning.
+The recent pandemic exposed significant risks in how companies manage talent, cost
+structures, and organizational stability during periods of uncertainty.
+Now is a critical time to equip HR leaders with a proactive Recession Readiness Playbook.
+One that enables scenario-based workforce planning, early risk detection, and predefined
+talent and cost levers to navigate economic downturns with speed and consistency.
+
+-- 26 of 61 --
+
+Just like a gym begins with a health assessment and a personalized fitness
+plan,
+Submitted by: Saghana Suresh Kumar | Team:
+Problem & Solution
+Just like a gym begins with a health assessment and a personalized fitness plan, this
+experience introduces an AI Career Health Check paired with a customized, AI-ready career
+roadmap for HR professionals. It brings clarity to how HR roles are evolving with AI and
+provides practical next steps to stay ahead. Built with a deep understanding of HR mindsets,
+it feels supportive and empowering—guiding growth in a way that’s developmental, not
+evaluative.
+
+-- 27 of 61 --
+
+The FLSA Classification Advisor is inspired by SHRM's FLSA Exemptions
+Flow Chart
+Submitted by: Jessica Langlois | Team:
+Problem & Solution
+The FLSA Classification Advisor is inspired by SHRM's FLSA Exemptions Flow Chart
+(https://www.shrm.org/topics-tools/tools/forms/flsa-exemption-flow-chart),
+transforming it into a 360 degree decision engine. Like the document builder, it addresses a
+frequent member request ("is this position exempt or nonexempt?") that Knowledge
+Advisors are unable to directly deliver. Members can upload an existing job description for
+analysis and FLSA determination or they can walk through a guided questionnaire. It
+provides users the option to determine whether a role is properly classified as an
+independent contractor. The tool has an embedded educational component ("Learn") that
+expands on the definitions of FLSA classifications and common misclassification scenarios.
+Users can create an account which allows them to save their history, build an audit trail, and
+export reports.
+
+-- 28 of 61 --
+
+SHRM’s signature conferences are one of our most valuable assets, but
+the path f
+Submitted by: Audrey Rodriguez | Team:
+Problem & Solution
+SHRM’s signature conferences are one of our most valuable assets, but the path from
+interest to participation isn’t as clear or compelling as it could be, especially for B2B buyers
+and time-constrained HR professionals.
+Today, both individuals and organizational decision-makers struggle to quickly understand
+the ROI: how attending translates into custom career growth, team performance, and
+business impact.
+To address this, I propose a dynamic, gated “HR Growth & ROI Quiz, " an 11-question
+interactive experience designed for both individual contributors and B2B decision-makers.
+Based on responses, participants receive a personalized output that includes:
+-A tailored journey map aligned to their career or organizational goals
+-A clear ROI projection (skills gained, team impact, retention, etc.)
+-Recommended conference pathways and learning tracks
+For individuals, this becomes a ready-made business case to share with their manager. For
+decision-makers, it provides a scalable way to evaluate the value of sending teams to SHRM
+conferences.
+This approach creates a faster, more personalized path to value, ultimately driving higher
+conversion, stronger B2B engagement, and increased conference participation at scale.
+
+-- 29 of 61 --
+
+I created a daily 10-15 minute AI-generated audio digest podcast
+summarizing the
+Submitted by: Veronica Magan | Team:
+Problem & Solution
+I created a daily 10-15 minute AI-generated audio digest podcast summarizing the top HR
+news from SHRM's HR Daily newsletter. This would be similar to NPR's Up First Podcast.
+
+-- 30 of 61 --
+
+I built a Global HR Compliance Tracker that maps out international
+policies and
+Submitted by: Tiani Mccarthy | Team:
+Problem & Solution
+I built a Global HR Compliance Tracker that maps out international policies and laws
+enacted within the past 12 months, organized by key HR focus areas. It addresses a major
+challenge our international members face today keeping up with rapidly changing
+regulations. This tool is designed for International HR leaders and teams, especially those
+managing employees across multiple countries, who need a clear, centralized view of what’s
+changed and where to focus their attention.
+
+-- 31 of 61 --
+
+Bloom is a guided first 90 days (or a specified timeline depending on
+needs) for
+Submitted by: Abby Harrington | Team:
+Problem & Solution
+Bloom is a guided first 90 days (or a specified timeline depending on needs) for every new
+hire, with built-in visibility for managers and HR.
+Employees get: a personal timeline of tasks and milestones, day by day; a searchable
+document library with everything they need; scheduled check-ins to share how they're
+doing; Ask Bloom, an AI assistant that answers policy questions from company docs; and
+real-time notifications when something needs their attention.
+Managers get: a team dashboard with progress and engagement at a glance; per-employee
+detail views with timeline and check-in history; ability to add team-specific tasks and check-
+ins on top of HR's baseline; individual task assignment for one-off requests; and live alerts
+when teammates submit check-ins; and more.
+HR gets:company-wide dashboard with completion rates, engagement trends, and at-risk
+hires; tools to build the onboarding timeline, check-in templates, documents, and FAQs; full
+employee and team management, filterable by team; and deep engagement analytics across
+every cohort.
+
+-- 32 of 61 --
+
+The SHRM Work Radar is a personalized, proactive intelligence and
+alerting syste
+Submitted by: Brett Roth | Team:
+Problem & Solution
+The SHRM Work Radar is a personalized, proactive intelligence and alerting system that
+combines real-time monitoring with forward-looking insights to help HR professionals stay
+ahead of change—not react to it.
+This Product has three modalities: Work Alerts for the policies affecting one's organization
+now, Horizon Index for policies and SHRM predictions that could affect one's organization
+in the future, and Advocate which allows everyone to find a cause they care about and get
+involved in seeing it become reality. By merging Work Alerts (what changed) with Horizon
+Index (what’s coming), Work Radar delivers clear, role-relevant guidance tailored to each
+member’s responsibilities, location, and industry.
+
+-- 33 of 61 --
+
+Tool: Pulse Survey Insight Generator
+Submitted by: Olivia Pagan | Team:
+Problem & Solution
+Tool: Pulse Survey Insight Generator
+Purpose: The purpose of this tool is to turn employee feedback into clear, actionable insight
+within seconds. HR teams regularly collect valuable employee feedback but sharing that
+data and turning that data into meaningful action often takes significant manual work and
+time. This tool was designed as a first step to changing that. The Pulse Survey Insight
+Generator uses AI to instantly analyze employee pulse survey results—whether pasted text
+or uploaded files—and transforms them into structured, decision-ready top-line insights.
+Designed for speed and simplicity, this tool helps HR professionals move from data
+collection to delivering top-line findings with a quick turnaround.
+What it delivers:
+• Executive summary of overall sentiment.
+• Key themes shaping the employee experience.
+• Risk signals (e.g., burnout, disengagement, attrition etc.).
+• Actionable recommendations for HR and managers.
+• Positive highlights to build on.
+• The ability to: Copy insights generated by the tool into other documents.
+• The ability to: Export generated insights into a Word document or PowerPoint slide
+deck, making it easier for HR to quickly share top-level pulse insights with teams and
+leadership.
+What it does not currently do: Provide deeper and detailed insight into specific survey
+questions, provide data breakdowns by respondent populations (i.e., feedback from
+marketing team vs sales team vs IT team etc.), assist with trend comparisons over time, or
+conduct statistical analysis. Instead, it is designed to take a more high-level view of the data
+and provide HR teams with a quick starting point and with the ability to share out some
+immediate findings while they conduct more detailed analysis.
+Ideas for continued areas of refinement/development:
+• Allow for top-level comparison across different data files and top-line trend
+comparison over time.
+• Additional SHRM branding/styling to the tool.
+• Refining Word/PowerPoint exports to generate more executive ready materials.
+• Adding an option for users to upload their own organization’s logos/branding for
+their Word/PowerPoint export generations.
+
+-- 34 of 61 --
+
+Current limitation to note: In its current version, clearly labeled columns in data shared
+with the tool are essential to insight accuracy. All open-ended data is clearly understood by
+the tool but for quantitative results question clarity is needed. For example, a question with
+the column label “Q1” will not be fully understood or accurately analyzed while a question
+labeled “Org_Satisfaction” will be.
+How the Tool was created: The tool was built in Loveable using text prompts. ChatGPT was
+utilized to help generate these text prompts and to generate a sample survey data file with
+1,000 AI generated responses for testing/demonstration purposes.
+
+-- 35 of 61 --
+
+The Recruiters Workbench is the start of building an ecosystem of role-
+based wor
+Submitted by: Brett Roth | Team:
+Problem & Solution
+The Recruiters Workbench is the start of building an ecosystem of role-based workbenches
+for our members. These workbenches will help them utilize SHRM resources, research, and
+tools seamlessly within their day-to-day responsibilities. For recruiters, this workbench
+allows them to store company job posting templates, start job posting projects based on our
+directory of job descriptions personalized through AI, then easily send that posting to job
+boards (including SHRM HR Jobs), and then easily create interview scripts for hiring
+managers and teams utilizing our interview questions directory. This app should increase
+SHRM daily visits, positioning us as a necessary utility, not just a resource library.
+
+-- 36 of 61 --
+
+Why HR Professionals Need a Better Multistate Law Comparison Tool:
+Submitted by: Andi Riggs | Team:
+Problem & Solution
+Why HR Professionals Need a Better Multistate Law Comparison Tool:
+For HR professionals operating across multiple states, compliance is not just complex, it’s
+constantly evolving. Each state, and often local jurisdictions, enforces its own requirements
+governing wages, leave, discrimination, benefits, and workplace safety.
+The result is a fragmented legal landscape that creates significant administrative burden
+and increases the risk of noncompliance. HR teams must balance the need for consistency in
+policies with the reality of jurisdiction-specific obligations—often under tight time
+constraints.
+While existing resources, such as SHRM’s Multistate Law Comparison Tool, offer valuable
+information, they often present challenges that limit usability and effectiveness:
+-Fragmented Content: Legal requirements are buried in dense text or inconsistent formats,
+making cross-state comparisons difficult.
+-Limited Visibility: The absence of visual structure makes it hard to quickly identify key
+differences and similarities.
+-Lack of Actionability: Most tools, including SHRM's, stop at explaining the law, without
+helping HR professionals translate requirements into practical policies or next steps.
+Our Pay Transparency Comparison Tool is an enhanced, chart-based comparison tool that
+transforms how HR professionals engage with multistate compliance:
+-Side-by-Side Visual Comparisons: Intuitive charts allow users to instantly compare legal
+requirements across jurisdictions, reducing cognitive load and saving time.
+-Actionable Guidance: Built-in recommendations, best practices, and compliance checklists
+help translate legal requirements into clear, implementable policies.
+-Expert-Driven Insights: Up-to-date legal analysis ensures accuracy and reliability,
+minimizing the risk of misinterpretation or oversight.
+-Proactive Risk Identification: Highlighted differences and potential pitfalls enable HR
+teams to anticipate and mitigate compliance risks before they escalate.
+This enhanced solution streamlines multistate compliance, reduces errors, and empowers
+HR teams to act with greater speed and confidence.
+
+-- 37 of 61 --
+
+SHRM Policy Change Radar is a lightweight AI + HI prototype that helps
+HR leader
+Submitted by: Christian Von Borstel | Team:
+Problem & Solution
+SHRM Policy Change Radar is a lightweight AI + HI prototype that helps HR leaders quickly
+understand emerging workforce policy changes and turn them into practical action. The
+challenge it addresses is that HR teams are often overwhelmed by fast-moving legislation
+and regulatory updates across states and at the federal level, making it difficult to know
+what matters, what to prioritize, and what steps to take next. This tool is designed for HR
+professionals, compliance teams, and executives who need a simple way to monitor policy
+trends, assess readiness, and respond with confidence through human-reviewed action
+plans.
+
+-- 38 of 61 --
+
+HR Investigation Simulator
+Submitted by: Alice Clark | Team:
+Problem & Solution
+HR Investigation Simulator
+What it does: An interactive, scenario-based training app that puts learners in the seat of an
+HR investigator. Users work through realistic workplace cases (harassment, retaliation,
+expense fraud, union grievance) using a structured 7-step investigation framework —
+making decisions, conducting witness interviews, reviewing evidence artifacts (emails,
+policies, transcripts), and receiving framework-aligned feedback at the end. Each case opens
+with a cinematic, Netflix-style intro to set the stakes, then drops the user into a tabbed
+dashboard for decisions, interviews, and the case file.
+The problem: HR investigations are high-stakes, legally sensitive, and notoriously hard to
+teach. Traditional training is passive — slide decks, policy PDFs, and compliance videos that
+don't build judgment. New HR professionals, people managers, and ER specialists rarely get
+to practice before their first real case, where mistakes can mean lawsuits, lost trust, and
+harm to employees. There's no safe sandbox for learning how to weigh credibility, sequence
+interviews, or recognize retaliation patterns.
+Who it's for:
+Early-career HR & ER professionals building investigative judgment before their first live
+case
+People managers who need to recognize when to escalate and how investigations actually
+work
+L&D and compliance teams at mid-to-large organizations looking for engaging, defensible
+training that goes beyond checkbox compliance
+HR certification candidates and graduate programs needing applied case practice
+
+-- 39 of 61 --
+
+SHRM PathFinder
+Submitted by: Alice Clark | Team:
+Problem & Solution
+SHRM PathFinder
+What it does: SHRM Pathfinder is an interactive recommendation engine that turns SHRM's
+full education portfolio — certifications, specialty credentials, seminars, and eLearning —
+into a personalized learning path in under 60 seconds. Users answer a short, branching quiz
+about their career stage, goals, focus area, and learning preferences, and receive a curated
+three-tier path: a Hero recommendation (the best-fit credential or certification), a Build
+Your Path sequence of supporting seminars and credentials, and Quick Wins they can knock
+out today. Every recommendation comes with a plain-English "why this fits you"
+explanation, drawn directly from the official SHRM Education Catalog.
+The problem it solves: SHRM offers one of the richest HR education portfolios in the
+industry — but that breadth is also the challenge. Today, customers landing on shrm.org
+face limited guidance on which program actually fits their goals. The result is decision
+friction: prospects bounce and high-intent learners default to whatever they've heard of
+instead of what's right for them. Pathfinder reframes program discovery from "browse a
+catalog" into "get advice from an expert" — collapsing a confusing exploration into a
+confident, guided next step.
+Who it's for:
+HR professionals at every career stage — from early-career practitioners learning the
+fundamentals to senior leaders pursuing strategic credentials like AI+HI or People
+Analytics.
+SHRM Marketing & Member Experience teams — as both a UX improvement that reduces
+drop-off and a lead-generation tool that surfaces high-intent learners and routes them to
+the right program.
+HR leaders making team-development decisions — who need a fast way to map roles to
+relevant SHRM offerings.
+
+-- 40 of 61 --
+
+State and Local Minimum Wage Law Assistant
+Submitted by: Rebecca Cooper | Team:
+Problem & Solution
+State and Local Minimum Wage Law Assistant
+Team members: Rebecca Cooper, lead for Tools and Guides Content, led a team effort to
+arrive at this solution. The team also included Allen Smith and Rachel Zheliabovskii from
+Thought Leadership Content, and Katie Brennan from the Knowledge Center.
+Problem: HR professionals face a maze of different state employment laws that are always
+changing. One big pain point for HR is getting the most up-to-date information on those
+laws in a succinct, digestible way. Members have commented that even SHRM's own
+offering, the Multistate Law Comparison Tool from Wolters Kluwer, provides too much
+jargony information without cutting to the chase about requirements that apply to them.
+Solution: Our AI-powered, Multistate Minimum Wage Law Assistant builds on existing
+vetted legal information from SHRM partner Wolters Kluwer to provide more user-friendly
+and readily accessible information on state and local minimum wage laws. This idea could
+be replicated for other state and local employment laws.
+How it Works: The tool allows the user to search either by individual states or to compare
+the requirements across states. The multistate function includes an interactive map where
+users of the tool may click on the states they’re interested in to find out state and local
+minimum wage requirements, which can be more complex than they seem at first glance.
+The tool points out exceptions to each state’s minimum wage requirements.
+Next Generation: This tool is pulling from a static download of Minimum Wage information
+from Wolters Kluwer, as well as a Berkeley.edu source for California locality minimum wage
+data. A deployed version of this tool should access the latest Wolters Kluwer legal resources
+via Vital Law or employment law smart charts, which SHRM already pays to license for
+members, in real time. It could also add in a broader AI search for more up-to-date
+information, prioritizing .gov and .us websites as sources.
+We could see a scenario where a future SHRM AI tool or Knowledge Advisors refer
+members to a State Employment Law Assistant for these types of question (or perhaps
+more usefully, more specific assistants tailored to particularly high-traffic topics, such as a
+State Family Medical Leave Law Assistant or State New Hire Paperwork Assistant).
+
+-- 41 of 61 --
+
+InsideTrack
+Submitted by: Alice Clark | Team:
+Problem & Solution
+InsideTrack
+What it does: InsideTrack is an internal talent-matching tool. Paste a job description (or
+pick an open role), and it instantly ranks your existing employees by how well their skills fit
+— with a match %, strong/partial tags, and a candidate detail view showing matched vs.
+missing skills. Admins can grow the talent pool by uploading resumes (parsed by AI into
+structured skill profiles) and add new open roles with auto-extracted requirements.
+The problem: Companies spend months and tens of thousands of dollars sourcing external
+candidates while qualified people already sit inside the org — invisible because their skills
+live in scattered resumes, HRIS fields, and manager memory. Internal mobility is slow,
+biased toward who you know, and almost never the first move when a role opens.
+Who it's for:
+Talent acquisition & people teams who want a "look inside first" step before posting
+externally.
+Hiring managers who need a fast, defensible shortlist of internal candidates.
+HR / People Ops leaders measuring internal mobility, retention, and skills visibility.
+Employees (downstream) who get surfaced for stretch roles they'd never have heard about.
+Why it matters Internal hires ramp faster, cost less, and stay longer. InsideTrack turns "who
+do we know?" into a 10-second search.
+
+-- 42 of 61 --
+
+CareOS — Employer Caregiver Intelligence Platform
+Submitted by: Shayla Alexander-Milligan | Team:
+Problem & Solution
+CareOS — Employer Caregiver Intelligence Platform
+The problem
+Caregiving has become a structural workforce crisis. According to publicly available SHRM
+research, three in four workers are managing some caregiving responsibility — yet 32%
+never disclose their status to their employer, meaning most support programs never reach
+the people who need them. Caregivers miss an average of 1.2 workdays per month when
+unsupported, costing an estimated $17.5 billion in lost wages monthly across the U.S.
+workforce. When caregivers do disclose, outcomes depend entirely on which manager they
+have: 48% receive support, 22% face scrutiny. That inconsistency is both a culture problem
+and a legal liability. Despite all of this, less than 12% of employers conduct an annual
+caregiving assessment. Most are navigating this blind.
+What CareOS does
+CareOS is a five-module employer intelligence platform that gives HR leaders and managers
+the infrastructure to treat caregiving as a strategic workforce issue — not a one-off
+accommodation request.
+Caregiver OS – centralizes all policies, active accommodations, resources, and disclosure
+tracking in one place — and surfaces compliance gaps before they become liabilities.
+Manager Playbook Engine – is AI-powered decision support for the moment that matters
+most: when a manager doesn't know what to say or do after a caregiver disclosure. It
+returns structured response options, legal flags, a conversation guide, and documentation
+requirements — so outcomes don't depend on any one manager's intuition.
+Experience Assessment – diagnoses the organization across six dimensions — policy
+maturity, culture safety, manager readiness, elder care coverage, and more — benchmarked
+against SHRM industry data. It makes the invisible visible.
+Strategy Playbook – turns assessment findings into a customized implementation roadmap,
+tiered by company size and maturity and sequenced across a 90-day to 12-month horizon.
+Metrics Dashboard – tracks caregiver retention, absenteeism, benefit utilization, and
+
+-- 43 of 61 --
+
+accommodation ROI over time — giving CHROs the numbers to prove business case and
+measure progress.
+Who it's for
+CHROs and VP Benefits at employers of 500–20,000 who know caregiving is affecting their
+workforce but lack the data to measure it or build a business case for it.
+Strategic HR Business Partners who need a consistent, legally-sound framework for
+handling caregiver requests, not a policy PDF to interpret under pressure.
+People Managers, the frontline of caregiver experience, who currently lack structured
+support. SHRM's 2026 CHRO Priorities report names manager development the top
+organizational priority for the second consecutive year. CareOS addresses that priority
+directly.
+Why now
+Caregiving appears on SHRM's official Top Five Workplace Issues list for 2026. Fifty percent
+of CHROs expect rising RTO mandates that will collide with the caregiving responsibilities of
+the fastest-growing employee segment. All Baby Boomers will have reached 65 by 2027,
+meaning elder care volume is about to surge at the exact moment employer readiness is
+lowest. The existing software market serves home care agencies, not employers. That gap is
+what CareOS fills.
+All statistics drawn from publicly available SHRM research: the Care and Careers report
+(2024), the 2025 Employee Benefits Survey, the 2026 State of the Workplace report, the
+2026 CHRO Priorities and Perspectives report, and SHRM's Top Five Workplace Issues for
+2026.
+
+-- 44 of 61 --
+
+Create an interactive, AI-driven career planning tool that guides users
+through
+Submitted by: Suleman Hafeez | Team:
+Problem & Solution
+Create an interactive, AI-driven career planning tool that guides users through a
+personalized journey and increases conversion into SHRM products and services.
+VALUE (KEY):
+• Introduces a personalized HR career engine that converts engagement directly into SHRM
+revenue
+• Positions certifications as required career milestones—not suggestions—making
+progression feel incomplete without them
+• Transforms SHRM credentials into visible checkpoints in the journey, reinforcing
+necessity, urgency, and perceived ROI
+• Uses a free diagnostic (career path, readiness score, skill gaps) to drive initial user buy-in
+• Locks high-value, actionable insights behind SHRM membership to create clear upgrade
+intent
+• Builds urgency with data-driven insights on timelines, role readiness, and market
+competitiveness
+• Embeds SHRM learning and certification as the default, structured path to advancement
+• Uses progress tracking and milestone completion to sustain engagement and retention
+• Drives conversion across the funnel: anonymous users → members → certification
+candidates
+• Increases lifetime value by making SHRM integral to achieving and accelerating career
+goals
+
+-- 45 of 61 --
+
+built a workflow tracking app that helps users manage multiple
+repeatable tasks
+Submitted by: Heather Hughes | Team:
+Problem & Solution
+built a workflow tracking app that helps users manage multiple repeatable tasks at the
+same time. Instead of using a basic to-do list, it tracks each item through the same step-by-
+step process—such as creating sponsor agreements, processing invoices, onboarding
+requests, or approvals.
+The challenge it solves is losing your place when juggling several identical workflows at
+once, especially when interruptions happen. Users can check off completed steps, pause,
+and return later without missing anything.
+It’s also designed for managers, giving real-time visibility into how long tasks take, where
+bottlenecks happen, and where errors or delays repeat. It’s ideal for teams handling high-
+volume operational work with recurring processes throughout the day.
+
+-- 46 of 61 --
+
+HR Ready to Work Simulation Pilot
+Submitted by: Liz Petersen | Team:
+Problem & Solution
+HR Ready to Work Simulation Pilot
+What it Does:
+The virtual simulation pilot is an AI-driven, interactive scenario designed to immerse users
+in realistic HR situations that require critical thinking, decision-making, and effective
+communication. Users must actively investigate, ask clarifying questions, and make choices
+that reveal underlying legal, ethical, and practical issues—mirroring the ambiguity and
+complexity of real-world HR work. To complete the simulation, the users complete a
+Summary Report for their HR Director of their findings and recommendations. Upon
+completion, they receive a scorecard and debrief highlighting strengths, areas for
+improvement, missed issues, and potential risks.
+Problem/Challenge Addressed:
+This simulation addresses the gap between theoretical HR education and real-world
+practice. Traditional internships and classroom learning often fail to expose students and
+early-career professionals to the nuanced, "grey area" situations that define effective HR
+management. Many students and career changers struggle to access meaningful internships,
+and employers seek candidates with practical, strategic thinking skills that go beyond
+textbook knowledge.
+Target Audience:
+• HR students (undergraduate and graduate)
+• Early-career and emerging HR professionals
+• Career changers entering HR
+• Educators seeking high-quality, experiential learning tools
+• SHRM members looking to upskill
+• SHRM Business clients interested in advancing HR proficiency among their
+workforce
+
+-- 47 of 61 --
+
+I built a Sponsors ROI Risk Alerts prototype to help sales teams improve
+renewal
+Submitted by: Heather Hughes | Team:
+Problem & Solution
+I built a Sponsors ROI Risk Alerts prototype to help sales teams improve renewals and
+reduce post-event cancellations. One of the biggest challenges after events is that exhibitors
+and sponsors often rebook while excitement is high, but a few months later those
+commitments can be questioned internally by finance leaders if there is no clear proof of
+ROI.
+The tool helps solve that problem by turning lead retrieval data into actionable insights.
+Users can upload spreadsheets with lead counts, attendee titles, notes, and engagement
+metrics. The app analyzes performance, compares results against event averages, identifies
+trends, and flags sponsors who may be at risk of canceling or not renewing.
+It also provides suggestions for proactive follow-up conversations, helping account teams
+speak with sponsors before concerns grow. It’s designed for sponsorship and exhibitor
+sales teams that need stronger retention tools, smarter forecasting, and data-backed
+renewal conversations.
+
+-- 48 of 61 --
+
+At most organizations, recruiters are instructed to use the job description
+and
+Submitted by: Calven Engstrom | Team:
+Problem & Solution
+At most organizations, recruiters are instructed to use the job description and qualities
+identified by the hiring manager to identify candidates to move forward in the process,
+often restricting the pool they can source from. However, we understand that the prior
+experience people have and what core abilities are needed for a position are more nuanced
+than what you can write out in a job ad. Additionally, many recruiters have trouble
+identifying the transferable skills of candidates, especially if they are applying for roles in a
+new field. The inability to assess and evaluate the transferable skills of applicants means
+recruiters and organizations are missing out on untapped talent potential by overlooking
+candidates that don’t meet all the requirements of a job description.
+While there are resources available that map out the core abilities and duties for various
+occupations, these data sources are complicated for the average person to look through.
+AdjacenSee incorporates data from O*NET’s skills and abilities work activities and context
+modules, creating a skills to abilities matrix, allowing users to easily evaluate candidates
+through a skills-first approach. AdjacenSee identifies the untapped strengths candidates can
+bring to a position that even the recruiter or organization did not consider, becoming an
+invaluable learning tool HR professionals can use to understand the skills that may lie
+beneath the surface.
+
+-- 49 of 61 --
+
+At most organizations, recruiters are instructed to use the job description
+and
+Submitted by: Sydney Ross | Team:
+Problem & Solution
+At most organizations, recruiters are instructed to use the job description and qualities
+identified by the hiring manager to identify candidates to move forward in the process,
+often restricting the pool they can source from. However, we understand that the prior
+experience people have and what core abilities are needed to be successful in a role are
+more nuanced than what’s written in a job ad. Additionally, many recruiters have trouble
+identifying the transferable skills of candidates, especially if applicants are applying for
+roles in a new field. The inability to assess and evaluate the transferable skills of applicants
+means recruiters and organizations are missing out on untapped talent potential by
+overlooking candidates that don’t meet strict job requirements.
+While there are resources available that map out the core abilities and duties for various
+occupations, these data sources are complicated for the average person to look through.
+AdjacenSee incorporates data from O*NET’s skills and abilities work activities and context
+modules, creating a skills-to-abilities matrix, allowing HR professionals to easily evaluate
+candidates through a skills-first approach. AdjacenSee identifies the untapped strengths
+candidates can bring to a position that even the recruiter or organization did not consider,
+becoming an invaluable learning tool HR professionals can use to understand the skills that
+may lie beneath the surface.
+
+-- 50 of 61 --
+
+HirePrep is a two-sided mock interview platform that connects early-
+career candi
+Submitted by: Kevin Abbed | Team:
+Problem & Solution
+HirePrep is a two-sided mock interview platform that connects early-career candidates,
+especially HR and business students with SHRM-verified practitioners for live, 30-minute
+practice interviews, complete with built-in scheduling, video links, in-session chat and
+notes, and structured 5-category feedback they can track over time. It solves a real gap:
+students rarely get realistic reps before high-stakes interviews, career centers can't scale
+1:1 coaching, and thousands of HR pros who want to mentor have no lightweight way to do
+it. By gating access to verified SHRM members and standardizing feedback with a clear
+rubric, HirePrep turns scattered goodwill into measurable growth giving students the reps
+they need and giving practitioners (and the SHRM chapters and university career centers
+that support them) a turnkey way to pay it forward at scale. Future positive effects could
+also impact the TA Specialty Credential, while also potentially giving HR practitioners PDC
+credits. (portal built in).
+
+-- 51 of 61 --
+
+EVOLVE: AI-Powered Workforce Intelligence Platform
+Submitted by: Alaina Leadbeter | Team:
+Problem & Solution
+EVOLVE: AI-Powered Workforce Intelligence Platform
+Positioned with SHRM Messaging
+EVOLVE, powered by SHRM, is an AI-driven workforce intelligence platform that empowers
+enterprise leaders to make data-backed decisions for workforce transformation. By
+integrating enterprise data with SHRM’s trusted research, EVOLVE optimizes talent
+deployment, identifies capability gaps, and models organizational structures. The platform
+delivers actionable insights and executive-ready briefs, enabling leaders to act with
+confidence and precision.
+Key Features
+Data-Driven Insights: Analyzes workforce data (roles, skills, tenure, performance, etc.) to
+uncover gaps.
+Combines internal data with SHRM’s external market intelligence for a holistic view.
+Scenario Modeling: Provides three talent pathways for critical roles: internal redeployment,
+up-skilling, or external hiring.
+Models structural alternatives to compare scenarios before implementation.
+Executive Briefs: Generates concise, one-page summaries with recommendations, action
+plans, and risk assessments.
+Six-Step Workflow: Guides users through defining objectives, confirming data, analyzing,
+reviewing findings, comparing scenarios, and exporting briefs.
+Technical Details
+Frontend: React 18, Vite, TypeScript, Tailwind CSS.
+Backend: Edge functions (Deno), Postgres database, AI orchestration.
+AI Integration:
+Skill normalization, recommendation synthesis, and brief composition.
+Privacy-focused with anonymized data processing to ensure compliance and security.
+Target Audience
+CHROs and Heads of People.
+HR Business Partners.
+Talent and Org Design Leads.
+
+-- 52 of 61 --
+
+Workforce Planning Analysts.
+Challenges Addressed
+Limited visibility into internal talent.
+Misaligned roles and organizational structures.
+Decisions disconnected from market and workforce realities.
+Differentiators
+Combines SHRM’s authoritative research with enterprise data for unparalleled insights.
+Scalable and repeatable workforce intelligence tailored to evolving business needs.
+Prioritizes decision-readiness, delivering clarity and actionable guidance over traditional
+dashboards.
+SHRM Alignment
+EVOLVE embodies SHRM’s mission to provide HR leaders with real-time intelligence,
+actionable insights, and strategic clarity. By leveraging SHRM’s research and expertise,
+EVOLVE positions HR as a strategic partner in shaping workforce decisions, ensuring
+compliance, and driving performance.
+
+-- 53 of 61 --
+
+HR Stack Navigator is a diagnostic assessment tool that helps HR leaders
+quickly
+Submitted by: Hadeel Al-Tashi | Team:
+Problem & Solution
+HR Stack Navigator is a diagnostic assessment tool that helps HR leaders quickly evaluate
+the health and completeness of their HR technology stack. By walking through a guided
+assessment, HR teams can identify gaps, redundancies, and opportunities in their current
+toolset, generating a clear picture of where their stack is strong and where it’s falling short.
+It’s designed to be the “front door” to smarter HR tech decisions, and a natural launchpad
+for a marketplace experience where teams can discover and fill the missing pieces in their
+stack.
+
+-- 54 of 61 --
+
+Research consistently shows employees leave managers, not companies—
+yet the most
+Submitted by: Sharon Lo | Team:
+Problem & Solution
+Research consistently shows employees leave managers, not companies—yet the most
+critical insights about performance, engagement, and risk are buried in one-on-one
+conversations that go uncaptured and unused. This platform transforms those moments
+into real-time organizational intelligence by enabling managers to capture key themes,
+while AI identifies patterns in employee sentiment, performance, flight risk, and potential
+HR risks, including legal and compliance issues. It goes further by coaching managers—
+using company-specific policies like the employee handbook—to guide better, more
+consistent, and compliant decision-making.
+At the leadership level, it surfaces manager effectiveness, employee morale, and emerging
+risks, escalating issues to HR when appropriate. The result is stronger managers, reduced
+attrition, and a more proactive, data-driven approach to protecting and improving the
+employee experience.
+
+-- 55 of 61 --
+
+SHRM Metric Matchup — instant HR benchmarking
+Submitted by: Nathan Ebikwo | Team:
+Problem & Solution
+SHRM Metric Matchup — instant HR benchmarking
+What it does: Input or upload key HR metrics and instantly benchmark against SHRM data.
+Get percentile rankings, anomaly flags, an AI executive summary, and a “cost of inaction” in
+dollars.
+The problem: HR has data but can’t answer “are we good?” in business terms. Benchmarks
+are buried in PDFs, and leaders struggle to translate metrics into financial impact.
+Who it’s for: CHROs, HRBPs, and People leaders who need fast, board-ready insights
+without consulting overhead.
+The wedge: Multiple input modes, role-based views, and one-click outputs that turn raw
+metrics into prioritized, dollar-backed decisions.
+SHRM Guardian — AI HR compliance copilot
+What it does: Upload policies or job posts and instantly flag compliance risks across U.S. and
+global laws. It scores risk, prioritizes issues (P0–P3), drafts fixes with citations, and tracks
+remediation. Includes a copilot for plain-English questions, plus a live regulatory calendar
+and targeted HR news.
+The problem: HR teams face fast-changing, complex regulations but rely on slow, expensive,
+point-in-time audits. Gaps are missed, risks grow, and existing tools are built for lawyers—
+not operators.
+Who it’s for: HR leaders, compliance teams, and legal partners who need a fast, reliable,
+always-on view of policy risk.
+Why now: AI regulation is exploding—and the same tech can now monitor, interpret, and
+fix compliance in real time.
+Product Pulse — AI-powered portfolio health for product leaders
+
+-- 56 of 61 --
+
+What it does: Upload any mix of CSVs, Excel, PDFs, or docs. The system auto-maps data to
+KPIs, scores each product across six dimensions, assigns a health tier, and delivers clear
+actions (OPTIMIZE, FIX, SCALE, SUNSET) with rationale. It also flags anomalies and surfaces
+cross-product opportunities.
+The problem: Product portfolios live in fragmented spreadsheets. Reviews are slow,
+inconsistent, and driven by gut—not data. Traditional BI tools require heavy setup and data
+teams.
+Who it’s for: Product leaders, GMs, and portfolio operators who need a fast, defensible,
+board-ready view across many products.
+The wedge: Zero setup. Messy data in, prioritized decisions out.
+
+-- 57 of 61 --
+
+SHRM Guardian — AI HR compliance copilot
+Submitted by: Nathan Ebikwo | Team:
+Problem & Solution
+SHRM Guardian — AI HR compliance copilot
+What it does: Upload policies or job posts and instantly flag compliance risks across U.S. and
+global laws. It scores risk, prioritizes issues (P0–P3), drafts fixes with citations, and tracks
+remediation. Includes a copilot for plain-English questions, plus a live regulatory calendar
+and targeted HR news.
+The problem: HR teams face fast-changing, complex regulations but rely on slow, expensive,
+point-in-time audits. Gaps are missed, risks grow, and existing tools are built for lawyers—
+not operators.
+Who it’s for: HR leaders, compliance teams, and legal partners who need a fast, reliable,
+always-on view of policy risk.
+Why now: AI regulation is exploding—and the same tech can now monitor, interpret, and
+fix compliance in real time.
+
+-- 58 of 61 --
+
+Product Pulse — AI-powered portfolio health for product leaders
+Submitted by: Nathan Ebikwo | Team:
+Problem & Solution
+Product Pulse — AI-powered portfolio health for product leaders
+What it does: Upload any mix of CSVs, Excel, PDFs, or docs. The system auto-maps data to
+KPIs, scores each product across six dimensions, assigns a health tier, and delivers clear
+actions (OPTIMIZE, FIX, SCALE, SUNSET) with rationale. It also flags anomalies and surfaces
+cross-product opportunities.
+The problem: Product portfolios live in fragmented spreadsheets. Reviews are slow,
+inconsistent, and driven by gut—not data. Traditional BI tools require heavy setup and data
+teams.
+Who it’s for: Product leaders, GMs, and portfolio operators who need a fast, defensible,
+board-ready view across many products.
+The wedge: Zero setup. Messy data in, prioritized decisions out.
+
+-- 59 of 61 --
+
+A research-backed web calculator that turns six inputs about an
+organization's w
+Submitted by: Anika Dhir | Team:
+Problem & Solution
+A research-backed web calculator that turns six inputs about an organization's workforce
+— headcount, salary, turnover, engagement, and manager training - into a hard-dollar
+estimate of what ineffective management is costing an organization. It breaks the cost into
+four drivers (turnover, lost productivity, absenteeism, HR time), projects it across five
+years, and shows how SHRM's leadership solutions (PMQ+) could close the gap. It's
+designed for HR and business leaders who need to make the business case for investing in
+their managers — CHROs, VPs of People, L&D directors, and the CEOs and CFOs they need
+to convince.
+
+-- 60 of 61 --
+
+People Analytics in Action is a self-paced simulation that puts HR
+professionals
+Submitted by: Alice Clark | Team:
+Problem & Solution
+People Analytics in Action is a self-paced simulation that puts HR professionals inside a
+realistic case as the People Analytics partner to a business unit. Across six phases — Brief,
+Data Room, Analysis, Recommendation, Executive Defense, and Debrief — learners
+interrogate datasets, separate strong signal from misleading patterns, build a root-cause
+narrative, defend it to skeptical executives, and get coached on what they missed.
+The problem: Most HR analytics training teaches statistics, not judgment. In the real job, the
+hard part isn't running the numbers — it's choosing which question to ask, recognizing
+when a chart is misleading, and influencing a CFO or CPO who already has a theory. There's
+no safe place to practice that loop.
+The solution: Four fully built scenarios (Engineering Attrition, Engagement Decline, Hiring
+Bottleneck, Representation Gap) with branching data requests, stakeholder personas with
+competing priorities, and an optional Coaching Mode that can be turned off for true
+difficulty. Every decision is graded against an expert take, so learners see exactly where
+their reasoning diverged from a senior practitioner's.
+Who it's for: HRBPs, People Analytics analysts, and HR leaders who need to translate data
+into business influence — from early-career practitioners building the muscle to senior
+leaders pressure-testing their instincts before a real boardroom moment.
+
+-- 61 of 61 --
+
