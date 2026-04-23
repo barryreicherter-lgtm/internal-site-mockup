@@ -17,7 +17,7 @@ function ILSFooter() {
             </p>
             <div style={ilsFtStyles.stamp}>
               <span style={ilsFtStyles.stampDot}/>
-              Operative stack: Google (Phase 0–1) · Microsoft-native (Phase 2+)
+              Google Cloud (Phase 0–1) · Model-agnostic · Microsoft Fabric only when integration triggers warrant
             </div>
           </div>
           <div style={ilsFtStyles.colsWrap}>

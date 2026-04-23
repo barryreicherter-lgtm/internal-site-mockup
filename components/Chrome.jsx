@@ -10,7 +10,7 @@ function ILSNav({ current = "home", onNavigate }) {
       { id: "vow",   label: "Voice of Work Synthetic" },
       { id: "unode", label: "University Nodes" },
       { id: "hack",      label: "SHRM Innovation Series" },
-      { id: "hackathon", label: "Hackathon 2025 · Gallery" },
+      { id: "hackathon", label: "Inaugural Hackathon · April 2026" },
     ]},
     { id: "research",     label: "Research" },
     { id: "universities", label: "For Universities" },
@@ -162,7 +162,7 @@ function ILSFooter({ onNavigate }) {
               { l: "Voice of Work Synthetic",          id: "vow" },
               { l: "University Nodes",                 id: "unode" },
               { l: "SHRM Innovation Series",           id: "hack" },
-              { l: "Hackathon 2025 · Gallery",         id: "hackathon" },
+              { l: "Inaugural Hackathon · April 2026",  id: "hackathon" },
             ]},
             { h: "Research",        items: [
               { l: "Insights & publications", id: "research" },

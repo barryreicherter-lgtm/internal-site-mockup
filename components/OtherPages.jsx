@@ -102,7 +102,7 @@ function ResearchPage({ onNavigate }) {
           <div>
             <div style={{ font: "800 11px/1 var(--font-display)", letterSpacing: ".16em", textTransform: "uppercase", color: "#F26A42", marginBottom: 8 }}>Also open for exploration</div>
             <div style={{ font: "700 20px/1.3 var(--font-display)", color: "#00093E", textWrap: "balance" }}>
-              Sixty-one staff submissions from the 2025 SHRM Innovation Hackathon — curated, attributed, and routed.
+              Fifty-five apps built in 24 hours at the Inaugural SHRM Innovation Hackathon — attributed, clustered, and routed.
             </div>
           </div>
           <Btn kind="ghost" onClick={() => onNavigate && onNavigate("hackathon")}>Browse the gallery →</Btn>

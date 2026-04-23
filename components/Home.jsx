@@ -26,16 +26,21 @@ function Hero({ onNavigate }) {
           letterSpacing: "-0.035em", margin: "22px 0 28px", textWrap: "balance",
           maxWidth: 1100,
         }}>
-          The reasoning layer<br/>
-          behind the{" "}
-          <span style={{ color: "#79ADD8" }}>world's authority</span>{" "}
-          on work.
+          The catalyst function<br/>
+          for the{" "}
+          <span style={{ color: "#79ADD8" }}>world of work</span>.
         </h1>
         <p style={{
           font: "400 22px/1.5 var(--font-body)", color: "#C5E5FF",
+          maxWidth: 860, margin: "0 0 28px", textWrap: "pretty",
+        }}>
+          ILS is SHRM's research-innovation hybrid: part market research, part applied innovation. It's where SHRM validates the questions the profession is actually asking — and where the capabilities worth productizing get proved out before they graduate into the product organization.
+        </p>
+        <p style={{
+          font: "400 17px/1.55 var(--font-body)", color: "#79ADD8",
           maxWidth: 820, margin: "0 0 40px", textWrap: "pretty",
         }}>
-          SHRM is converting seventy-plus years of standards, two years of expert case resolutions, and three years of longitudinal workforce data into machine-executable intelligence — peer-reviewed, ethically red-teamed, and deployable inside the tools HR professionals already use.
+          Why this, why now: 69.8% of HR professionals use AI weekly. Only 7.3% have enterprise-approved tools. The profession is building on whatever it can reach — SHRM's job is to make sure what it reaches for is trustworthy.
         </p>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
           <Btn kind="emphasis" onClick={() => onNavigate && onNavigate("partner")}>Partner with SHRM →</Btn>
@@ -46,23 +51,127 @@ function Hero({ onNavigate }) {
   );
 }
 
+function LeadCommercial({ onNavigate }) {
+  const tiers = [
+    {
+      tier: "Tier 1",
+      name: "Diagnostic",
+      price: "$15K",
+      unit: "per assessment",
+      tagline: "Know where you stand.",
+      desc: "The HR-X Assessment — 95 items across 4 dimensions — returns a maturity score for each of 71 HR subpractices, benchmarked against a panel of 330,000+ SHRM members.",
+      deliverables: ["Maturity score by subpractice", "Benchmark panel positioning", "Executive summary report"],
+    },
+    {
+      tier: "Tier 2",
+      name: "Prescriptive",
+      price: "$75K",
+      unit: "per engagement",
+      tagline: "Know what to do about it.",
+      desc: "Tier 1 plus a Priority Index that turns the diagnostic into a prioritized action plan — sequenced against the SHRM Body of Applied Skills & Knowledge and grounded in validated HR practice.",
+      deliverables: ["Priority Index ranking", "BASK-mapped action plan", "Capability roadmap"],
+      featured: true,
+    },
+    {
+      tier: "Tier 3",
+      name: "Predictive",
+      price: "$150K",
+      unit: "per engagement",
+      tagline: "See what happens if you act.",
+      desc: "Tier 2 plus simulation on the Voice of Workforce digital twin — a synthetic HR function modeled on the organization's own demographics. Test interventions before you spend on them.",
+      deliverables: ["VoW digital twin of your org", "Intervention simulation runs", "Outcome probability bands"],
+    },
+  ];
+  return (
+    <section style={{ background: "#00093E", color: "#fff", position: "relative", overflow: "hidden", padding: "120px 0" }}>
+      <div aria-hidden style={{ position: "absolute", right: -240, top: -180, pointerEvents: "none" }}>
+        <Pinwheel size={680} opacity={0.08} tone="dark"/>
+      </div>
+      <div style={{ position: "relative", maxWidth: 1280, margin: "0 auto", padding: "0 40px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 64, alignItems: "end", marginBottom: 48 }}>
+          <div>
+            <Eyebrow color="#FBB533">The lead commercial interface</Eyebrow>
+            <h2 style={{ font: "900 56px/1.03 var(--font-display)", color: "#fff", letterSpacing: "-0.03em", margin: "16px 0 0", textWrap: "balance" }}>
+              HR-X Solutions Hub.
+              <br/><span style={{ color: "#79ADD8" }}>Where the Studio meets the market.</span>
+            </h2>
+          </div>
+          <div style={{ maxWidth: 560, paddingBottom: 8 }}>
+            <p style={{ font: "400 19px/1.55 var(--font-body)", color: "#C5E5FF", margin: "0 0 14px", textWrap: "pretty" }}>
+              The Studio is upstream. HR-X Solutions Hub is the commercial face of it — the three-tier enterprise platform that packages ILS capabilities into something a CHRO can buy, deploy, and prove the ROI on.
+            </p>
+            <p style={{ font: "400 15px/1.6 var(--font-body)", color: "#79ADD8", margin: 0, textWrap: "pretty" }}>
+              Tier 3 is the differentiator — nothing else in the category lets an organization simulate an intervention on a digital twin of their own workforce before funding it.
+            </p>
+          </div>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16, marginBottom: 36 }}>
+          {tiers.map(t => (
+            <div key={t.tier} style={{
+              background: t.featured ? "#fff" : "rgba(255,255,255,0.04)",
+              color: t.featured ? "#00093E" : "#fff",
+              border: t.featured ? "1px solid #fff" : "1px solid rgba(197,229,255,0.18)",
+              padding: "32px 30px 30px",
+              position: "relative",
+              display: "flex", flexDirection: "column",
+            }}>
+              {t.featured && (
+                <div style={{ position: "absolute", top: -12, left: 24, background: "#FBB533", color: "#00093E", padding: "4px 10px", font: "800 10px/1 var(--font-display)", letterSpacing: ".18em", textTransform: "uppercase" }}>
+                  Most deployed
+                </div>
+              )}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+                <span style={{ font: "800 11px/1 var(--font-display)", letterSpacing: ".18em", color: t.featured ? "#0076BE" : "#79ADD8", textTransform: "uppercase" }}>{t.tier}</span>
+                <span style={{ font: "500 11px/1 var(--font-body)", color: t.featured ? "#787878" : "#79ADD8", letterSpacing: ".04em" }}>{t.unit}</span>
+              </div>
+              <h3 style={{ font: "900 32px/1.1 var(--font-display)", color: t.featured ? "#00093E" : "#fff", letterSpacing: "-0.022em", margin: "0 0 4px" }}>{t.name}</h3>
+              <div style={{ font: "900 44px/1 var(--font-display)", color: t.featured ? "#0076BE" : "#fff", letterSpacing: "-0.028em", margin: "8px 0 18px" }}>{t.price}</div>
+              <p style={{ font: "700 15px/1.45 var(--font-display)", color: t.featured ? "#00093E" : "#fff", margin: "0 0 10px", textWrap: "balance" }}>{t.tagline}</p>
+              <p style={{ font: "400 14px/1.55 var(--font-body)", color: t.featured ? "#3B4A66" : "#C5E5FF", margin: "0 0 22px", textWrap: "pretty" }}>{t.desc}</p>
+              <div style={{ marginTop: "auto", paddingTop: 18, borderTop: t.featured ? "1px solid #EEF1F6" : "1px solid rgba(197,229,255,0.18)" }}>
+                {t.deliverables.map(d => (
+                  <div key={d} style={{ display: "grid", gridTemplateColumns: "14px 1fr", gap: 10, padding: "6px 0", font: "500 13px/1.45 var(--font-body)", color: t.featured ? "#3B4A66" : "#C5E5FF" }}>
+                    <span style={{ color: t.featured ? "#2A8F6B" : "#FBB533", font: "900 13px/1.45 var(--font-display)" }}>→</span>
+                    <span>{d}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", paddingTop: 10 }}>
+          <p style={{ font: "400 14px/1.5 var(--font-body)", color: "#79ADD8", margin: 0, maxWidth: 560 }}>
+            All tiers include the HR-X Assessment instrument and SHRM-panel benchmarking. Tiers 2 and 3 carry the SHRM Validation Seal.
+          </p>
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <Btn kind="emphasis" onClick={() => onNavigate && onNavigate("xhub")}>Explore HR-X Solutions Hub →</Btn>
+            <Btn kind="ghostD" onClick={() => onNavigate && onNavigate("partner")}>Talk to the team</Btn>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function WhatTheStudioIs() {
   const principles = [
-    { n: "01", t: "Proprietary, not general-purpose.", d: "General AI has read the internet. SHRM has resolved the hard cases. The Intelligence Layer Studio encodes SHRM's standards and case history into reasoning infrastructure that general systems cannot replicate — and cannot access." },
-    { n: "02", t: "Deployed where HR already works.",   d: "ILS is not a destination product. It shows up inside the tools HR professionals already use — enterprise copilots, consumer assistants, HRIS systems — with SHRM as the invisible authority behind the answer." },
-    { n: "03", t: "Validated before it ships.",          d: "Every ILS capability passes independent scientific review across three specialized academic nodes before carrying SHRM branding. The SHRM Validation Seal is an outcome, not a slogan." },
+    { n: "01", t: "A catalyst, not a product org.", d: "ILS is upstream. Capabilities that prove themselves here — validated against real HR use, reviewed by independent academic nodes, sized against a market — graduate out of ILS into SHRM Product Development for productization. Research and innovation are halves of the same function, not features of a product team." },
+    { n: "02", t: "Research is half of what we do.",   d: "Every initiative carries four research functions in parallel: commercial validation, technical validation, positioning intelligence, and ongoing Voice of Customer. The research isn't marketing for the products — it's how we decide which products deserve to exist." },
+    { n: "03", t: "Validated before it ships.",          d: "Capabilities that pass ILS carry the SHRM Validation Seal — the output of independent scientific review across three specialized national-lab-style academic nodes. The Seal is an outcome of triple-gate peer review, not a slogan." },
   ];
   return (
     <section style={{ background: "#fff", padding: "130px 0" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 80, alignItems: "start" }}>
           <div>
-            <Eyebrow>What the Studio is</Eyebrow>
+            <Eyebrow>How the Studio operates</Eyebrow>
             <h2 style={{ font: "900 52px/1.05 var(--font-display)", color: "#00093E", letterSpacing: "-0.028em", margin: "16px 0 20px", textWrap: "balance" }}>
-              Three commitments that make the Intelligence Layer Studio worth listening to.
+              Three commitments that define the ILS operating model.
             </h2>
             <p style={{ font: "400 18px/1.55 var(--font-body)", color: "#3B4A66", margin: 0, textWrap: "pretty", maxWidth: 460 }}>
-              The Studio's current slate is five active projects — a rolling portfolio, not a fixed roadmap. New initiatives spin up as the architecture demands it.
+              The Studio's current slate is five active initiatives plus a rolling Innovation Series. Capabilities move out as they mature; the portfolio stays upstream.
             </p>
           </div>
           <div style={{ display: "grid", gap: 0 }}>
@@ -152,7 +261,7 @@ function Portfolio({ onNavigate }) {
               Current projects.
             </h2>
             <p style={{ font: "400 18px/1.55 var(--font-body)", color: "#3B4A66", margin: 0, textWrap: "pretty" }}>
-              One enterprise platform. Two reasoning capabilities. One research backbone. One cultural engine. A rolling portfolio — more will join as the architecture demands it.
+              HR-X Solutions Hub is the commercial lead. Two reasoning capabilities feed the Hub and power SHRM's own tools. One research backbone, one cultural engine, one rolling innovation slate sit upstream.
             </p>
           </div>
           <Btn kind="ghost" onClick={() => onNavigate && onNavigate("research")}>Research highlights →</Btn>
@@ -170,38 +279,38 @@ function Portfolio({ onNavigate }) {
           })}
         </div>
 
-        {/* Incoming from the Innovation Series — candidate projects under evaluation */}
+        {/* Elite Recognition — Top 2 from the Inaugural Hackathon */}
         <div style={{ marginTop: 72 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 24, marginBottom: 24, flexWrap: "wrap" }}>
-            <div style={{ maxWidth: 680 }}>
-              <Eyebrow color="#F26A42">Incoming · from the 2025 Hackathon</Eyebrow>
+            <div style={{ maxWidth: 720 }}>
+              <Eyebrow color="#F26A42">Elite Recognition · Inaugural Hackathon · April 2026</Eyebrow>
               <h3 style={{ font: "900 32px/1.12 var(--font-display)", color: "#00093E", letterSpacing: "-0.022em", margin: "14px 0 10px", textWrap: "balance" }}>
-                Four candidate projects under Studio evaluation.
+                Two projects the executive panel voted through decisively.
               </h3>
-              <p style={{ font: "400 16px/1.55 var(--font-body)", color: "#3B4A66", margin: 0, maxWidth: 620, textWrap: "pretty" }}>
-                Elevated from sixty-one staff submissions. Each has a full project page; whether they stand alone, merge into existing projects, or route to programs is the Studio's current decision.
+              <p style={{ font: "400 16px/1.55 var(--font-body)", color: "#3B4A66", margin: 0, maxWidth: 660, textWrap: "pretty" }}>
+                Fifty-five apps built in 24 hours by 39 builders across 7 divisions and 2 countries. A six-person executive panel voted; two projects cleared the 5-of-6 threshold for Elite Recognition. Both are in Studio evaluation now.
               </p>
             </div>
-            <Btn kind="ghost" onClick={() => onNavigate && onNavigate("hackathon")}>View the full gallery →</Btn>
+            <Btn kind="ghost" onClick={() => onNavigate && onNavigate("hackathon")}>View all 55 apps →</Btn>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 16 }}>
             {Object.values(ELEVATED_PROJECTS).map(p => (
               <a key={p.id} onClick={() => onNavigate && onNavigate(p.id)}
                  style={{
                    display: "block", background: "#fff", cursor: "pointer", textDecoration: "none", color: "inherit",
-                   padding: "24px 24px 26px", borderTop: `4px solid ${p.accent}`, border: "1px solid #E4E8F1",
+                   padding: "28px 30px 30px", borderTop: `4px solid ${p.accent}`, border: "1px solid #E4E8F1",
                    transition: "transform .18s, box-shadow .18s",
                  }}
                  onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 14px 32px -14px rgba(0,9,62,.28)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
                  onMouseLeave={e => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
                   <span style={{ font: "800 10px/1 var(--font-display)", letterSpacing: ".14em", color: p.accent, textTransform: "uppercase" }}>
                     {p.classification.split(" · ")[0]}
                   </span>
-                  <span style={{ font: "800 10px/1 var(--font-display)", letterSpacing: ".12em", textTransform: "uppercase", color: "#fff", background: p.accent, padding: "4px 8px" }}>Elevated</span>
+                  <span style={{ font: "800 10px/1 var(--font-display)", letterSpacing: ".12em", textTransform: "uppercase", color: "#00093E", background: "#FBB533", padding: "4px 8px" }}>Elite · Top 2</span>
                 </div>
-                <h4 style={{ font: "800 20px/1.22 var(--font-display)", color: "#00093E", margin: "0 0 8px", textWrap: "balance" }}>{p.name}</h4>
-                <p style={{ font: "500 14px/1.45 var(--font-body)", color: p.accent, margin: "0 0 14px", textWrap: "pretty" }}>{p.tagline}</p>
+                <h4 style={{ font: "900 26px/1.18 var(--font-display)", color: "#00093E", letterSpacing: "-0.02em", margin: "0 0 10px", textWrap: "balance" }}>{p.name}</h4>
+                <p style={{ font: "500 15px/1.5 var(--font-body)", color: p.accent, margin: "0 0 14px", textWrap: "pretty" }}>{p.tagline}</p>
                 <div style={{ font: "500 12px/1.4 var(--font-body)", color: "#787878" }}>Submitted by {p.origin.author}</div>
               </a>
             ))}
@@ -362,6 +471,7 @@ function CTABands({ onNavigate }) {
 }
 
 window.Hero = Hero;
+window.LeadCommercial = LeadCommercial;
 window.WhatTheStudioIs = WhatTheStudioIs;
 window.Portfolio = Portfolio;
 window.AuthorityStrip = AuthorityStrip;
