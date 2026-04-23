@@ -59,6 +59,7 @@ function HomePage({ onNavigate }) {
   return (
     <div>
       <Hero onNavigate={onNavigate}/>
+      <LeadCommercial onNavigate={onNavigate}/>
       <WhatTheStudioIs/>
       <Portfolio onNavigate={onNavigate}/>
       <AuthorityStrip/>
@@ -96,11 +97,9 @@ function PrintApp() {
     { id: "vow",          label: "Project · Voice of Work Synthetic",            el: <ProjectPage id="vow" onNavigate={noop}/> },
     { id: "unode",        label: "Project · University Nodes",                   el: <ProjectPage id="unode" onNavigate={noop}/> },
     { id: "hack",         label: "Project · SHRM Innovation Series",             el: <ProjectPage id="hack" onNavigate={noop}/> },
-    { id: "hackathon",    label: "Hackathon 2026 · Gallery",                     el: <HackathonPage onNavigate={noop}/> },
-    { id: "sim",          label: "Elevated · HR Investigation Simulator",        el: <ElevatedProjectPage id="sim" onNavigate={noop}/> },
-    { id: "pathfinder",   label: "Elevated · SHRM PathFinder",                   el: <ElevatedProjectPage id="pathfinder" onNavigate={noop}/> },
-    { id: "careos",       label: "Elevated · CareOS",                            el: <ElevatedProjectPage id="careos" onNavigate={noop}/> },
-    { id: "compass",      label: "Elevated · Civility Compass",                  el: <ElevatedProjectPage id="compass" onNavigate={noop}/> },
+    { id: "hackathon",    label: "Inaugural Hackathon · April 2026",              el: <HackathonPage onNavigate={noop}/> },
+    { id: "pathnex",      label: "Elite Recognition · Pathnex",                     el: <ElevatedProjectPage id="pathnex" onNavigate={noop}/> },
+    { id: "metricmatchup",label: "Elite Recognition · SHRM Metric Matchup",          el: <ElevatedProjectPage id="metricmatchup" onNavigate={noop}/> },
     { id: "research",     label: "Research & Insights",                          el: <ResearchPage onNavigate={noop}/> },
     { id: "universities", label: "For Universities",                             el: <UniversitiesPage onNavigate={noop}/> },
     { id: "partner",      label: "Partner with SHRM",                            el: <PartnerPage onNavigate={noop}/> },

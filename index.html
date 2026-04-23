@@ -44,6 +44,7 @@ function HomePage({ onNavigate }) {
   return (
     <div>
       <Hero onNavigate={onNavigate}/>
+      <LeadCommercial onNavigate={onNavigate}/>
       <WhatTheStudioIs/>
       <Portfolio onNavigate={onNavigate}/>
       <AuthorityStrip/>
@@ -66,7 +67,7 @@ function App() {
 
   const navigate = (id) => setPage(id);
   const projectIds = ["kcde", "vow", "unode", "xhub", "hack"];
-  const elevatedIds = ["sim", "pathfinder", "careos", "compass"];
+  const elevatedIds = ["pathnex", "metricmatchup"];
 
   return (
     <div data-screen-label={`ILS · ${page}`}>
