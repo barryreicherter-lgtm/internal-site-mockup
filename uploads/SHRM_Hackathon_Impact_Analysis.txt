@@ -1,0 +1,1942 @@
+
+
+SHRM Innovation Week Hackathon
+
+Impact Analysis & Knowledge Base
+
+What 55 apps, built in 24 hours, reveal about SHRM&apos;s AI opportunity
+
+An aggregate analysis of all 55 apps built during the 1st SHRM Hackathon, with implications for product, certification, content, events, member experience, and commercial teams — intended as source material for a future interactive knowledge base.
+
+
+
+Prepared by Barry Reicherter
+
+Director, Market Research & Voice of the Customer
+
+April 2026
+
+Better Workplaces. Better World.™
+
+
+
+Contents
+
+To populate this Table of Contents: right-click anywhere in the field below and select &apos;Update Field&apos; in Word.
+TOC \h \o "1-3"
+
+
+
+
+Executive Summary
+
+The 1st SHRM Innovation Week Hackathon (April 16-17, 2026) produced 55 working AI-powered application prototypes in 24 hours. Participation was voluntary, cross-divisional, and drew submissions from both U.S. offices and SHRM East in India. Three coaches completed structured documentation for 49 of the 55 submissions, reviewed every app, and advanced 10 to a Final Round where a six-person panel cast votes for recognition. This document analyzes the aggregate of what was built — not to revisit the results, but to surface the strategic signal embedded in 55 unconstrained attempts at reimagining HR with AI.
+
+The headline finding is that SHRM staff, given 24 hours and no product roadmap, did not build generic AI tools. They built tools that are distinctively SHRM — grounded in SHRM&apos;s own data, frameworks, content, networks, and authority. When left to choose what to build, they reached for the assets SHRM already owns and asked how those assets could become intelligent, interactive, and personalized. That instinct is the strategic signal this report surfaces repeatedly: the staff closest to SHRM&apos;s business saw its AI opportunity more clearly than any external consultant or product roadmap has articulated to date.
+
+The corpus also reveals where SHRM&apos;s members&apos; problems concentrate (compliance, workforce intelligence, talent development), where SHRM&apos;s current products leave gaps (real-time data access, interactive decision support, member network activation), and where entirely new opportunities sit (a defensible benchmarking product category, a BASK-powered workforce application layer, a credential-to-application conversion path). Each of these represents a conversation worth having with the relevant SHRM business team — which is the second purpose of this document.
+
+
+Headline numbers
+
+55 apps · 24 hours · 3 coaches · 7 divisions · 2 countries
+
+Of 49 documented apps, 43 (88%) delivered working prototypes. 12 HR domains were covered. Nearly every app surfaced a real SHRM member pain point, and a significant majority drew on existing SHRM research, frameworks, content, or networks as their foundation. Every app has a home — in an internal repository, a member-facing public gallery, follow-up conversations with relevant teams, or concept testing with members and customers.
+
+ 
+
+
+Core findings from the aggregate
+
+
+SHRM&apos;s existing assets are the moat. Apps repeatedly built on BASK, Human Capital Benchmarking data, HR Daily Newsletter, SHRM credentials, the Knowledge Center, the member network, and published SHRM research. Staff instinctively see these assets as the raw material for AI products — not as static reference material.
+
+
+Compliance and workforce intelligence dominate the problem space. 21 of 49 documented apps (43%) address compliance, legal, or analytics/intelligence problems. This concentration reveals where members&apos; highest-friction pain points sit and where SHRM could establish decision-support infrastructure rather than content-as-answer.
+
+
+Cross-domain creativity is the organizational signal. Two Thought Leadership economists built a recruiter training game. Brand Partnerships staff built a compliance tool. Student Communities activated the member network. Staff built for each other across functions — a pattern that suggests SHRM&apos;s internal innovation capacity is less bounded by department than organizational charts imply.
+
+
+88% working prototype rate validates the methodology. Given 24 hours and AI-assisted development tools, SHRM staff shipped functional software in the majority of attempts. The methodology works. This is no longer a hypothesis.
+
+
+Geographic distribution tells a story about SHRM East. Five submissions from the India office, including two that advanced to the Final Round. The per-capita participation rate from SHRM East exceeded U.S. average participation, and the quality of output was disproportionate to team size.
+
+
+
+
+What this document covers
+
+Section 1 provides the corpus at a glance — aggregate statistics, completion quality, and triage distribution. Section 2 maps HR domain coverage across the 12 areas addressed. Section 3 analyzes SHRM asset utilization patterns. Section 4 examines the AI architectures staff reached for. Section 5 catalogs problem framing patterns. Section 6 maps the audience targeting implied across the batch. Section 7 surfaces cross-domain builders and what their pattern reveals.
+
+Section 8 is the longest and most actionable — it organizes implications by receiving business team (Product, Certification, Content, Events, Member Experience, Knowledge Center, Compliance, Research, Commercial) with specific apps as examples and conversations worth sparking. Section 9 examines what was notably absent and what those gaps mean. Section 10 provides design specifications for a future interactive knowledge base that would let SHRM teams browse, search, and drill into the 55 apps — making this analysis a living navigable resource rather than a static artifact.
+
+The appendices provide the full portfolio snapshot of all documented apps with attribution, domain, triage path, and ratings, plus visualization specifications for the knowledge base.
+
+
+
+1. The Corpus at a Glance
+
+Before examining patterns, a baseline. The 1st SHRM Innovation Week Hackathon ran from April 16 to April 17, 2026 — a 24-hour window from kickoff to submission deadline. Participation was voluntary and open to all SHRM staff globally. 55 apps were submitted by 39 unique individuals — meaning 9 staff members submitted more than one app, with Daniel Hozik from the Knowledge Division submitting six and Alice Clark from Members & Communities submitting four.
+
+Three coaches — Barry Reicherter (Market Research), Joey Buss, and Sandeep Reddy Nimma — reviewed the submissions in parallel, producing structured documentation reports for 49 of the 55 apps. The six apps without completed documentation were submissions whose source materials were less accessible at the time of review; their attribution is preserved in the repository and they appear in the full appendix. The 49 documented apps form the analytical basis for the patterns described in this document.
+
+
+Participation
+
+
+
+Seven divisions submitted apps. Brand, Marketing & Content (including BAM, Digital Experiences, Content Production, Corporate Communications, and Multimedia) led with 17 submissions (31%), reflecting the division&apos;s size and the fact that many staff members submitted multiple apps. Knowledge & Thought Leadership came second at 14 submissions (25%), including Market Research, Thought Leadership Content, and Knowledge Advisory. The remaining five divisions each contributed between 3 and 6 submissions.
+
+The per-capita participation rate is more revealing than the raw counts. SHRM East (India) contributed 5 submissions — a significant share given the office&apos;s smaller headcount and 10-12 hour time zone difference from the primary hackathon coordination. SHRM East&apos;s output-to-participant ratio exceeded every U.S. division. Student Communities, Government Affairs, and SHRM Labs — divisions that don&apos;t typically appear in product or innovation discussions — each contributed submissions that advanced to meaningful stages of the pipeline.
+
+
+Completion quality
+
+
+
+Of the 49 apps that received structured documentation, 43 (88%) were rated Mission-Complete — meaning the app delivered an end-to-end working prototype that solved the problem it proposed to solve. 5 apps (10%) were Mission-Partial, meaning the core concept functioned but significant gaps remained (typically in AI integration or data wiring). 1 app was rated Mission-Concept — a compelling idea that hadn&apos;t yet reached functional prototype status.
+
+An 88% completion rate in a voluntary 24-hour sprint, with no prior training requirement, is a significant data point. For context: traditional software development cycles typically operate on multi-week sprints with dedicated engineering resources. The hackathon compressed this to 24 hours and relied on AI-assisted rapid prototyping tools (primarily Lovable) wielded by staff from non-engineering backgrounds. The result challenges the assumption that software prototyping requires dedicated product or engineering teams.
+
+
+The hardening pipeline
+
+
+
+Every app was assigned to one of three pipeline tracks based on what it would take to move from prototype to releasable state. 26 apps (53%) were classified as ready for release with light hardening — real authentication, cloud-backed data storage, and a branding pass. 16 apps (33%) were classified as needing deeper technical hardening, typically because their AI layers required safety review or production-grade implementation. 7 apps (14%) were classified as needing research validation — legal, ethical, or academic review before SHRM could attach its name to them.
+
+This distribution is itself a finding. It means the majority of apps are not blocked by product decisions or market validation — they are blocked only by routine engineering work. A third require AI infrastructure investment to move forward. And a non-trivial subset exist in regulatory, legal, or ethical territory where SHRM&apos;s credibility depends on getting the validation right. Each pathway has different economics, timelines, and governance requirements.
+
+
+Coach review distribution
+
+
+
+The three coaches reviewed comparable batches — Barry 18 apps, Joey 16, Sandeep 15 — each producing structured documentation reports following a consistent template. This distribution is relevant because every pattern observed in this document was cross-validated across three independent reviewers working in parallel. Where a pattern appears in apps reviewed by all three coaches, it reflects a genuine signal in the corpus rather than the framing of any single reviewer.
+
+
+
+2. What Was Built — Domain Coverage and Concentration
+
+The 49 documented apps span 12 distinct HR practice areas. This breadth was not directed — no domain prompts were issued, no gaps were identified in advance, and no coordination mechanism steered submissions toward coverage. The resulting map is a bottom-up portrait of where SHRM staff independently perceive friction, opportunity, and unmet need in the HR profession.
+
+
+
+
+Compliance & Legal dominates
+
+The largest single domain by a meaningful margin is Compliance & Legal, with 11 apps addressing regulatory navigation, workplace investigations, legal risk assessment, and policy tracking. This concentration is itself a finding. Compliance questions are the friction point SHRM members raise most often through the Knowledge Center, and the hackathon corpus reflects staff awareness of that demand. Apps in this domain include FMLA Leave Eligibility Checker (Ben Hood, Brand Partnerships), Corporate Visa Decision Engine (Judit Markarian, J-1 Exchange Visitor Program), SHRM Guardian (Nathan Ebikwo, Product Optimization), Civility Compass (Kristi Meacham, Knowledge Division), CaseCoach, guidHR, Global HR Compliance Tracker, State and Local Minimum Wage Law Assistant, TLU HR Simulation, CultureBridge, and the HR Investigation Simulator (Alice Clark, Members & Communities).
+
+Each of these apps, in its own way, is an attempt to turn SHRM compliance content into interactive decision support. The pattern suggests an underlying thesis: SHRM members don&apos;t just need access to compliance information — they need tools that apply that information to their specific situation and produce a usable answer. The gap between content and application is the opportunity.
+
+
+Analytics & Intelligence is the second concentration
+
+10 apps address workforce analytics, benchmarking, sentiment monitoring, and HR intelligence. These range from SHRM Metric Matchup (turning Human Capital Benchmarking data into an AI-narrated scorecard) and SignalForge (continuous workforce sentiment monitoring) through SHRM Work Radar, SHRM InsightBridge, PeopleScope, People Analytics in Action, Pulse Survey Insight Generator, SHRM Manager Effectiveness Cost Calculator, Recession Navigation Guide, and Product Pulse.
+
+The pattern across this domain is staff reaching for the gap between SHRM&apos;s research outputs (published reports) and what members actually need (on-demand, personalized, interactive intelligence for their specific organization). Multiple apps use the phrase &apos;turn reporting into real-time decision support&apos; or similar language. This is the same thesis visible in the Compliance & Legal domain — content as answer versus tool as answer — applied to a different data category.
+
+
+Talent & Learning is a third cluster
+
+5 apps address career development, competency frameworks, and individual development planning: Pathnex (the BASK-powered IDP generator), UpskillX, SHRM Growth Compass, Emberstone Ascent, and SHRM Career Architect. These apps collectively make an argument that SHRM&apos;s BASK framework — and SHRM&apos;s credential portfolio — are underutilized as application substrates. The staff who built these apps did not treat BASK as a reference document. They treated it as an API for career planning.
+
+
+Talent Acquisition, HR Operations, and Employee Relations
+
+5 apps focus on talent acquisition workflows (AdjacenSee from Cal Engstrom and Sydney Ross, SHRM Recruiter Workbench from Brett Roth, InsideTrack from Alice Clark, IOX, HRIS Test Scriptor), 6 on HR operations and internal workflow (HR Navigator, Bloom, Flowtrack appearing twice independently, EquipFlow), and 3 on employee relations and culture (Civility Compass, CultureBridge, HR Therapy).
+
+The operations cluster is notable because these are the apps least likely to carry a commercial product argument but most likely to improve day-to-day HR work. They represent staff building for their peers and their members&apos; peers — utilities that make HR jobs easier.
+
+
+The long tail
+
+The remaining 12 apps spread across Content & Media (HR Daily Roundup, HR Daily Brief), Member Value (SHRM PathFinder, Conference ROI Quiz), Workforce Planning (CareOS, Evolve), HR Technology (SHRM HR Tech Stack Advisor), Events & Marketing (LeadPulse), and Early Career (HirePrep). Several of these single-domain apps are among the most strategically distinctive in the batch — HirePrep in particular represents a kind of member-network activation that no single larger cluster captures.
+
+
+Distribution table
+Domain
+App Count
+% of Documented
+Representative Apps
+Compliance & Legal
+11
+22%
+FMLA Checker, SHRM Guardian, Visa Engine, Investigation Simulator
+Analytics & Intelligence
+10
+20%
+Metric Matchup, SignalForge, Work Radar, PeopleScope
+HR Operations
+6
+12%
+HR Navigator, Bloom, Flowtrack, EquipFlow
+Talent Acquisition
+5
+10%
+AdjacenSee, Recruiter Workbench, InsideTrack
+Talent & Learning
+5
+10%
+Pathnex, UpskillX, Career Architect, Growth Compass
+Employee Relations
+3
+6%
+Civility Compass, CultureBridge, HR Therapy
+Workforce Planning
+2
+4%
+Evolve, CareOS
+Member Value
+2
+4%
+SHRM PathFinder, Conference ROI Quiz
+Content & Media
+2
+4%
+HR Daily Roundup, HR Daily Brief
+Events & Marketing
+1
+2%
+LeadPulse
+HR Technology
+1
+2%
+HR Tech Stack Advisor
+Early Career
+1
+2%
+HirePrep
+
+ 
+
+What the distribution reveals
+
+The concentration in Compliance & Legal and Analytics & Intelligence is not accidental. These are the two HR domains where (1) members have high-frequency recurring friction, (2) SHRM has authoritative content that is underutilized, and (3) the gap between existing content and interactive decision support is largest. The long tail of smaller clusters reveals creative range — staff reached into domains like early career, events marketing, and HR technology — but the center of gravity is clear. Where SHRM invests AI product development should probably correlate with where staff instinctively saw the highest-leverage problems.
+
+
+
+3. SHRM Asset Utilization Patterns
+
+The single most important finding in the corpus is not a specific app — it is the pattern of how staff reached for SHRM&apos;s existing assets. Given 24 hours and no constraints, a significant majority of apps anchored themselves on something SHRM already owns. This is not an obvious outcome. Staff could have built generic HR tools with no SHRM connection and collected recognition for any working prototype. Instead, they built tools that required SHRM&apos;s foundation to make sense.
+
+This section catalogs which SHRM assets appeared as foundations most often, which appeared rarely, and which did not appear at all. The pattern reveals how staff instinctively see the extensibility of SHRM&apos;s IP portfolio — and where the blind spots are.
+
+
+
+
+Assets that anchored multiple apps
+
+
+SHRM Credentials & Products (6 apps)
+
+The credential portfolio appeared as foundation for SHRM PathFinder (Alice Clark), Conference ROI Quiz (Audrey Rodriguez), HirePrep (Kevin Abbed), SHRM Career Architect (Sandeep batch), TLU HR Simulation (Joey batch), and SHRM Growth Compass (Joey batch). The recurring thesis across these apps is that the credential portfolio is underutilized as a destination — members encounter SHRM credentials as line items on a website, not as outcomes of a guided journey. Each of these apps, in different ways, attempts to convert intent into credential enrollment by making the path visible and personalized.
+
+This is a commercial insight as much as a product one. Credentials are SHRM&apos;s most defensible revenue stream. The fact that six independent staff members built apps oriented toward credential conversion — from six different angles — suggests the current conversion path leaves meaningful revenue on the table.
+
+
+SHRM Research & Reports (6 apps)
+
+Published SHRM research appeared as foundation for SHRM Manager Effectiveness Cost Calculator (benchmarking data), HR Recession Navigation Guide (SHRM employment research), CareOS (workplace trends research), SHRM InsightBridge (research data), SHRM Work Radar (workforce data), and several others. The pattern across this cluster is turning static research outputs into personalized, interactive decision support.
+
+A SHRM research report today is typically consumed as a PDF. Members download it, extract one or two stats, and move on. These apps propose a different consumption model: the research becomes an engine that answers the member&apos;s specific question with their specific data. The Manager Effectiveness Cost Calculator, for instance, takes SHRM&apos;s research multipliers on turnover cost and absenteeism and combines them with user-input company parameters to produce a personalized business case. That is research as infrastructure, not research as artifact.
+
+
+SHRM Member Network (4 apps)
+
+HirePrep (Kevin Abbed), Emberstone Ascent, CrossRoads Conversations, and A.V.E. Framework (Nisha Kurup and Karuna Parmar, SHRM East) all treat the member network itself as the product. These apps propose that SHRM&apos;s 340,000-member base is a latent asset that, if activated, becomes a service layer nobody else can replicate.
+
+This is strategically distinctive. HirePrep is the clearest case — it creates a two-sided marketplace connecting early-career candidates with SHRM practitioners for structured interview practice. The network is the product. The AI layer is incidental. No SaaS vendor or consulting firm can build this because no one else has 340,000 HR professionals in a single trusted relationship structure.
+
+
+HR-X Framework / Workforce Maturity (3 apps)
+
+SignalForge, Evolve, and PeopleScope all operate in the space HR-X is meant to describe — the comprehensive workforce maturity model SHRM is building. These apps are, in effect, different interface proposals for the same underlying framework. They suggest that the HR-X framework has broader application surface than currently deployed, and that multiple distinct product experiences could be built on top of it.
+
+
+SHRM BASK Framework (2 direct, 2 adjacent)
+
+Pathnex directly operationalizes BASK into a personalized IDP generator. AdjacenSee uses O*NET with a stated BASK upgrade path. HR Investigation Simulator draws on BASK-aligned competencies. SHRM Career Architect references BASK-adjacent learning paths.
+
+BASK is SHRM&apos;s most authoritative intellectual property in the HR profession — the competency framework that defines what good HR looks like. Pathnex in particular demonstrates what becomes possible when BASK is treated as an application substrate rather than a reference document. A manager uploads a job description. The app maps it to BASK competencies. It generates a 20-question contextual assessment calibrated to that specific role. It produces a competency gap analysis with a 90-day individual development plan. This entire experience is possible because BASK is sufficiently structured to be queryable by AI. That is a significant strategic asset that the hackathon surfaced and that no current SHRM product fully exploits.
+
+
+HR Daily Newsletter (2 apps)
+
+HR Daily Roundup (Veronica Magan) and HR Daily Brief (Joey batch) both convert the existing HR Daily content into audio format. These two apps, built independently by staff in different batches, arrived at the same thesis: SHRM&apos;s content has a distribution problem, not a quality problem. The audio format extension is a zero-new-content-cost expansion of reach.
+
+
+Assets that appeared only once
+
+Several SHRM assets appeared as foundation for exactly one app — suggesting either that the asset is harder to extend, less visible to staff, or not yet obvious as a product substrate:
+
+
+JD Library + HR Jobs Board — SHRM Recruiter Workbench (Brett Roth) is the only app that wove together these two existing assets. The job description library and HR Jobs are both live SHRM products today, but their integration potential surfaced only through this single submission.
+
+
+SHRM Investigation Framework — HR Investigation Simulator (Alice Clark) is the only app built on the Workplace Investigations Specialty Credential content, even though the content is rich and the topic is high-interest.
+
+
+SHRM Policy Intelligence — SHRM Policy Change Radar (Sandeep batch) is the only app that treats SHRM&apos;s policy tracking as a product category.
+
+
+SHRM Annual Conference / Events — Only LeadPulse (Apurva Ojha, SHRM India) and Conference ROI Quiz (Audrey Rodriguez) leveraged the events infrastructure directly. For an organization whose flagship commercial event draws thousands of members, this is thin.
+
+
+Human Capital Benchmarking Data — Remarkably, only SHRM Metric Matchup (Nathan Ebikwo) and the Manager Effectiveness Cost Calculator built directly on the proprietary benchmarking data. The Metric Matchup submission demonstrates the immense potential of this asset as AI substrate — and yet only one of the 55 staff submissions reached for it directly.
+
+
+Assets that did not appear at all
+
+The gaps are as revealing as the concentrations. Several SHRM assets have no representation in the 49 documented apps:
+
+
+The SHRM Advisor (Ask an Advisor) — the human-assisted advisor service that is one of SHRM&apos;s most valuable member touchpoints did not appear as a foundation, despite being a natural input to AI-powered decision support.
+
+
+SHRM Sample Policies — SHRM&apos;s library of template policies and forms is heavily used by members but did not anchor a single hackathon app. The compliance cluster of 11 apps could each benefit from integration with this library.
+
+
+SHRM Store / product catalog — the commercial products catalog did not appear as a substrate, even though the Credentials & Products cluster of 6 apps obviously adjacent to it.
+
+
+SHRM.org content architecture — the existing content architecture of SHRM.org did not appear as something to extend, suggesting staff see the site as a channel rather than an asset.
+
+
+Linkage content and methodology — SHRM Linkage&apos;s assessment and advisory content did not appear as a foundation in any of the 49 apps. This is a significant gap given Linkage&apos;s leadership development assessment IP.
+
+The strategic signal
+
+Staff reached most confidently for assets that are structured, API-addressable, and narratively clear — BASK, benchmarking data, credentials, member network. They reached less confidently for assets that are unstructured, service-dependent, or buried in content architecture — SHRM Advisor transcripts, sample policies, SHRM.org content. The gap between these two categories is not a failure of staff imagination. It is an accurate read of which SHRM assets are currently productized versus stored. Turning the second category into AI-addressable substrates is itself a strategic opportunity the hackathon reveals.
+
+
+
+4. AI Architecture and Sophistication
+
+Staff built with a range of AI sophistication — from deterministic calculators with no AI integration through multi-step agentic workflows with meaningful reasoning chains. This section examines the distribution of AI architectures across the corpus and what staff choices reveal about both their skill level and their instinct for where AI adds value versus where it is decorative.
+
+
+The sophistication spectrum
+AI Architecture
+App Count
+Example Apps
+What It Means
+No AI (deterministic)
+~8
+FMLA Checker, Manager Cost Calculator, Conference ROI Quiz
+Rules-based tools; AI adds no value to the core logic
+Single LLM call
+~18
+Recruiter Workbench, Metric Matchup, Work Radar
+AI generates content or narration from structured inputs
+RAG / Retrieval-augmented
+~6
+guidHR, SHRM Policy Change Radar, HR Navigator
+AI retrieves relevant SHRM content and synthesizes an answer
+Multi-step / Agentic
+~12
+Pathnex, HirePrep, SignalForge, Evolve, AdjacenSee
+AI chains reasoning across multiple steps and decision points
+Simulation / Game-like
+~5
+HR Investigation Simulator, TLU HR Simulation, AdjacenSee
+AI plays roles, provides coaching, or scores performance
+
+ 
+
+
+What the choices reveal
+
+
+Most staff reached for AI that matched the problem
+
+The distribution is not biased toward maximum AI complexity. Roughly a third of apps use AI in a single, focused way — generating a job description, narrating a scorecard, summarizing a report. Another quarter use AI more ambitiously through multi-step workflows. And a meaningful portion use no AI at all, reaching instead for deterministic calculators where AI would add no value.
+
+This is a more mature pattern than a naive reading might expect. Staff did not treat the hackathon as an opportunity to demonstrate AI for its own sake. They treated it as an opportunity to solve HR problems, and reached for AI only where AI was the right tool. The FMLA Checker (Ben Hood) is explicitly rules-based because FMLA eligibility is explicitly rules-based — adding AI reasoning to that calculation would introduce uncertainty where certainty is legally required. The Manager Effectiveness Cost Calculator is deterministic because the formulas are heuristic but stable, and a user needs to be able to trust the output number.
+
+
+Agentic candidates cluster in talent development and analytics
+
+The most sophisticated agentic workflows appeared in Talent & Learning (Pathnex, HirePrep, Career Architect) and Analytics & Intelligence (SignalForge, Evolve, PeopleScope, Work Radar). These domains share a characteristic: the problems they solve require reasoning across multiple user-specific inputs, not just lookup or generation. Pathnex reads a job description, maps it to competencies, generates a personalized assessment, scores it, identifies gaps, and produces a behavioral development plan — that is a genuine chain of AI-assisted reasoning, not a single generation.
+
+The fact that staff chose agentic architecture for these domains and simpler architecture for others suggests good product instinct. The agentic candidates are also the apps most likely to require technical hardening before release, which is why 16 apps carry that classification in the pipeline.
+
+
+RAG as knowledge center extension
+
+Six apps use retrieval-augmented generation — AI that retrieves relevant SHRM content before answering a question. This is a meaningful architectural choice. It treats SHRM&apos;s content library as a knowledge base queryable in natural language, rather than as a set of static pages to navigate. guidHR, SHRM Policy Change Radar, HR Navigator, and State and Local Minimum Wage Law Assistant all propose variants of this pattern.
+
+The strategic implication is significant: if SHRM can successfully expose its content library as an AI-retrievable substrate, the Knowledge Center Decision Engine (KCDE) that the broader ILS strategy contemplates has validation — staff instinctively reached for this architecture when given freedom. Six independent apps proposing the same architecture across different content domains is stronger evidence of the opportunity than a single strategic argument.
+
+
+Simulation and game mechanics emerged organically
+
+Five apps use game-like or simulation mechanics — AI that plays roles, scores performance, or provides coaching through practice scenarios. HR Investigation Simulator (Alice Clark) puts users through realistic workplace cases. TLU HR Simulation operates similarly. AdjacenSee treats resume screening as a practice skill with AI-measured improvement over time.
+
+This cluster is distinctive because none of SHRM&apos;s current products use this format. Simulation-based learning is a proven adult learning modality used by law schools, medical schools, and corporate leadership development programs. SHRM&apos;s credential content translates naturally into simulation formats, but current delivery is almost exclusively expository. The hackathon surfaced five independent attempts to bridge this gap. That is product territory that did not previously have visible demand.
+
+
+Build platform concentration
+
+Of the 49 documented apps, all 42 with detected platforms used Lovable. The remaining 7 either did not have clearly identifiable platform metadata or used alternative approaches (static HTML, Microsoft Copilot Studio). This near-universal adoption of Lovable for rapid prototyping is itself a finding worth capturing.
+
+Lovable&apos;s React + Vite + TypeScript + Tailwind stack produced working prototypes in under 24 hours for staff with no prior frontend experience. This validates the tool choice for the hackathon methodology and has implications for any future ILS-HACK cycles: the infrastructure is proven and the learning curve is surmountable even for non-technical staff. The cost of additional hackathons is primarily Lovable licensing and AI API consumption — both of which scale predictably.
+
+The AI choice pattern
+
+Staff did not default to maximum AI sophistication. They chose architectures that fit their problems — rules-based where certainty was required, single-call generation where content was the bottleneck, RAG where SHRM content was the answer, agentic where reasoning had to chain, and simulation where practice was the learning modality. This pattern suggests SHRM has internal product instinct that could be channeled toward AI product decisions at the organization level, not just at the prototype level.
+
+
+
+5. Problem Framing Patterns
+
+Every app begins with a problem statement. Across 49 documented apps, the problem statements cluster into recognizable framing patterns. These patterns are more revealing than the domain distribution because they show how staff conceptualize the unmet need, not just the topic area. The question a problem statement asks determines what the app becomes.
+
+
+Pattern 1: Content-to-application gap
+
+The most common framing is some variant of: &apos;SHRM has the authoritative answer to this question, but members can&apos;t easily apply it to their situation.&apos; This framing appears across compliance apps (FMLA Checker, Corporate Visa Decision Engine, guidHR, Global HR Compliance Tracker, Minimum Wage Law Assistant), analytics apps (Metric Matchup, Manager Effectiveness Cost Calculator, Recession Navigation Guide), and talent apps (Pathnex, Career Architect).
+
+The underlying structure is consistent: SHRM publishes content → member reads content → member still has to do their own work to apply it to their situation. The apps all propose: SHRM provides the authoritative logic → member inputs their situation → tool produces their answer. The shift is from content as answer to tool as answer.
+
+This is the single most consistent strategic signal across the corpus. It suggests that SHRM&apos;s content moat could be extended into a tools moat without abandoning content as a category. The apps aren&apos;t arguing for replacing SHRM&apos;s research and advisory — they&apos;re arguing for a tool layer built on top of it.
+
+
+Pattern 2: Workflow inefficiency
+
+A second cluster frames the problem as: &apos;HR professionals spend time on low-value repetitive work that could be automated or templated.&apos; SHRM Recruiter Workbench (recurring job posting creation), HR Navigator (routing member questions), EquipFlow (employee equipment tracking), Flowtrack (HR workflow management), HRIS Test Scriptor (HRIS test case generation), and Bloom (structured onboarding) all share this framing.
+
+These apps are less strategically distinctive than the content-to-application apps — they solve problems that many HR tech vendors also solve — but they are meaningful because they reveal where SHRM members&apos; time is being lost. Each represents a utility category where SHRM could choose to compete (building the tool), partner (recommending vendors), or inform (educating members on selection).
+
+
+Pattern 3: Decision support failure
+
+A third cluster frames the problem as: &apos;HR leaders need to make a decision but lack the data, comparison, or scenario analysis to make it well.&apos; SignalForge (attrition decisions), Evolve (workforce planning decisions), CareOS (caregiving policy decisions), PeopleScope (workforce intelligence), Manager Effectiveness Cost Calculator (training investment decisions), and SHRM Work Radar (policy impact decisions) all sit in this pattern.
+
+These apps target the CHRO and senior HR leader audience specifically. They are attempts to build the missing decision support layer between SHRM&apos;s research outputs and executive-level workforce decisions. Three of these (SignalForge, Evolve, CareOS) reached the Final Round, and the collective weight of the cluster suggests an underserved product category: CHRO-level decision support infrastructure grounded in SHRM authority.
+
+
+Pattern 4: Engagement and connection
+
+A smaller cluster frames the problem as: &apos;Members, employees, or early-career professionals are disconnected from resources or from each other.&apos; HirePrep (early-career to practitioner connection), HR Daily Roundup and HR Daily Brief (content accessibility), Conference ROI Quiz (prospective attendee conversion), Emberstone Ascent (member engagement), and A.V.E. Framework (alumni value engagement) all sit in this pattern.
+
+These apps treat connection as the problem rather than information. They represent thinking beyond SHRM-as-publisher toward SHRM-as-network. HirePrep is the clearest case — the problem it solves is not knowledge deficit but network deficit. Early-career candidates don&apos;t need more interview advice; they need access to practitioners who can provide structured feedback. The app creates the connection.
+
+
+Pattern 5: Practice and skill building
+
+A fifth cluster — the smallest but most distinctive — frames the problem as: &apos;HR professionals need to practice skills they can&apos;t practice in their day-to-day work.&apos; HR Investigation Simulator (investigation skills), TLU HR Simulation (HR scenarios), AdjacenSee (resume screening skill), CaseCoach (case management practice), and HR Therapy (coaching practice) all sit in this pattern.
+
+This framing is almost absent from SHRM&apos;s current product portfolio, which focuses on expository learning (content, courses, credentials). Practice-based learning — the kind pilots, surgeons, and lawyers receive through simulation — has no meaningful SHRM product today. The hackathon surfaced five independent attempts to address this gap.
+
+
+Pattern distribution
+Framing Pattern
+App Count
+Strategic Signal
+Content-to-application gap
+~22
+Strongest signal. Tools built on SHRM authority.
+Workflow inefficiency
+~10
+Commodity utility territory. Competitive decision.
+Decision support failure
+~8
+CHRO-level opportunity. Distinctive authority play.
+Engagement and connection
+~5
+Member network as product. High differentiation.
+Practice and skill building
+~4
+Absent from portfolio. Category creation opportunity.
+
+ 
+
+What the framing pattern reveals
+
+When SHRM staff are given freedom to identify HR problems, they converge on a small number of recurring frames. The dominant frame — content-to-application gap — reveals a systemic perception that SHRM&apos;s authority is underutilized because it is packaged as content rather than as tools. This is not a product suggestion; it is a business model observation. The apps collectively argue that SHRM&apos;s growth opportunity is at the tool layer built on top of its content layer, not by expanding content or replacing content but by making content queryable, interactive, and personalized.
+
+
+
+6. Audience Targeting — Who Staff Built For
+
+When staff chose what to build, they also chose who to build for. The implied audience map across 49 apps reveals how SHRM staff think about their user populations — and reveals some misalignments between what staff built and who SHRM currently serves most actively.
+
+
+Primary audience distribution
+Primary Audience
+App Count
+Representative Apps
+HR Generalists & Business Partners
+~18
+FMLA Checker, Recruiter Workbench, HR Navigator, HR Tech Stack Advisor
+CHROs & Senior HR Leaders
+~12
+Metric Matchup, SignalForge, Evolve, Manager Cost Calculator
+Employees / Individual Contributors
+~8
+Pathnex, Bloom, HR Therapy, UpskillX, Growth Compass
+Recruiters & TA Teams
+~5
+AdjacenSee, Recruiter Workbench, InsideTrack, IOX
+Early-Career & Students
+~3
+HirePrep, Career Architect, TLU Simulation
+Compliance Officers & Legal
+~3
+SHRM Guardian, CaseCoach, Investigation Simulator
+L&D & Training Teams
+~2
+SHRM PathFinder, TLU HR Simulation
+
+ 
+
+
+HR Generalists as the dominant audience
+
+Roughly 37% of apps target HR generalists and business partners — the mid-market HR professional managing multiple functions at small-to-mid-sized organizations. This is SHRM&apos;s core member demographic, and the heavy concentration is both expected and strategically important. These members have the broadest scope of responsibility and the fewest specialist tools available, making them the highest-value target for SHRM utility apps. Every tool that makes an HR generalist&apos;s job faster or more defensible compounds SHRM member value.
+
+
+CHROs and senior leaders — the underserved audience
+
+The second-largest audience cluster — 12 apps targeting CHROs and senior HR leaders — is strategically distinctive because SHRM&apos;s current product portfolio serves this audience relatively thinly. The SHRM Executive Network and People + Strategy publication serve the community, but product-level decision support tools for CHROs are mostly absent. The hackathon surfaced a dozen independent attempts to fill this gap.
+
+SignalForge, Evolve, CareOS, and PeopleScope in particular propose CHRO-level workforce intelligence infrastructure that is distinct from both SHRM&apos;s current executive content and from what external vendors offer. The staff perception, repeated across these submissions, is that CHROs need real-time, personalized, SHRM-grounded decision support tools — and currently reach for consultants, external vendors, or ad-hoc spreadsheets to get it. SHRM has the authority and data to serve this audience with product, but has not yet chosen to.
+
+
+Employees and individual contributors — an emerging audience
+
+Eight apps target employees or individual contributors directly — not HR teams, but the workforce HR serves. Pathnex deploys to every employee in an organization. Bloom onboards new hires. HR Therapy serves anyone under workplace stress. UpskillX and Growth Compass target individual career development.
+
+This is a meaningful audience shift. SHRM has historically served HR professionals, with the workforce reached indirectly through HR. Several of these apps propose a direct-to-employee model where HR teams deploy SHRM-built tools to their workforce as a value-add. This is an enterprise distribution model that SHRM&apos;s B2B sales team could monetize — each enterprise customer serving tens of thousands of employees through a single SHRM relationship.
+
+
+Early-career as a distinct audience
+
+HirePrep, Career Architect, and TLU Simulation all target early-career or student audiences. SHRM&apos;s current engagement with this demographic is primarily through the Student Communities program and limited academic partnerships. The hackathon surfaced three independent proposals to serve this audience with product — a meaningful signal given that today&apos;s early-career professionals are tomorrow&apos;s SHRM members. The cost of acquisition is lower when engagement starts before the first HR job.
+
+
+Audiences noticeably absent
+
+Some audiences SHRM currently serves actively did not appear as primary targets in the hackathon:
+
+
+International HR professionals outside India — despite SHRM&apos;s growing international expansion, no app specifically targeted European, African, Latin American, or broader Asia-Pacific HR audiences.
+
+
+Small business owners without HR staff — SHRM&apos;s SMB member segment (businesses under 100 employees without dedicated HR) was absent as an explicit audience, though some HR generalist tools could serve them incidentally.
+
+
+Federal and public sector HR — despite public sector HR being a meaningful SHRM member segment, no app specifically targeted federal, state, or local government HR contexts.
+
+
+Labor relations and union environments — unionized workplaces and labor relations professionals did not appear as a distinct audience.
+
+The audience map as strategic input
+
+The hackathon&apos;s audience distribution roughly mirrors SHRM&apos;s active member base, but the absences are instructive. Where staff did not build tools, SHRM either has low internal awareness of the audience&apos;s needs or low internal conviction that those audiences are growth territory. Any future hackathon could prompt for these missing audiences explicitly, using the absence as a signal about where to seed specific creativity.
+
+
+
+7. Cross-Domain Builders & Organizational Signal
+
+A meaningful subset of the strongest apps in the batch were built by people whose day job has nothing to do with the problem they chose. This pattern — people building outside their department role — is worth examining directly because it reveals something important about SHRM&apos;s organizational capacity and its internal mobility of creative energy.
+
+
+The cross-domain pattern
+Builder
+Home Division
+What They Built
+App Domain
+Cal Engstrom & Sydney Ross
+Thought Leadership (economists)
+AdjacenSee
+Talent Acquisition training
+Ben Hood
+Brand Partnerships, Exhibits & Sales
+FMLA Leave Eligibility Checker
+Compliance & Legal
+Judit Markarian
+J-1 Exchange Visitor Program
+Corporate Visa Decision Engine
+Global Mobility / Compliance
+Audrey Rodriguez
+Brand
+Recession Navigation Guide, Conference ROI Quiz
+Analytics / Member Value
+Kevin Abbed
+Student Communities
+HirePrep
+Member Network Activation
+Animesh Rola
+SHRM East (content)
+SignalForge
+Workforce Analytics / CHRO
+Veronica Magan
+Content Production / BAM
+HR Daily Roundup
+Content format extension
+Apurva Ojha
+Marketing (India)
+LeadPulse
+Marketing / Event Operations
+
+ 
+
+
+What the pattern reveals
+
+Cal Engstrom and Sydney Ross are labor economists in the Thought Leadership division. Their day job is research into workforce trends. They built a recruiter training game. The distance between their role and the output is substantial — they did not extend their research into a new format; they stepped entirely outside their research practice to build something for a different function.
+
+Ben Hood works in Brand Partnerships, Exhibits and Sales — the division responsible for SHRM&apos;s commercial partnership revenue. He built an FMLA compliance decision tool. The FMLA domain has no relationship to his division&apos;s scope. He identified a member pain point, recognized that SHRM had the authoritative content, and built the decision tool that applied it.
+
+Judit Markarian runs the J-1 Exchange Visitor program — a narrow, specialized program for international exchange visitors. She built a general corporate visa decision engine that goes far beyond her program&apos;s scope into broader global mobility. She generalized from her domain expertise into adjacent territory.
+
+Kevin Abbed works in Student Communities. He built HirePrep, which is not about student communities per se — it is about activating the entire SHRM member network as a service for early-career candidates. He used his proximity to one audience (students) to propose infrastructure for a much larger one (the full 340,000-member base).
+
+
+The organizational implication
+
+These cross-domain builds are not coincidences. They reveal that SHRM has internal capacity for creative application of the organization&apos;s assets that is not bounded by the organizational chart. The staff members best positioned to identify an SHRM opportunity are not always the staff members whose official role intersects that opportunity. When creative latitude is granted — as it was in this hackathon — that capacity surfaces.
+
+The traditional SHRM innovation model depends on product teams doing product work and research teams doing research and content teams doing content. The hackathon suggests the model can be supplemented with a periodic &apos;unbounded creativity&apos; mode that surfaces opportunities the traditional model would not produce. Two Thought Leadership economists would not have been asked to propose a recruiter training product. They proposed it anyway. That is organizational value the traditional workflow cannot generate.
+
+
+The prolific builders
+
+Nine staff members submitted more than one app. Their patterns are informative:
+Builder
+Division
+App Count
+Pattern
+Daniel Hozik
+Knowledge Division
+6
+Breadth explorer — surveyed problem space broadly
+Alice Clark
+Members & Communities
+4
+Simulation and member experience focus
+Nathan Ebikwo
+Product Optimization
+3
+High-ambition product candidates
+Niloufar Gomez
+SHRM Business
+2
+Growth and development focus
+Veronica Magan
+Content Production / BAM
+2
+Content format innovation
+Jessica Langlois
+Knowledge Team
+2
+Knowledge Center extension
+Audrey Rodriguez
+Brand
+2
+Member value and cross-functional
+Brett Roth
+Digital Experiences, BAM
+2
+Member-facing utility
+Heather Hughes
+Brand Partners
+2
+Business operations utilities
+
+ 
+
+Daniel Hozik&apos;s six submissions deserve specific attention. He used the hackathon as an opportunity to explore the problem space broadly — each of his apps tackled a different HR domain. This breadth-exploration approach is a distinct creative mode from the single-deep-app approach of Nathan Ebikwo (three submissions, each at high ambition) or Alice Clark (four submissions clustered in member experience and simulation). Both modes produced valuable output. Hozik&apos;s suggests someone using the hackathon to map where ideas land; Ebikwo&apos;s suggests someone developing a potential product concept through rapid iteration.
+
+
+SHRM East as a distinct creative cluster
+
+Five submissions came from SHRM East in India — Nivrita Sharma, Nidhika Mishra, Nisha Kurup with Karuna Parmar, Animesh Rola, and Amit Sethi. Two of these advanced to the Final Round: Karan Singh&apos;s Pathnex (SHRM East; note that Karan submitted Pathnex from SHRM East as well, alongside these five documented contributors) and Animesh Rola&apos;s SignalForge.
+
+The per-capita output from SHRM East was disproportionate to team size, and the quality — measured by Final Round advancement — was exceptional. Pathnex is arguably the single most strategically distinctive app in the batch because of how directly it operationalizes BASK. The SHRM East pattern suggests a creative capacity that should be deliberately supported in future hackathons, potentially through timezone-friendly programming or dedicated SHRM East tracks.
+
+The cross-domain pattern as a capability
+
+The cross-domain builders are not exceptions — they are a distinct mode of value creation that the traditional product workflow cannot replicate. Future ILS hackathons should explicitly encourage this mode. The ask could be as simple as &apos;build something that isn&apos;t in your department&apos;s current scope.&apos; The pattern suggests SHRM&apos;s best internal product instinct often comes from people who see the organization from outside their own function.
+
+
+
+8. Implications for SHRM Business Teams
+
+This section organizes the corpus by receiving business team — the teams inside SHRM whose existing roadmaps, products, or member relationships intersect with what was built. The goal is not to assign ownership of the 55 apps to individual teams. The goal is to surface the conversations each team should be having based on what the hackathon revealed about their domain.
+
+Each team section below identifies the specific apps most relevant to that team&apos;s scope, the strategic implications the cluster surfaces, and the conversations worth having. These are discussion prompts, not product directives. The apps are evidence that a question is worth asking.
+
+
+8.1 Product Development
+
+Stephanie Laguna&apos;s product team inherits the most direct implications from the hackathon because several of the apps map onto decisions that will need to be made about the 2026-2027 product roadmap. The Final Round advances — Metric Matchup, Pathnex, HirePrep — are the most immediate MVP conversation starters, but the broader corpus surfaces opportunities the roadmap may not currently contemplate.
+
+
+Immediate MVP conversation candidates
+
+
+SHRM Metric Matchup (Nathan Ebikwo) — turns Human Capital Benchmarking data into an AI-narrated interactive scorecard. This is arguably the single clearest commercial product conversation in the batch. It takes a proprietary SHRM asset (benchmarking data) and transforms it into a product category with obvious pricing — interactive benchmarking with personalized narration and cost-of-inaction scoring. The question for the product team: what does the product version of Metric Matchup look like and what is the minimum viable test with members?
+
+
+Pathnex (Karan Singh, SHRM East) — operationalizes BASK into an IDP generator HR teams deploy for their workforce. This is a B2B enterprise offering hidden inside a member-facing utility. The question for the product team: is this a standalone product, an extension of existing certification content, or enterprise infrastructure that distributes BASK to SHRM B2B customers&apos; full employee populations?
+
+
+HirePrep (Kevin Abbed) — activates the SHRM member network as a structured interview prep service. This is a different product category entirely — a two-sided marketplace rather than content or tool. The question for the product team: does SHRM have an enterprise-wide interest in productizing the member network as a service layer, and if so, where does HirePrep sit in that broader strategy?
+
+
+Emerging product category signals
+
+
+CHRO-level workforce decision support — SignalForge, Evolve, PeopleScope, CareOS, SHRM Work Radar, and Manager Effectiveness Cost Calculator collectively propose that SHRM should have a CHRO-facing decision support product. Today SHRM&apos;s CHRO products are primarily content and community. These apps argue for tools. The question: is this a category worth entering, and if so, which of these six apps best represents the entry point?
+
+
+Simulation-based learning — HR Investigation Simulator, TLU HR Simulation, AdjacenSee, CaseCoach, and HR Therapy all propose simulation or practice-based experiences. This is a product category SHRM does not currently occupy but that has clear demand signals. The question: should SHRM develop simulation content as a product line adjacent to its credential portfolio?
+
+
+HR utility tools for day-to-day work — SHRM Recruiter Workbench, Flowtrack, EquipFlow, HR Navigator, Bloom, and HRIS Test Scriptor propose utilities for daily HR operations. These compete with existing HR tech vendors but have SHRM brand and authority as differentiators. The question: does SHRM enter HR utility tooling, partner to curate vendors, or educate members on selection?
+
+
+Conversations the product team should be having
+
+
+Which of the Top 2 advances to MVP concept test, and on what timeline? Both Metric Matchup and Pathnex have clear commercial potential but significantly different product profiles. Testing both in parallel is an option; testing in sequence is another.
+
+
+How does CHRO decision support fit into the 2026-2027 roadmap? Six independent apps arrived at this thesis. If the product team&apos;s current roadmap doesn&apos;t include CHRO decision support, the hackathon is suggesting it should.
+
+
+What is the product team&apos;s posture toward simulation-based learning as a new product category? Five apps propose this direction. Entering the category is a commitment; not entering it is a signal to staff about how creative ambition is bounded.
+
+
+Which gallery apps should the product team review on a rolling basis as they consider future initiatives? The repository is not just an archive — it is a searchable source of prior internal thinking the team should reference when planning.
+
+
+8.2 Certification & Learning
+
+The certification and learning team has the densest cluster of hackathon output relevant to its scope. Five apps directly extend BASK, the credential portfolio, or learning journeys. The thesis across this cluster is consistent: SHRM&apos;s competency and credential IP is underutilized as application substrate.
+
+
+Most relevant apps
+
+
+Pathnex — the most direct BASK operationalization. Turns the competency framework into a personalized IDP generator. Demonstrates that BASK is sufficiently structured to be queryable by AI and applied to individual roles at scale.
+
+
+SHRM PathFinder (Alice Clark) — a learning journey navigator that maps member goals to SHRM credentials. A conversion funnel built around the credential portfolio.
+
+
+HR Investigation Simulator (Alice Clark) — extends the Workplace Investigations Specialty Credential into an immersive practice experience. Demonstrates how credential content can become interactive experience.
+
+
+TLU HR Simulation — another simulation experience, this one broader in HR scenario coverage, using credential-framework-aligned competencies.
+
+
+SHRM Career Architect — career path planning using SHRM credentials as milestones.
+
+
+SHRM Growth Compass (Niloufar Gomez) — personal growth and development using SHRM competency data.
+
+
+UpskillX — upskilling and competency gap identification.
+
+
+Manager Effectiveness Cost Calculator — a sales aid for PMQ+ that quantifies the cost of ineffective management. Not a learning product itself but directly supports learning business development.
+
+
+Strategic implications
+
+The cluster collectively argues that SHRM&apos;s credential portfolio could be the destination rather than the product. Today members encounter credentials as line items. These apps propose experiences that guide members from their current state to the right credential for their situation. That is a shift from credential-as-SKU to credential-as-outcome.
+
+The simulation subcluster (Investigation Simulator, TLU Simulation, AdjacenSee) argues that SHRM&apos;s credential content has untapped value in practice-based delivery modes. This has implications both for existing credential holders (re-engagement through practice) and for new credential pipeline (trial-based entry into credentialing).
+
+
+Conversations worth having
+
+
+Is BASK ready to be a product API? Pathnex demonstrates it can be. The certification team&apos;s authority over BASK structure and maintenance is what makes this possible, but it also constrains what staff can build without team involvement.
+
+
+What is the team&apos;s posture toward simulation-based credential delivery? Several apps propose it; one exists already (the instructional design team&apos;s Regis pilot referenced in the Investigation Simulator documentation).
+
+
+Should the credential conversion path be a product the team owns? PathFinder, Career Architect, and Growth Compass all propose variants. A coordinated response is likely stronger than any individual app.
+
+
+How does the Manager Effectiveness Cost Calculator relate to existing PMQ+ sales infrastructure? It could become standard sales enablement if productized carefully.
+
+
+
+8.3 Content & Marketing
+
+Tina Beaty&apos;s content and marketing organization sits at the intersection of several hackathon threads. The most direct is the distribution format extension of owned content, but the broader implication is about member engagement infrastructure.
+
+
+Most relevant apps
+
+
+HR Daily Roundup (Veronica Magan) — turns the HR Daily newsletter into a two-host audio briefing. The clearest content-distribution expansion in the batch. Members increasingly consume professional content via audio; SHRM currently publishes primarily in text and limited podcast form.
+
+
+HR Daily Brief (Joey&apos;s batch) — independent variant of the same thesis. Two teams arriving at the same idea is itself a signal about member demand for the format.
+
+
+SHRM Work Radar (Brett Roth) — a personalized, proactive intelligence dashboard built on SHRM content. Positioned as an app available through the existing SHRM Dashboard. Proposes member content consumption as a dashboard experience rather than an article stream.
+
+
+SHRM InsightBridge — translates SHRM research into personalized insights for organizations.
+
+
+HR Recession Navigation Guide (Audrey Rodriguez) — turns SHRM employment research into a playbook-style decision resource.
+
+
+Conference ROI Quiz (Audrey Rodriguez) — an event marketing tool that converts interest into attendance through a quiz-format decision journey.
+
+
+Strategic implications
+
+The cluster reveals that SHRM&apos;s content library has distribution and format potential that current operations do not exploit. HR Daily Roundup in particular demonstrates that existing editorial investment can produce secondary channels at near-zero marginal cost. Two hackathon apps arriving at the same conclusion is a strong market signal.
+
+SHRM Work Radar&apos;s dashboard framing is strategically important. It proposes that members want content delivered as intelligence, not just as articles. A dashboard experience built on SHRM content could become a daily-use destination that justifies membership renewal more actively than the current article-stream model.
+
+
+Conversations worth having
+
+
+Should HR Daily Roundup be an extension of HR Daily rather than a standalone product? The content is already SHRM&apos;s. The format extension could launch under the existing HR Daily brand with no new editorial investment.
+
+
+What is the content team&apos;s posture toward AI-assisted personalization of existing content? Work Radar and InsightBridge both propose it. The infrastructure investment is non-trivial but the member value proposition is distinctive.
+
+
+Is Conference ROI Quiz a template for broader event marketing? Each SHRM event could have a tailored decision journey built on similar scaffolding.
+
+
+Could the Public Gallery of hackathon apps itself become a content marketing asset? The story of SHRM staff building 55 AI apps in 24 hours is a distinctive brand narrative.
+
+
+8.4 Events & Experience
+
+The events team&apos;s most direct hackathon thread is LeadPulse, but the broader implications extend to how events relate to year-round member engagement.
+
+
+Most relevant apps
+
+
+LeadPulse (Apurva Ojha, SHRM India) — automated lead tracking and allocation for conference marketing. Built for SHRM India Conference but broadly applicable. Proposes replacing manual lead follow-up with AI-assisted movement tracking and regional allocation.
+
+
+Conference ROI Quiz (Audrey Rodriguez) — pre-event conversion tool for SHRM Annual and other flagship events. Turns attendance consideration into a personalized decision journey.
+
+
+Strategic implications
+
+These two apps alone represent modest direct implications, but the broader hackathon pattern suggests that SHRM&apos;s event infrastructure has untapped product potential. Events are currently a standalone category — members attend, exit, and are reengaged through marketing. Several adjacent apps (SHRM PathFinder, Career Architect, Metric Matchup) could become event-adjacent experiences that extend value before and after the event itself.
+
+
+Conversations worth having
+
+
+Should LeadPulse methodology be standardized across all SHRM events, or does each event have distinct lead flow requirements?
+
+
+Is Conference ROI Quiz a model that should be replicated for each major SHRM event? Each event could have its own decision journey.
+
+
+What would an AI-powered year-round event engagement look like? Attendees could receive personalized follow-up based on their session choices; prospects could get tailored invitations based on their challenges.
+
+
+
+8.5 Members & Communities
+
+The members and communities team inherits a distinctive cluster because several hackathon apps propose using the member network itself as infrastructure. This is a perspective shift from members-as-customers to members-as-product.
+
+
+Most relevant apps
+
+
+HirePrep (Kevin Abbed) — activates the 340,000-member network as a structured interview prep service. Members become practitioners delivering value to other members (candidates). Two-sided marketplace dynamics.
+
+
+A.V.E. Framework (Nisha Kurup & Karuna Parmar, SHRM East) — Alumni Value Ecosystem. Transforms employee exit into a continuous value engine — but the framework applies directly to SHRM member lifecycle too.
+
+
+Emberstone Ascent — member engagement and retention tool built on SHRM network.
+
+
+CrossRoads Conversations — member-to-member dialogue infrastructure.
+
+
+Bloom — first 90 days for new employees. While built for HR teams, the methodology could apply to new SHRM members&apos; first 90 days.
+
+
+Strategic implications
+
+The cluster proposes that SHRM&apos;s member base is structurally different from typical professional association membership. 340,000 members who are themselves practitioners of the profession SHRM serves creates the raw material for a service marketplace, a mentorship network, and an alumni value ecosystem. The current membership model treats this as passive relationship. These apps treat it as active infrastructure.
+
+HirePrep in particular is strategically important beyond its specific use case. If the model works for early-career candidate preparation, the same architecture could serve any case where SHRM members want structured access to other members&apos; expertise — compliance consultation, compensation benchmarking conversations, change management advisory, crisis response peer support.
+
+
+Conversations worth having
+
+
+Is the SHRM member network ready to be productized as a service layer, or does member expectations management need to happen first?
+
+
+Should HirePrep be a pilot of the broader thesis — test whether members will show up for a structured service delivery role, starting with early-career interview prep?
+
+
+What does A.V.E.&apos;s alumni framework look like applied to lapsed SHRM memberships? The &apos;alumni as continuing value&apos; thesis could transform member retention strategy.
+
+
+8.6 Knowledge Center & Advisory
+
+James Atkinson&apos;s Knowledge Center team is the group whose day-to-day work most closely resembles what many of these apps propose to automate. The implications are complex — some apps extend the team&apos;s scope, others potentially substitute for it.
+
+
+Most relevant apps
+
+
+HR Navigator (Daniel Hozik) — routes HR questions through SHRM Knowledge Center content. A direct automation thesis applied to the advisor experience.
+
+
+guidHR (Sandeep batch) — general HR guidance delivered through AI retrieval of SHRM content.
+
+
+FMLA Leave Eligibility Checker (Ben Hood) — one of the highest-volume Knowledge Center question types automated into a decision tool.
+
+
+State and Local Minimum Wage Law Assistant — another high-volume question type automated.
+
+
+SHRM Policy Change Radar — policy intelligence delivered proactively rather than reactively.
+
+
+SHRM Guardian (Nathan Ebikwo) — AI HR compliance copilot. Positioned as a CHRO-level tool, but operationally overlaps with advisor scope.
+
+
+HR Investigation Simulator (Alice Clark) — simulation training that teaches the investigation process advisors handle in high-stakes cases.
+
+
+CaseCoach — case management coaching.
+
+
+Civility Compass (Kristi Meacham) — workplace civility diagnostic that surfaces issues advisors often hear about.
+
+
+Global HR Compliance Tracker — global compliance intelligence.
+
+
+Strategic implications
+
+This is the densest cluster of hackathon output relative to a single team&apos;s scope, and the implications are genuinely complex. The pattern can be read two ways. One reading: these apps extend the Knowledge Center&apos;s reach by automating the high-volume repetitive questions, freeing advisors to focus on the complex cases where human judgment adds the most value. The second reading: these apps substitute for advisors at the low-complexity end of the demand curve, which has revenue implications for the advisor service model.
+
+Both readings are likely true in different measure. The strategic decision is not whether AI-powered tools will serve some of the Knowledge Center&apos;s current demand — they will — but how the Knowledge Center business adapts its role, pricing, and scope in response. The hackathon reveals that the shift is already starting to happen through staff intuition; the strategic question is whether the Knowledge Center leads the shift or is shaped by it.
+
+
+Conversations worth having
+
+
+What is the Knowledge Center&apos;s explicit posture on AI-assisted member self-service? The hackathon is going to produce more of these apps regardless of the team&apos;s position — clarifying the posture now allows coordinated response rather than reactive one.
+
+
+Which of the advisor-substitute apps should the Knowledge Center team actively adopt and brand as advisor extensions? FMLA Checker and Minimum Wage Assistant are natural candidates.
+
+
+Should the team partner with the product team on SHRM Guardian&apos;s enterprise compliance copilot thesis? This is adjacent enough to advisor scope to matter.
+
+
+What is the role of simulation (Investigation Simulator, CaseCoach) in advisor training and continuing education?
+
+
+
+8.7 HR Jobs & Talent Services
+
+The HR Jobs product and SHRM&apos;s talent services scope intersects with a meaningful cluster of recruitment-focused apps. These apps collectively propose that SHRM could extend its HR Jobs relationship with recruiters beyond job posting into tooling and training.
+
+
+Most relevant apps
+
+
+SHRM Recruiter Workbench (Brett Roth) — the most direct HR Jobs extension. Connects the job description library with HR Jobs through an AI-assisted workflow. Drives repeat member engagement with HR Jobs rather than single-use posting.
+
+
+AdjacenSee (Cal Engstrom & Sydney Ross) — recruiter training through resume screening practice. Positions SHRM as a skill-building partner for recruiters, not just a job posting destination.
+
+
+InsideTrack (Alice Clark) — internal talent matching. Extends TA beyond external hiring into internal mobility.
+
+
+HirePrep (Kevin Abbed) — candidate preparation side of the hiring equation. Completes the picture — Recruiter Workbench for the recruiter, HirePrep for the candidate.
+
+
+IOX — Internal Opportunity Exchange — internal career marketplace.
+
+
+HRIS Test Scriptor — HR technology testing — adjacent to TA but broader.
+
+
+Strategic implications
+
+The cluster proposes that SHRM could occupy a distinctive position in the recruiting ecosystem — not competing with LinkedIn or Indeed on job board scale, but offering the training, tools, and professional infrastructure recruiters need to do their jobs well. Recruiter Workbench and AdjacenSee in particular show how SHRM&apos;s authority in HR professional development could extend into TA-specific utilities.
+
+HirePrep complements this by serving the candidate side — also without competing with job boards on scale, but offering interview preparation that candidates cannot get elsewhere at the same quality. Together, Recruiter Workbench and HirePrep suggest SHRM could be the professional development layer of the hiring ecosystem while leaving pure distribution to others.
+
+
+Conversations worth having
+
+
+Should HR Jobs become a recruiter productivity platform, with the job board as a component rather than the whole product? Recruiter Workbench points in this direction.
+
+
+Is there a recruiter training and certification business adjacent to but distinct from SHRM&apos;s HR generalist credentials? AdjacenSee suggests yes.
+
+
+Does SHRM have a perspective on internal mobility as a distinct HR practice area worth tools and training, separate from external hiring?
+
+
+8.8 Compliance & Legal Advisory
+
+The compliance and legal advisory scope intersects with the single largest domain cluster — 11 apps addressing regulatory, legal, or compliance decisions. The implications are both product-relevant (what tools could SHRM offer) and liability-relevant (what can SHRM attach its name to).
+
+
+Most relevant apps
+
+All 11 compliance domain apps are relevant to this team. The most distinctive:
+
+
+SHRM Guardian (Nathan Ebikwo) — AI HR compliance copilot for enterprise. Flags risks across US and global laws, prioritizes issues P0-P3, drafts fixes with citations.
+
+
+FMLA Leave Eligibility Checker (Ben Hood) — high-volume specific use case with clear answer logic.
+
+
+Corporate Visa Decision Engine (Judit Markarian) — global mobility compliance, structured around business intent.
+
+
+HR Investigation Simulator (Alice Clark) — investigation practice using SHRM framework.
+
+
+CaseCoach — case management through compliance situations.
+
+
+Civility Compass (Kristi Meacham) — workplace civility diagnostic tied to SHRM&apos;s civility research.
+
+
+Global HR Compliance Tracker — global compliance intelligence across jurisdictions.
+
+
+SHRM Policy Change Radar — proactive policy intelligence.
+
+
+guidHR — general HR guidance with retrieval.
+
+
+State and Local Minimum Wage Law Assistant — wage law jurisdictional lookup.
+
+
+TLU HR Simulation — HR scenario-based decision practice.
+
+
+Strategic implications
+
+The compliance cluster concentrates both the most commercial opportunity and the most legal risk. SHRM&apos;s authority in compliance is real and monetizable — members will pay for decision support tools branded with SHRM&apos;s name. But that same authority creates liability when the tools produce wrong answers. Every app in this cluster sits in territory where getting it right matters legally, not just commercially.
+
+The University Node referral track in the broader ILS strategy exists specifically for this category. Seven apps were classified as needing research validation before release, and the majority of those sit in this cluster. The question for the compliance and legal advisory team is not whether these apps should exist — staff will continue building them — but how SHRM&apos;s validation and branding apparatus responds to them.
+
+
+Conversations worth having
+
+
+What is the framework for attaching SHRM branding to a compliance decision tool? Which tools meet the bar? Who reviews?
+
+
+Should FMLA Checker become a publicly available SHRM-branded member utility? It is a high-volume member need with clear answer logic — the ideal first test case.
+
+
+Is SHRM Guardian the beginning of an enterprise compliance product line? How does that relate to existing SHRM Business offerings?
+
+
+How should the Knowledge Center advisor service relate to these compliance tools? Are they substitutes, extensions, or complementary services at different price points?
+
+
+
+8.9 Research & Voice of Work
+
+Alex Alonso&apos;s research organization has a distinctive relationship to the hackathon corpus because several apps demonstrate appetite for SHRM data products — which is adjacent to the research team&apos;s scope — and because some apps could themselves produce research signal if instrumented correctly.
+
+
+Most relevant apps
+
+
+SHRM Metric Matchup (Nathan Ebikwo) — the most direct research extension. Turns benchmarking research into an interactive data product. The research team&apos;s data as the substrate.
+
+
+Manager Effectiveness Cost Calculator — uses SHRM research multipliers to quantify management cost. Translates research into personalized business case.
+
+
+HR Recession Navigation Guide (Audrey Rodriguez) — turns employment research into playbook-style decision resource.
+
+
+CareOS — built on SHRM workplace caregiving research and trends data.
+
+
+SHRM InsightBridge — translates research data into personalized organizational insights.
+
+
+SHRM Work Radar — proactive alerting on workforce trends that the research team surfaces through reports.
+
+
+Strategic implications
+
+The research team produces authoritative data and reports. The hackathon cluster above shows staff reaching for that output and trying to turn it into tools. This is a consistent pattern observed throughout the document — content-to-application gap — applied specifically to research outputs.
+
+A second-order implication: if these apps deployed at scale, they would generate research signal of their own. When a CHRO uses Metric Matchup, their inputs reveal what organizations are measuring, where they&apos;re struggling, and what benchmarks they prioritize. That is a research asset the current SHRM research operation does not capture. Instrumenting these tools to feed back into the VoW research pipeline is a strategic consideration.
+
+
+Conversations worth having
+
+
+Should Metric Matchup be a research product or a product product? The distinction matters — who owns it, who maintains data currency, how pricing works.
+
+
+Which hackathon apps, if deployed, could generate research signal worth capturing? Instrumentation is architecturally cheap if built in early.
+
+
+What is the research team&apos;s relationship to the VoW Synthetic project? The hackathon apps that target CHRO decision support could be validation testbeds for synthetic persona accuracy.
+
+
+8.10 SHRM Business & Commercial Teams
+
+Syed Wasey&apos;s commercial scope inherits the commercialization implications for the strongest apps. The MVP conversation candidates, the enterprise offerings, and the B2B product line extensions all flow through this team.
+
+
+Most relevant apps
+
+
+SHRM Metric Matchup — clearest commercial product candidate.
+
+
+Pathnex — enterprise workforce tool HR teams deploy for their full employee base.
+
+
+SHRM Guardian — enterprise compliance copilot.
+
+
+SignalForge — enterprise workforce intelligence.
+
+
+CareOS — employer caregiver intelligence platform.
+
+
+Evolve — workforce intelligence platform for CEOs and CHROs.
+
+
+PeopleScope — continuous workforce visibility for HR leaders.
+
+
+Strategic implications
+
+The enterprise-facing apps represent potential product lines the commercial organization could develop. Several of these align with existing SHRM Business scope (compliance services, CHRO engagement) while others propose new categories (workforce intelligence infrastructure, decision support products).
+
+The commercialization framework for advancing apps beyond prototype is itself a strategic question. What does concept testing look like? Which apps deserve investment? Which represent partnerships rather than products? These are commercial team decisions that benefit from the hackathon portfolio as input rather than being made in isolation.
+
+
+Conversations worth having
+
+
+Which apps enter formal concept testing with members or customers, and on what timeline?
+
+
+Is there an enterprise product line built around workforce intelligence (SignalForge, Evolve, PeopleScope, CareOS)? Four apps propose it.
+
+
+What is the commercial relationship between SHRM&apos;s advisor services and the compliance tools cluster?
+
+
+How does the Gallery of hackathon outputs feed future commercial conversations — should it become a regular input to the commercial team&apos;s planning cycle?
+
+
+8.11 SHRM East & International
+
+SHRM East deserves its own section not because the apps built there fall outside other categories — they don&apos;t — but because the pattern of output from the India office itself represents an organizational insight worth separate examination.
+
+
+SHRM East submissions
+
+
+Pathnex (Karan Singh) — BASK-powered IDP generator. Top 2 finalist.
+
+
+SignalForge (Animesh Rola) — workforce intelligence platform. Top 5 finalist.
+
+
+A.V.E. Framework (Nisha Kurup & Karuna Parmar) — Alumni Value Ecosystem.
+
+
+CrossRoads Conversations (Nivrita Sharma) — member dialogue infrastructure.
+
+
+Cross-cultural communication copilot (Amit Sethi) — cross-cultural workplace interaction support.
+
+
+The pattern
+
+The per-capita submission rate from SHRM East exceeded every U.S. division. Two of the five submissions advanced to the Final Round, and one (Pathnex) reached the Top 2. The quality of strategic thinking — particularly Pathnex&apos;s BASK operationalization and SignalForge&apos;s workforce intelligence thesis — matches or exceeds output from larger U.S. divisions.
+
+This pattern suggests creative capacity at SHRM East that is underutilized in current operational scope. The office&apos;s participation in hackathons should be explicitly supported in future cycles — through timezone-friendly coordination, dedicated SHRM East tracks, or joint U.S./India project pairs. The hackathon format proved that geographic distance does not limit creative contribution when the tools are asynchronous-friendly.
+
+
+Conversations worth having
+
+
+What operational role should SHRM East play in future ILS initiatives? The talent is there; the question is whether the workload connection is made deliberately.
+
+
+Are there SHRM East submissions that should become part of the broader product roadmap rather than being treated as regional outputs?
+
+
+Does SHRM have an international expansion thesis that draws on the creative capacity the hackathon revealed at SHRM East?
+
+
+
+9. What&apos;s Missing — The Analytical Counterpoint
+
+Sections 2 through 8 analyzed what was built. This section analyzes what was not. The gaps in the corpus are as analytically valuable as the concentrations because they reveal where SHRM staff either did not see opportunity, did not feel equipped to build, or do not instinctively think the organization should compete.
+
+
+Domains that were thin or absent
+
+
+Compensation and total rewards
+
+For a profession in which compensation strategy is a defining competency, the hackathon produced no dedicated compensation app. This is striking. Compensation questions dominate the Knowledge Center advisor queue, pay equity is a regulatory growth area, and pay benchmarking is a revenue line SHRM already participates in. Yet no hackathon app tackled compensation design, pay equity analysis, total rewards optimization, or compensation communication. This suggests either that staff perceive compensation as territory dominated by specialist vendors (Payscale, Radford, Mercer), or that the specific assets SHRM has in this space are less obvious as AI substrates. Either way, the absence is worth examining directly.
+
+
+Benefits administration and design
+
+Similarly absent: benefits. No hackathon app addressed benefits plan design, open enrollment support, benefits communication, or benefits optimization. Given that benefits administration is one of HR&apos;s largest time sinks and benefits literacy is a persistent employee pain point, this absence likely reflects how the benefits domain is perceived — as vendor territory rather than SHRM territory. It may also reflect that SHRM&apos;s content in this space is less structured than its compliance or competency content.
+
+
+Diversity, equity, inclusion, and belonging
+
+DEIB appeared in Civility Compass and implicitly in some culture-focused apps, but no app was primarily a DEIB product. This is notable given the existence of the Center for Inclusion & Diversity and the broader I&D benchmarking work Carolyn Johnson&apos;s team is building. Either the organization&apos;s ongoing DEIB work absorbed the creative energy that would otherwise appear in hackathon output, or staff perceive DEIB as institutional territory rather than individual app territory. The absence is worth discussing with Carolyn&apos;s team specifically, especially in the context of the HR-X Assessment & Solutions Hub&apos;s planned I&D module.
+
+
+Performance management
+
+Performance reviews, goal-setting, feedback systems, and continuous performance enablement did not appear as central themes in any app. Some adjacent territory was covered (Sharon Lo&apos;s people manager platform, SHRM Growth Compass) but not performance management as a distinct domain. This is a gap worth noting because it is one of the most unresolved, high-friction HR domains in the profession — and SHRM has authoritative content about it through PMQ+ and related programs.
+
+
+Labor relations and union environments
+
+Unionized workplaces, labor negotiation support, and labor relations expertise were absent as domain focuses. Given that labor relations is a distinct HR specialization and a growing area of member interest as union activity has increased, this absence is structural rather than random.
+
+
+Public sector and nonprofit HR
+
+The hackathon apps largely assume corporate HR contexts. Public sector HR (with its distinct regulatory environment, budget cycles, and union relationships) and nonprofit HR (with its resource constraints and mission-driven compensation tradeoffs) did not appear as target contexts. SHRM has meaningful member populations in both sectors, and the absence suggests the dominant mental model staff work from is corporate.
+
+
+Audiences that were thin or absent
+
+Section 6 catalogued these in detail. The most strategically significant absences:
+
+
+International HR outside India — European, Latin American, African, and broader Asia-Pacific HR contexts.
+
+
+Small business owners without HR staff — SMB members who are their own HR department.
+
+
+HR consultants and solo practitioners — a growing segment of the profession.
+
+
+SHRM assets that did not anchor any app
+
+Section 3 catalogued these. The most notable:
+
+
+The SHRM Advisor service (human-assisted advisory)
+
+
+SHRM Sample Policies and template library
+
+
+SHRM Store / commercial product catalog
+
+
+SHRM Linkage content and methodology
+
+
+Architectural patterns that were rare
+
+Beyond domain and audience gaps, some AI architectures were underrepresented:
+
+
+Voice-first interfaces — HR Daily Roundup is audio output, but no app was primarily voice-interaction.
+
+
+Multimodal (image + text) experiences — no app used image inputs (e.g., reviewing documents photographically).
+
+
+Real-time collaborative experiences — every app assumes single-user interaction.
+
+
+Longitudinal tracking and member data persistence — nearly all apps treat the user session as transient; almost none propose building a continuous relationship with the member through persistent data.
+
+
+Why gaps matter
+
+The absences are signal, not noise
+
+Every absence in this corpus reflects something about SHRM staff&apos;s operating mental model. Staff reached for territory where SHRM has authority and where they had access to source material. They avoided territory where SHRM&apos;s positioning is less clear or where specialist vendors dominate. This is an accurate read of where SHRM&apos;s opportunity is currently articulated and where it is not. Future hackathons could use these gaps as explicit prompts — inviting staff to build in areas they didn&apos;t reach for the first time. The second cycle of any methodology should probe where the first cycle left blank space.
+
+
+
+10. Knowledge Base Design Specifications
+
+This document is intended as source material for an interactive internal knowledge base that makes the 55 apps browsable, searchable, and drillable by any SHRM team. This section specifies the data model, filter facets, views, and features such a knowledge base should include. The specifications are detailed enough for a rapid prototyping platform (Lovable, static site on Azure, or similar) to implement without further design work.
+
+
+Purpose
+
+The knowledge base serves one primary use case: an SHRM team member (any team, any role) should be able to discover which hackathon apps intersect with their work in under 90 seconds, drill into any app they find interesting, and know how to advance a conversation about that app. Everything in the specifications below serves this use case.
+
+Secondary use cases: the knowledge base serves as a permanent archive of the hackathon outputs, a reference for future hackathon design, and an internal showcase of SHRM&apos;s innovation capacity. It should not try to be a product discovery tool for members — that is a different problem with different governance requirements. This knowledge base is internal-only.
+
+
+Data model
+
+Each app record should include the following fields. Fields marked (required) must be present for every app. Fields marked (when available) are populated where source material supports them.
+Field
+Type
+Required
+Description
+app_id
+string
+required
+Unique identifier — slug-form app name
+name
+string
+required
+Display name of the app
+tagline
+string
+required
+One-sentence description, max 120 characters
+problem_statement
+text
+required
+The problem the app addresses — 2-3 sentences
+what_it_does
+text
+required
+Description of app functionality — 3-5 sentences
+primary_builder
+string
+required
+Name of primary submitter
+co_builders
+array[string]
+when available
+Additional builders or partners
+division
+string
+required
+Division or team submitter is from
+geography
+enum
+required
+US | SHRM East (India) | Other
+hr_domain
+enum
+required
+12 HR domains as cataloged in Section 2
+ai_architecture
+enum
+required
+Deterministic | Single LLM | RAG | Agentic | Simulation
+shrm_assets_used
+array[enum]
+required
+Which SHRM assets the app builds on
+primary_audience
+enum
+required
+HR Generalist | CHRO | Employee | Recruiter | Early Career | Compliance | L&D
+framing_pattern
+enum
+required
+One of 5 framing patterns from Section 5
+completion_rating
+enum
+required
+Mission-Complete | Mission-Partial | Mission-Concept
+triage_path
+enum
+required
+Vibe Repository | Agentic Candidate | University Node Referral
+hackathon_status
+enum
+required
+Top 2 | Top 5 | Final Round | Gallery | Repository
+live_url
+url
+when available
+Link to working prototype
+documentation_url
+url
+when available
+Link to full documentation report
+build_platform
+enum
+required
+Lovable | Copilot Studio | Custom | Other
+related_apps
+array[app_id]
+computed
+Apps that share domain, audience, or SHRM asset
+business_team_relevance
+array[enum]
+required
+Which SHRM business teams should see this app
+
+ 
+
+
+Primary views
+
+
+Grid view (default landing)
+
+The default experience when a user arrives is a responsive grid of cards — one card per app. Each card shows: app name, tagline, primary builder, division, HR domain badge, triage badge, and completion rating indicator. Cards should be visually distinguishable by triage path (Vibe Repository, Agentic Candidate, University Node Referral) through color or icon. The full grid fits on one scroll for all 55 apps on a desktop screen.
+
+
+List view (alternative)
+
+A denser list view should be available as a toggle. Each row shows the same information in a compact table format — useful for users who want to see multiple attributes side-by-side without visual card decoration.
+
+
+App detail view
+
+Clicking or tapping any card or row opens the full detail view for that app. The detail view includes: problem statement, what-it-does description, builder attribution with division, SHRM assets used with links to each, primary audience, AI architecture explanation, framing pattern, triage path with explanation of what that means, live prototype link (when available), full documentation link, and a &apos;Related apps&apos; section that surfaces 3-5 apps sharing domain, audience, or SHRM asset characteristics.
+
+
+Team landing pages (curated views)
+
+In addition to the browse-by-filter experience, the knowledge base should include curated landing pages for each SHRM business team. These pages correspond to the Section 8 analysis in this document. Each team&apos;s page shows: the team&apos;s relevant app cluster, strategic implications summary (synthesized from Section 8), and discussion prompts (&apos;Conversations to spark&apos;). The team pages transform the document&apos;s analysis into navigable experience.
+
+Minimum team pages: Product Development, Certification & Learning, Content & Marketing, Events, Members & Communities, Knowledge Center & Advisory, HR Jobs & Talent Services, Compliance & Legal Advisory, Research & VoW, SHRM Business & Commercial, SHRM East & International.
+
+
+Analytical views
+
+The knowledge base should include aggregate analytical views that render the charts from this document interactively:
+
+
+Domain coverage map — 12 HR domains with drill-down to app cluster
+
+
+SHRM asset utilization map — which assets appeared most often as foundations
+
+
+AI architecture distribution — where staff reached for sophistication
+
+
+Triage pipeline visualization — what&apos;s at what stage
+
+
+Geographic and divisional distribution — participation map
+
+
+Filter facets
+
+The left-rail filter on the grid view should expose these facets, all combinable:
+
+
+HR Domain — 12 options, multi-select
+
+
+Primary Audience — 7 options, multi-select
+
+
+SHRM Asset — 8+ options, multi-select — especially important for teams searching &apos;show me everything that used BASK&apos;
+
+
+AI Architecture — 5 options, multi-select
+
+
+Triage Path — 3 options, multi-select
+
+
+Completion Rating — 3 options, multi-select
+
+
+Division / Source — 7+ options, multi-select
+
+
+Geography — US / India / Other, multi-select
+
+
+Framing Pattern — 5 options, multi-select
+
+
+Hackathon Status — Top 2 / Top 5 / Final Round / Gallery / Repository, multi-select
+
+
+Business Team Relevance — 11 options, multi-select
+
+All filters should combine with AND logic by default. The active filter set should be visible at the top of the grid, and individual filters should be removable with a single click.
+
+
+Search
+
+A persistent search bar should search across app name, tagline, problem statement, what-it-does description, and builder name simultaneously. Results should rank by match quality (name match > tagline match > description match). Search should work in combination with active filters — meaning a user can filter to &apos;Compliance domain&apos; and then search &apos;visa&apos; to find just the visa-related compliance apps.
+
+
+Relationships and discovery
+
+The &apos;Related apps&apos; section on each detail view is the most important discovery feature. It surfaces apps that share characteristics with the app currently being viewed, in ranked order: same HR domain first, same SHRM asset second, same primary audience third. This lets a user who likes AdjacenSee discover Recruiter Workbench (same domain), or a user who likes Pathnex discover PathFinder (same SHRM asset — credentials).
+
+
+Actions from the detail view
+
+Each app detail view should include action buttons:
+
+
+Open live prototype — link to the Lovable URL where the app is running (where available)
+
+
+View full documentation — link to the structured documentation report for the app
+
+
+Request conversation — opens an email template pre-filled to the builder (or the relevant business team lead) to start a conversation about the app
+
+
+Add to my list — simple bookmarking for users who want to track apps they&apos;re reviewing
+
+
+Metadata for future hackathons
+
+The knowledge base should be built to accept new app records from future hackathons through a simple admin interface or structured import. The data model specified above should remain stable across cycles. Each app record should include a &apos;hackathon_cycle&apos; field (starting at &apos;2026-Q2&apos; for this inaugural batch) to allow filtering by cycle.
+
+When the knowledge base grows beyond one hackathon cycle, a &apos;cycle comparison&apos; view becomes valuable — showing how domain coverage shifts cycle over cycle, what new audiences emerge, which SHRM assets rise in utilization. This is out of scope for the v1 build but should be architecturally possible.
+
+
+Hosting and governance
+
+As discussed in the broader analysis, the preferred hosting model is Azure Static Web Apps within the SHRM tenant. This provides Entra ID SSO, governance compliance, custom domain under SHRM infrastructure, and design latitude. The canonical source data should live in a SHRM-owned SharePoint list or JSON repository that the static site reads from or is built against.
+
+Access should be open to all SHRM staff by default with no separate authentication beyond Entra SSO. Future expansion to external audiences (members, partners, media) is a separate decision with separate governance requirements and is not contemplated in the v1 design.
+
+
+What the knowledge base replaces and what it does not
+
+The knowledge base replaces the current ad-hoc documentation repository (markdown files in OneDrive) with a browsable, searchable, discoverable experience. It does not replace the apps themselves — the prototypes continue to live on Lovable and are accessed via the live_url field on each record. It does not replace the source documentation — the full documentation reports remain authoritative and are accessed via the documentation_url field. It is a navigation and discovery layer over existing artifacts, not a replacement for them.
+
+Build recommendation
+
+The knowledge base is a one-to-two-week build for a single developer using Claude-assisted development on Azure Static Web Apps, with the app data provided as a structured JSON file derived from this document&apos;s appendix. The team landing pages can be adapted directly from Section 8 of this document. The analytical views can be adapted from the charts. The filter facets can be adapted from the data model. This is itself a vibe-coding project that could be scoped as a follow-up ILS deliverable.
+
+
+
+Appendix A: Portfolio Snapshot — All 49 Documented Apps
+
+The table below lists every documented app in the corpus with its primary builder, division, HR domain, triage classification, and completion rating. Six additional submissions exist in the repository whose documentation was not finalized at the time of this report; they are preserved in the raw submission records and will appear in the knowledge base as their documentation is completed.
+
+This table is the raw material for the knowledge base described in Section 10. Each row becomes a record. The columns become structured fields. The app-level detail documentation (the MD files produced during the coaching review) becomes the full detail view for each record.
+App Name
+Builder
+Division
+HR Domain
+Triage Path
+Rating
+AdjacenSee
+Cal Engstrom & Sydney Ross
+Thought Leadership
+Talent Acquisition
+Vibe Repository
+Mission-Complete
+Bloom
+Abby Harrington
+Corporate Communications, BAM
+HR Operations
+Agentic Candidate
+Mission-Complete
+Corporate Visa Decision Engine
+Judit Markarian
+J-1 / Global Business
+Compliance & Legal
+University Node Referral
+Mission-Complete
+Evolve
+Alaina Leadbeter
+Brand & Marketing
+Workforce Planning
+University Node Referral
+Mission-Concept
+FileUI
+—
+—
+Compliance & Legal
+Vibe Repository
+Mission-Complete
+Flowtrack
+Heather Hughes
+Brand Partnerships
+HR Operations
+Vibe Repository
+Mission-Complete
+HR Navigator
+Denise Fenrick
+MCCE
+HR Operations
+Vibe Repository
+Mission-Complete
+HR Investigation Simulator
+Alice Clark
+Members & Communities
+Compliance & Legal
+University Node Referral
+Mission-Complete
+HR Recession Navigation Guide
+Audrey Rodriguez
+Brand
+Analytics & Intelligence
+Vibe Repository
+Mission-Complete
+InsideTrack
+Alice Clark
+Members & Communities
+Talent Acquisition
+Agentic Candidate
+Mission-Complete
+LeadPulse
+Apurva Ojha
+Marketing
+Events & Marketing
+Vibe Repository
+Mission-Complete
+Pathnex
+Karan Singh
+SHRM East
+Talent & Learning
+Agentic Candidate
+Mission-Complete
+SHRM Manager Effectiveness Cost Calculator
+Product team
+Product Optimization
+Analytics & Intelligence
+Vibe Repository
+Mission-Complete
+SHRM Metric Matchup
+Nathan Ebikwo
+Product Optimization
+Analytics & Intelligence
+Agentic Candidate
+Mission-Complete
+SHRM Conference ROI Quiz
+Audrey Rodriguez
+Brand
+Member Value
+Vibe Repository
+Mission-Complete
+SHRM Recruiter Workbench
+Brett Roth
+Digital Experiences, BAM
+Talent Acquisition
+Vibe Repository
+Mission-Complete
+SignalForge
+Animesh Rola
+SHRM East
+Analytics & Intelligence
+University Node Referral
+Mission-Partial
+FMLA Leave Eligibility Checker
+Ben Hood
+Brand Partnerships
+Compliance & Legal
+Agentic Candidate
+Mission-Complete
+AdjacenSee
+Cal Engstrom & Sydney Ross
+Thought Leadership
+Talent Acquisition
+Vibe Repository
+Mission-Complete
+CareOS
+Shayla Alexander-Milligan
+Product Optimization
+Workforce Planning
+Agentic Candidate
+Mission-Partial
+CultureBridge
+Amit Sethi
+SHRM East
+Employee Relations
+Vibe Repository
+Mission-Complete
+Emberstone Ascent
+Members team
+Members & Communities
+Talent & Learning
+Vibe Repository
+Mission-Complete
+EquipFlow
+Daniel Hozik
+Knowledge Division
+HR Operations
+Agentic Candidate
+Mission-Complete
+SHRM HR Tech Stack Advisor
+Hadeel Al-Tashi
+SHRM Labs
+HR Technology
+Vibe Repository
+Mission-Complete
+HR Daily Brief
+Veronica Magan
+Content Production / BAM
+Content & Media
+Vibe Repository
+Mission-Complete
+HR Therapy
+Daniel Hozik
+Knowledge Division
+Employee Relations
+Vibe Repository
+Mission-Complete
+People Analytics in Action
+Alice Clark
+Members & Communities
+Analytics & Intelligence
+Vibe Repository
+Mission-Complete
+SHRM Guardian
+Nathan Ebikwo
+Product Optimization
+Compliance & Legal
+University Node Referral
+Mission-Complete
+SHRM InsightBridge
+Daniel Hozik
+Knowledge Division
+Analytics & Intelligence
+Vibe Repository
+Mission-Complete
+SHRM Pathfinder
+Alice Clark
+Members & Communities
+Member Value
+Vibe Repository
+Mission-Complete
+SHRM Growth Compass
+Niloufar Gomez
+SHRM Business
+Talent & Learning
+Vibe Repository
+Mission-Complete
+SHRM Work Radar
+Brett Roth
+Digital Experiences, BAM
+Analytics & Intelligence
+Vibe Repository
+Mission-Complete
+TLU HR Simulation
+—
+Members & Communities
+Compliance & Legal
+Agentic Candidate
+Mission-Complete
+UpskillX
+Daniel Hozik
+Knowledge Division
+Talent & Learning
+Vibe Repository
+Mission-Complete
+Civility Compass
+Kristi Meacham
+Knowledge Division
+Employee Relations
+Agentic Candidate
+Mission-Complete
+CaseCoach
+—
+Knowledge Center
+Compliance & Legal
+Agentic Candidate
+Mission-Complete
+Flowtrack
+Heather Hughes
+Brand Partnerships
+HR Operations
+Vibe Repository
+Mission-Complete
+Global HR Compliance Tracker
+Nidhika Mishra
+SHRM East
+Compliance & Legal
+Vibe Repository
+Mission-Complete
+HR Daily Roundup
+Veronica Magan
+Content Production / BAM
+Content & Media
+Vibe Repository
+Mission-Complete
+HRIS Test Scriptor
+Jessica Langlois
+Knowledge Team
+HR Operations
+Agentic Candidate
+Mission-Complete
+HirePrep
+Kevin Abbed
+Student Communities
+Early Career
+Agentic Candidate
+Mission-Complete
+IOX
+Internal Opp. Exchange team
+Members & Communities
+Talent Acquisition
+Agentic Candidate
+Mission-Partial
+Product Pulse
+—
+Product
+Analytics & Intelligence
+Agentic Candidate
+Mission-Partial
+PeopleScope
+Daniel Hozik
+Knowledge Division
+Analytics & Intelligence
+University Node Referral
+Mission-Complete
+Pulse Survey Insight Generator
+—
+Knowledge Division
+Analytics & Intelligence
+Vibe Repository
+Mission-Complete
+SHRM Career Architect
+Suleman Hafeez
+BAM - Web Strategy
+Talent & Learning
+Agentic Candidate
+Mission-Partial
+SHRM Policy Change Radar
+Brett Roth
+Digital Experiences, BAM
+Compliance & Legal
+Agentic Candidate
+Mission-Complete
+State and Local Minimum Wage Law Assistant
+Rebecca Cooper + team
+Thought Leadership
+Compliance & Legal
+Vibe Repository
+Mission-Complete
+guidHR
+—
+Knowledge Division
+Compliance & Legal
+University Node Referral
+Mission-Complete
+
+ 
+
+Attribution note: For any app where the primary builder worked with co-builders or partners whose names are not reflected above, corrections are welcomed. The knowledge base will maintain the current best attribution; updates can be submitted to Barry Reicherter for integration.
+
+
+
+Appendix B: Visualization Specifications for the Knowledge Base
+
+The charts embedded throughout this document are static PNG images. The knowledge base implementation should render these as interactive, filterable, drillable visualizations. This appendix specifies each visualization with enough detail for implementation.
+
+
+Visualization 1: HR Domain Coverage
+
+Horizontal bar chart. Y-axis: 12 HR domains. X-axis: count of apps per domain. Sort descending by count. On click of any bar, filter the grid view to apps in that domain and scroll the grid into view. Color each bar by a SHRM palette assignment consistent with the team landing page color.
+
+Data source: the hr_domain field on each app record, aggregated.
+
+
+Visualization 2: Hardening Pipeline (Triage)
+
+Vertical bar chart with 3 bars — Vibe Repository, Agentic Candidate, University Node Referral. Show count and percentage. On click of any bar, filter the grid view to apps in that triage path. Include an explanatory hover tooltip that describes what each triage path means in plain language.
+
+Data source: the triage_path field on each app record, aggregated.
+
+
+Visualization 3: SHRM Asset Utilization
+
+Horizontal bar chart. Y-axis: SHRM assets as cataloged. X-axis: count of apps referencing each asset. This is the most useful analytical view for business team members exploring &apos;what&apos;s been built on our assets.&apos; On click of any asset bar, filter the grid to apps that reference that asset. Also show a &apos;Assets not yet used&apos; panel below the chart listing absent assets.
+
+Data source: the shrm_assets_used field on each app record (many-to-many, each app can reference multiple assets), aggregated across apps.
+
+
+Visualization 4: Divisional Participation
+
+Horizontal bar chart. Y-axis: divisions. X-axis: count of submissions per division. Include a secondary axis or indicator showing per-capita rate where team sizes are known (especially useful for making the SHRM East signal visible). On click of any division, filter the grid to apps submitted from that division.
+
+Data source: the division field on each app record, aggregated.
+
+
+Visualization 5: AI Architecture Distribution
+
+Donut chart with 5 segments — Deterministic, Single LLM, RAG, Agentic, Simulation. Each segment labeled with count and percentage. Clicking any segment filters the grid to apps using that architecture. Include a second ring or indicator showing completion rating distribution within each architecture type — useful for testing hypotheses like &apos;were simpler architectures more likely to complete?&apos;
+
+Data source: ai_architecture field on each app record.
+
+
+Visualization 6: Audience Targeting Map
+
+Horizontal bar chart. Y-axis: audiences. X-axis: count of apps targeting each audience. This view is particularly useful for the Product Development and Business teams considering audience strategy.
+
+Data source: primary_audience field on each app record.
+
+
+Visualization 7: Domain × Audience Heatmap
+
+Two-dimensional heatmap. Rows: 12 HR domains. Columns: 7 primary audiences. Cell value: count of apps in that domain-audience intersection. Color intensity encodes count. This view reveals concentration patterns that no single-dimension chart surfaces — for example, which domains have CHRO-focused apps vs. employee-focused apps.
+
+Data source: hr_domain × primary_audience cross-tabulation.
+
+
+Visualization 8: Framing Pattern Distribution
+
+Stacked bar chart or waffle chart. 5 framing patterns. Within each pattern, breakdown by triage path — useful for showing, for example, that &apos;content-to-application gap&apos; apps are disproportionately Vibe Repository while &apos;decision support failure&apos; apps are disproportionately Agentic Candidates.
+
+Data source: framing_pattern × triage_path cross-tabulation.
+
+
+Visualization 9: Cycle Over Cycle (Future)
+
+Line chart or small-multiples view. X-axis: hackathon cycle (2026-Q2 as baseline, then each subsequent cycle). Y-axis varies by selected metric: domain coverage breadth, SHRM asset utilization depth, geographic distribution. This visualization becomes valuable at the second hackathon cycle and is a placeholder in v1.
+
+Data source: hackathon_cycle field on each app record; useful once 2+ cycles exist.
+
+
+Interaction design principles
+
+
+All visualizations should be clickable and serve as filters on the grid view. Clicking a bar, segment, or cell should add a filter and scroll the grid into view.
+
+
+All visualizations should be responsive. On mobile, simpler views (bar charts scrollable, donut charts sized down) should remain readable.
+
+
+All visualizations should carry source attribution. A footer on each chart should indicate: source, date generated, and methodology note where relevant.
+
+
+The knowledge base should export visualizations as PNG. Users exploring the data for a business team conversation should be able to grab any chart for their deck.
+
+
